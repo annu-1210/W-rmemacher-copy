@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports ={
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,9 +7,21 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        MontserratLight: ["MontserratLight"],
+        MontserratRegular: ["MontserratRegular"],
+        MontserratMedium: ["MontserratMedium"],
+        MontserratSemibold: ["MontserratSemibold"],
+        MontserratBold: ["MontserratBold"],
+        MontserratExtrabold: ["MontserratExtrabold"],
+        MontserratBlack: ["MontserratBlack"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      backgroundImage:{
+       HeroBg: "url('/images/w-1.png')",
       },
     },
   },
