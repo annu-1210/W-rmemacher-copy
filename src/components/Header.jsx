@@ -1,4 +1,3 @@
-
 import React from "react";
 import { NavLinks } from "./common/Helper";
 import { Logo } from "./common/Icon";
@@ -11,16 +10,16 @@ function Header() {
           <a
             key={index}
             href={link.link}
-            className="text-white text-sm font-MontserratRegular"
+            className="text-primary text-sm font-MontserratRegular"
           >
             {link.title}
           </a>
         ))}
       </div>
       <a href="/" className="flex w-[77px] h-[66px]">
-        <Logo width={77} height={66}/>
+        <Logo width={77} height={66} />
       </a>
-      <div></div>
+      <div className="flex w-[450px] bg-transparent justify-end text-primary font-MontserratMedium text-xs">German</div>
     </div>
   );
 }
