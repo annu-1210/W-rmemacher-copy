@@ -1,11 +1,11 @@
 import React from "react";
 
-function SocialLinks({ children, size = 20, link, className = "" }) {
+function SocialLinks({ children, size = 15, link, className = "" }) {
   return (
     <>
       <a
         href={link ?? "/"}
-        className={`flex items-center justify-center w-30 h-30 rounded-full cursor-pointer  ${className} `}
+        className={`flex items-center justify-center w-[31px] h-[31px] rounded-full cursor-pointer bg-transparent border border-borderColor ${className} `}
         target="_blank" rel="noopener noreferrer"
       >
         {React.cloneElement(children, { size })}

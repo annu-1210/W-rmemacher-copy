@@ -215,9 +215,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(76.1353 24.2544) scale(17.4681 17.4681)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_4378_223"
@@ -227,9 +227,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(84.1428 26.4391) scale(17.6707)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_4378_223"
@@ -239,9 +239,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(91.6831 29.8389) scale(17.8204 17.8204)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_4378_223"
@@ -251,9 +251,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(97.8406 35.4765) scale(17.8292)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_4378_223"
@@ -263,9 +263,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(101.602 42.7526) scale(17.6883)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_4378_223"
@@ -275,9 +275,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(102.298 50.8752) scale(17.424)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint6_radial_4378_223"
@@ -287,9 +287,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(64.2522 24.2547) scale(17.4681 17.4681)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint7_radial_4378_223"
@@ -299,9 +299,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(56.2536 26.4391) scale(17.6707)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint8_radial_4378_223"
@@ -311,9 +311,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(48.7043 29.8392) scale(17.8204 17.8204)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint9_radial_4378_223"
@@ -323,9 +323,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(42.5558 35.4765) scale(17.8292 17.8292)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint10_radial_4378_223"
@@ -335,9 +335,9 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(38.7856 42.753) scale(17.6883 17.6883)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
         <radialGradient
           id="paint11_radial_4378_223"
@@ -347,10 +347,48 @@ export const FooterLogo = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(38.0984 50.8749) scale(17.424 17.424)"
         >
-          <stop stop-color="#E95F32" />
-          <stop offset="0.36" stop-color="#F18F34" />
-          <stop offset="0.77" stop-color="#FDC800" />
+          <stop stopColor="#E95F32" />
+          <stop offset="0.36" stopColor="#F18F34" />
+          <stop offset="0.77" stopColor="#FDC800" />
         </radialGradient>
+      </defs>
+    </svg>
+  );
+};
+
+export const MailBoxIcon = () => {
+  return (
+    <svg
+      width="28"
+      height="18"
+      viewBox="0 0 24 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M3.36377 0.54541C2.56812 0.54541 1.80506 0.86148 1.24245 1.42409C0.67984 1.9867 0.36377 2.74976 0.36377 3.54541V14.4545C0.36377 15.2501 0.67984 16.0132 1.24245 16.5758C1.80506 17.1384 2.56812 17.4545 3.36377 17.4545H20.8183C21.614 17.4545 22.377 17.1384 22.9396 16.5758C23.5022 16.0132 23.8183 15.2501 23.8183 14.4545V3.54541C23.8183 2.74976 23.5022 1.9867 22.9396 1.42409C22.377 0.86148 21.614 0.54541 20.8183 0.54541H3.36377ZM7.10559 5.05741C6.92775 4.94136 6.71176 4.899 6.50326 4.93928C6.29476 4.97956 6.11009 5.09933 5.98828 5.27326C5.86647 5.4472 5.81705 5.66169 5.85048 5.8714C5.8839 6.0811 5.99755 6.2696 6.16741 6.39705L11.622 10.2152C11.7595 10.3114 11.9232 10.3631 12.091 10.3631C12.2589 10.3631 12.4226 10.3114 12.5601 10.2152L18.0147 6.39705C18.1066 6.3371 18.1854 6.25928 18.2466 6.16823C18.3078 6.07718 18.3501 5.97475 18.3709 5.86704C18.3917 5.75933 18.3906 5.64854 18.3677 5.54125C18.3449 5.43396 18.3007 5.33236 18.2377 5.24251C18.1748 5.15265 18.0944 5.07636 18.0014 5.01819C17.9084 4.96001 17.8047 4.92113 17.6963 4.90387C17.588 4.8866 17.4773 4.89129 17.3708 4.91767C17.2643 4.94405 17.1642 4.99157 17.0765 5.05741L12.091 8.54723L7.10559 5.05741Z"
+        fill="#E94E1B"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M3.36377 0.54541C2.56812 0.54541 1.80506 0.86148 1.24245 1.42409C0.67984 1.9867 0.36377 2.74976 0.36377 3.54541V14.4545C0.36377 15.2501 0.67984 16.0132 1.24245 16.5758C1.80506 17.1384 2.56812 17.4545 3.36377 17.4545H20.8183C21.614 17.4545 22.377 17.1384 22.9396 16.5758C23.5022 16.0132 23.8183 15.2501 23.8183 14.4545V3.54541C23.8183 2.74976 23.5022 1.9867 22.9396 1.42409C22.377 0.86148 21.614 0.54541 20.8183 0.54541H3.36377ZM7.10559 5.05741C6.92775 4.94136 6.71176 4.899 6.50326 4.93928C6.29476 4.97956 6.11009 5.09933 5.98828 5.27326C5.86647 5.4472 5.81705 5.66169 5.85048 5.8714C5.8839 6.0811 5.99755 6.2696 6.16741 6.39705L11.622 10.2152C11.7595 10.3114 11.9232 10.3631 12.091 10.3631C12.2589 10.3631 12.4226 10.3114 12.5601 10.2152L18.0147 6.39705C18.1066 6.3371 18.1854 6.25928 18.2466 6.16823C18.3078 6.07718 18.3501 5.97475 18.3709 5.86704C18.3917 5.75933 18.3906 5.64854 18.3677 5.54125C18.3449 5.43396 18.3007 5.33236 18.2377 5.24251C18.1748 5.15265 18.0944 5.07636 18.0014 5.01819C17.9084 4.96001 17.8047 4.92113 17.6963 4.90387C17.588 4.8866 17.4773 4.89129 17.3708 4.91767C17.2643 4.94405 17.1642 4.99157 17.0765 5.05741L12.091 8.54723L7.10559 5.05741Z"
+        fill="url(#paint0_linear_4378_271)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_4378_271"
+          x1="0.363769"
+          y1="1.46438"
+          x2="25.4651"
+          y2="8.54228"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#E94E1B" />
+          <stop offset="1" stopColor="#FDC801" />
+        </linearGradient>
       </defs>
     </svg>
   );

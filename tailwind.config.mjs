@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports ={
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,7 +16,7 @@ module.exports ={
         MontserratExtrabold: ["MontserratExtrabold"],
         MontserratBlack: ["MontserratBlack"],
         PpEditorialRegular: ["PpEditorialRegular"],
-        Gilroy:["Gilroy"],
+        Gilroy: ["Gilroy"],
       },
       colors: {
         primary: " rgba(255, 255, 255, 1)",
@@ -24,10 +24,15 @@ module.exports ={
         tertiary: "rgba(233, 78, 27, 1)",
         quaternary: "rgba(255, 239, 211, 1)",
         quinary: "rgba(255, 255, 255, 0.02)",
+        borderColor: "rgba(178, 178, 178, 0.6)",
+        neutral: "rgba(178, 178, 178, 1)",
+        background: "rgba(29, 29, 27, 0.86)",
+
       },
-      backgroundImage:{
+      backgroundImage: {
         // "custom-gradient":"linear-gradient(0deg, #E94E1B, #E94E1B)",
-        "custom-gradient":"linear-gradient(101.49deg, #E94E1B 0.92%, #FDC801 96.93%)",
+        "custom-gradient":
+          "linear-gradient(101.49deg, #E94E1B 0.92%, #FDC801 96.93%)",
       },
     },
   },

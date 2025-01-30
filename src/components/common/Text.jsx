@@ -6,7 +6,7 @@ const text = tv(
     base: "flex z-10 relative",
     variants: {
       color: {
-        primary: "text-primary",
+        primary: "text-neutral",
         secondary: "text-secondary",
       },
       size: {

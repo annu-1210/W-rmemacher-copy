@@ -10,7 +10,7 @@ const button = tv(
         secondary: "backdrop-blur-[6px] quinary border-2 border-transparent ",
       },
       size: {
-        sm: "w-[95px] !h-[30px] px-2.5 py-[11.63px] !gap-[8.31px]",
+        sm: "w-[95px] !h-[30px] px-2.5 py-[11.63px] !gap-[8.31px] !text-sm",
         md: "w-[160px] px-3 py-3.5 border",
         lg: "w-[160px] px-6 py-3.5",
         xl: "w-[191px] px-6 py-3.5",

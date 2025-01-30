@@ -10,7 +10,7 @@ function Header() {
           <a
             key={index}
             href={link.link}
-            className="text-primary text-sm font-MontserratRegular"
+            className="text-neutral text-sm font-MontserratRegular"
           >
             {link.title}
           </a>
