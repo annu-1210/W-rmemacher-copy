@@ -12,8 +12,8 @@ import ActionButton from "./common/ActionButton";
 
 function Slider() {
   return (
-    <div className="max-w-[1400px] w-full mx-auto mt-[150px] !h-[770px] rounded-2xl overflow-hidden ">
-      <div className="max-w-[1400px] w-full ">
+    <div className="max-w-[1920px] w-full mx-auto mt-[150px] !h-[770px] rounded-2xl overflow-hidden ">
+      <div className="max-w-[1920px] w-full ">
         <Swiper
           modules={[Pagination]}
           pagination={{
@@ -23,7 +23,7 @@ function Slider() {
           }}
           slidesPerView={1}
           loop={true}
-          className="max-w-[1400px] !h-[770px] rounded-2xl "
+          className="max-w-[1920px] !h-[770px] rounded-2xl "
         >
           {SliderData.map((slide) => {
             return (
@@ -38,7 +38,7 @@ function Slider() {
                     key={slide.id}
                     width={1140}
                     height={770}
-                    className="w-full max-w-[1400px] rounded-2xl absolute top-px z-0 object-stretch bg-custom-gradient2"
+                    className="w-full max-w-[1920px] rounded-2xl absolute top-px z-0 object-cover object-center bg-custom-gradient2"
                   />
                   <div
                     className={`absolute ${slide.position} left-[40px] max-w-[718px] flex flex-col gap-y-10 ${slide.TextWidth}`}

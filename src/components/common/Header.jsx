@@ -19,7 +19,9 @@ function Header() {
       <a href="/" className="flex w-[77px] h-[66px]">
         <Logo width={77} height={66} />
       </a>
-      <div className="flex w-[450px] bg-transparent justify-end text-primary font-MontserratMedium text-xs">German</div>
+      <div className="flex w-[450px] bg-transparent justify-end text-primary font-MontserratMedium text-xs">
+        German
+      </div>
     </div>
   );
 }

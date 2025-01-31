@@ -9,7 +9,7 @@ import blogImg3 from "../../../public/images/blog3.png";
 import blogImg4 from "../../../public/images/blog4.png";
 import blogImg5 from "../../../public/images/blog5.png";
 import sliderImg1 from "../../../public/images/w-6.png";
-import sliderImg2 from "../../../public/images/w-1.png";
+import sliderImg2 from "../../../public/images/w-14.jpeg";
 import AboutSection from "../AboutSection";
 import Sustainability from "../Sustainability";
 import Technology from "../Technology";
@@ -86,7 +86,7 @@ export const navTabs = [
   {
     id: "technology",
     title: "Technologie",
-    component: <Technology />,
+    component: <Technology className="gradient-icon"/>,
   },
   {
     id: "services",
@@ -164,14 +164,7 @@ export const BlogData2 = [
 export const SocialLink = [
   {
     id: 1,
-    icon: (
-      <FaFacebookF
-        style={{
-          backgroundColor:
-            "linear-gradient(101.49deg, #E94E1B 0.92%, #FDC801 96.93%)",
-        }}
-      />
-    ),
+    icon: <FaFacebookF />,
     link: "https://www.facebook.com",
   },
   {

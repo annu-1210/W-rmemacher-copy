@@ -13,8 +13,8 @@ function Footer() {
     "Lorem ipsum dolor sit amet consect itae orci vivamus elementum.";
   return (
     <footer className="footer">
-      <div className="rounded-2xl max-w-[1400px] mx-auto pl-[100px] pr-[118px] pt-[50px] pb-11 flex flex-col gap-[35px] justify-between items-center bg-secondary mt-[150px]">
-        <div className="flex justify-between gap-x-32 w-full">
+      <div className="rounded-2xl max-w-[1920px] mx-auto pl-[100px] pr-[118px] pt-[50px] pb-11 flex flex-col gap-[35px] justify-between items-center bg-secondary mt-[150px]">
+        <div className="flex justify-between gap-x-32 max-w-[1400px]">
           <div className="flex flex-col gap-y-6 max-w-[290px] ">
             <a href="/" className="flex w-[140px] h-[121px]">
               <FooterLogo width={140} height={121} />

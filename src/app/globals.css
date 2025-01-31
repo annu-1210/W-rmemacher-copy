@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --red-linear: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%);
+}
+
+@layer components {
+  .gradient-border {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: linear-gradient(0, 0) padding-box,
+      linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%) border-box;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+  }
+}
+
+@layer components{
+  .gradient-icon {
+    color: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%);
+    -webkit-background-clip: text;
+    /* color: transparent; */
+  }
+}
+
 @font-face {
   font-family: "MontserratLight";
   src: url("/fonts/Montserrat-Light.ttf") format("truetype");
