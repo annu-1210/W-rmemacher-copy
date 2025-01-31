@@ -10,6 +10,10 @@ import blogImg4 from "../../../public/images/blog4.png";
 import blogImg5 from "../../../public/images/blog5.png";
 import sliderImg1 from "../../../public/images/w-6.png";
 import sliderImg2 from "../../../public/images/w-1.png";
+import AboutSection from "../AboutSection";
+import Sustainability from "../Sustainability";
+import Technology from "../Technology";
+import Services from "../Services";
 
 export const HeaderLinks = [
   {
@@ -65,22 +69,27 @@ export const SliderData = [
   },
 ];
 
-export const navLinks = [
+export const navTabs = [
   {
+    id: "uber-uns",
     title: "Über uns",
-    link: "/AboutSection",
+    component: <AboutSection/>,
+    
   },
   {
+    id: "sustainability",
     title: "Nachhaltigkeit",
-    link: "/Sustainability",
+    component: <Sustainability/>,
   },
   {
+    id: "technology",
     title: "Technologie",
-    link: "/Technology",
+    component: <Technology/>,
   },
   {
+    id: "services",
     title: "Service",
-    link: "/Services",
+    component: <Services/>,
   },
 ];
 

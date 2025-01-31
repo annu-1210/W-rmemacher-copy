@@ -1,10 +1,11 @@
+"use client";
 import React from "react";
 import Text from "./common/Text";
-import { navLinks } from "./common/Helper";
-// import { useRouter } from "next/router";
+import { navTabs } from "./common/Helper";
+import { useState } from "react";
 
 function FutureOfBathroom() {
-  // const router = useRouter();
+  const [activeTab, setActiveTab] = useState(navTabs [0].id);
   const para =
     "Technologische und funktionale Maßstäbe für die nächste Generation des Bads neu definiert.";
   return (
@@ -20,19 +21,23 @@ function FutureOfBathroom() {
           <Text label={para} size="md" color="secondary" />
         </p>
       </div>
-      <div className="max-w-[1107px] max-h-[613px] gap-y-[70px]">
+      <div className="max-w-[1107px] max-h-[613px] flex items-center justify-center flex-col gap-y-[70px]">
         <div className="w-[753px] h-[44px] flex gap-x-[30px] border-b border-neutral">
-          {navLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.link}
-              className="text-secondary text-xl font-MontserratRegular w-full flex justify-center"
+          {navTabs.map((tab) => (
+            <button
+              key={tab.id}
+              className={`${
+                activeTab === tab.id
+                  ? "border-b border-tertiary text-tertiary"
+                  : "text-secondary"
+              } text-xl font-MontserratRegular w-full flex justify-center`}
+              onClick={() => setActiveTab(tab.id)}
             >
-              {link.title}
-            </a>
+              {tab.title}
+            </button>
           ))}
         </div>
-        <div></div>
+        <div className="max-w-[1107px] max-h-[500px]">{navTabs.find((tab) => tab.id === activeTab)?.component}</div>
       </div>
     </div>
   );

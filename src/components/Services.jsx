@@ -8,14 +8,14 @@ function Services() {
   return (
     <div className="max-w-[1107px] flex items-center justify-between gap-[60px] ">
       <Image
-        src="/images/w-10.png"
+        src="/images/w-10.jpeg"
         alt="Image"
         width={502}
         height={449}
-        className="w-full max-w-[502px] rounded-2xl absolute top-px z-0"
+        className="w-full max-w-[502px] rounded-2xl "
       />
       <p className="max-w-[521px] ">
-        <Text label={para} size="md" color="secondary" />
+        <Text label={para} size="sm" color="secondary" />
       </p>
     </div>
   );
