@@ -12,7 +12,7 @@ import ActionButton from "./common/ActionButton";
 
 function Slider() {
   return (
-    <div className="max-w-[1920px] w-full mx-auto mt-[150px] !h-[770px] rounded-2xl overflow-hidden ">
+    <section className="max-w-[1920px] w-full mx-auto mt-[150px] !h-[770px] rounded-2xl overflow-hidden ">
       <div className="max-w-[1920px] w-full ">
         <Swiper
           modules={[Pagination]}
@@ -87,7 +87,7 @@ function Slider() {
           })}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 }
 
