@@ -1,12 +1,12 @@
 import React from "react";
-import { NavLinks } from "./common/Helper";
-import { Logo } from "./common/Icon";
+import { HeaderLinks } from "./Helper";
+import { Logo } from "./Icon";
 
 function Header() {
   return (
     <div className="absolute z-10 bg-transparent top-0 left-0 right-0 flex items-center justify-between pt-3.5 px-10 mx-auto">
       <div className="flex items-center gap-x-5">
-        {NavLinks.map((link, index) => (
+        {HeaderLinks.map((link, index) => (
           <a
             key={index}
             href={link.link}

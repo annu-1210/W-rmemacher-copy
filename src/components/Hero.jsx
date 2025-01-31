@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./common/Header";
 import Image from "next/image";
 import Text from "./common/Text";
 import ActionButton from "./common/ActionButton";

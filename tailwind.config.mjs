@@ -27,12 +27,12 @@ module.exports = {
         borderColor: "rgba(178, 178, 178, 0.6)",
         neutral: "rgba(178, 178, 178, 1)",
         background: "rgba(29, 29, 27, 0.86)",
-
       },
       backgroundImage: {
-        // "custom-gradient":"linear-gradient(0deg, #E94E1B, #E94E1B)",
         "custom-gradient":
           "linear-gradient(101.49deg, #E94E1B 0.92%, #FDC801 96.93%)",
+        "custom-gradient2":
+          "linear-gradient(269.67deg, rgba(29, 29, 27, 0) -0.85%, rgba(29, 29, 27, 0.516785) 47.2%, #1D1D1B 100.71%)",
       },
     },
   },
