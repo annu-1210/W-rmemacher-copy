@@ -33,7 +33,7 @@ function Gifi() {
             </p>
           </div>
           <div className="w-full z-10 flex items-center justify-center z-20">
-          <ActionButton label="Mehr erfahren" color="primary" size="lg"/>
+          <ActionButton label="Mehr erfahren" color="primary" size="md"/>
           </div>
          
         </div>

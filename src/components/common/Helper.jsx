@@ -14,6 +14,9 @@ import AboutSection from "../AboutSection";
 import Sustainability from "../Sustainability";
 import Technology from "../Technology";
 import Services from "../Services";
+import qualitiesImg1 from "../../../public/images/w-11.png";
+import qualitiesImg2 from "../../../public/images/w-12.png";
+import qualitiesImg3 from "../../../public/images/w-13.png";
 
 export const HeaderLinks = [
   {
@@ -50,7 +53,7 @@ export const SliderData = [
       "text-6xl leading-[73.14px] transition-all mx-auto max-w-[718px] font-MontserratMedium",
     EditorialLabel: "Badezimmer von Morgen",
     EditorialStyle: "font-PpEditorialRegular italic text-6xl ",
-    TextWidth:"718px",
+    TextWidth: "718px",
     position: "top-[278px]",
   },
   {
@@ -60,11 +63,11 @@ export const SliderData = [
     paragraph:
       "Entdecken Sie den Badezimmerspiegel VIVA mit integrierter Infrarotheizung und Smart Home in Premium-Qualität.",
     MontserratLabel: "Innovativste Wärmetechnik",
-    Montserratstyle:
-      " font-PpEditorialRegular italic text-6xl ",
+    Montserratstyle: " font-PpEditorialRegular italic text-6xl ",
     EditorialLabel: "im Bad: VIVA",
-    EditorialStyle: "text-6xl leading-[73.14px] transition-all mx-auto max-w-[718px] font-MontserratMedium",
-    TextWidth:"686px",
+    EditorialStyle:
+      "text-6xl leading-[73.14px] transition-all mx-auto max-w-[718px] font-MontserratMedium",
+    TextWidth: "686px",
     position: "top-[365px]",
   },
 ];
@@ -73,23 +76,46 @@ export const navTabs = [
   {
     id: "uber-uns",
     title: "Über uns",
-    component: <AboutSection/>,
-    
+    component: <AboutSection />,
   },
   {
     id: "sustainability",
     title: "Nachhaltigkeit",
-    component: <Sustainability/>,
+    component: <Sustainability />,
   },
   {
     id: "technology",
     title: "Technologie",
-    component: <Technology/>,
+    component: <Technology />,
   },
   {
     id: "services",
     title: "Service",
-    component: <Services/>,
+    component: <Services />,
+  },
+];
+
+export const QualitiesData = [
+  {
+    id: "innovative",
+    label: "Zeitlose Eleganz trifft auf innovative Technologie",
+    description:
+      "Wärmemacher Badezimmerspiegel setzen neue Maßstäben in Design und Funktionalität – für ein Badezimmer, das durch zeitlose Ästhetik und höchste technische Raffinesse überzeugt.",
+    image: qualitiesImg1,
+  },
+  {
+    id: "smart-home",
+    label: "Smart Home Funktionalität",
+    description:
+      "Mit unseren Badezimmerspiegeln erleben Sie Smart Home neu – von der Weckfunktion über Wetter- und Temperaturanzeigen bis hin zur nahtlosen WiFi-Konnektivität. Erweitern Sie Ihren Alltag mit intelligentem Luxus, der Ihr Badezimmer revolutioniert.",
+    image: qualitiesImg2,
+  },
+  {
+    id: "infrared-heating",
+    label: "Wärme und Vitalität durch Infrarotheizung",
+    description:
+      "Unsere Badezimmerspiegel bieten nicht nur kristallklare Reflexionen, sondern fördern mit sanfter Infrarotwärme Ihr Wohlbefinden und Ihre Vitalität. Die integrierte Anti-Beschlagsfunktion sorgt zudem jederzeit für klare Sicht – für ein Badeerlebnis, das Komfort und Stil bietet.",
+    image: qualitiesImg3,
   },
 ];
 

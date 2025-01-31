@@ -55,17 +55,17 @@ function Slider() {
                       </p>
                     </div>
                     <div className="max-w-[306px] flex max-h-[72px] items-center">
-                      <ul className="flex flex-col gap-y-1 font-MontserratMedium text-primary max-w-[95px]">
-                        <li className="text-base">Größe</li>
-                        <li className="text-xl">60x60cm</li>
-                        <li className="text-base">SOLIS</li>
-                      </ul>
+                      <div className="flex flex-col gap-y-1 font-MontserratMedium text-primary max-w-[95px]">
+                        <p className="text-base">Größe</p>
+                        <p className="text-xl">60x60cm</p>
+                        <p className="text-base">SOLIS</p>
+                      </div>
                       <div className="h-[70px] border border-primary mx-8"></div>
-                      <ul className="flex flex-col gap-y-1 font-MontserratMedium text-primary max-w-[147px]">
-                        <li className="text-base">Smart Mirror</li>
-                        <li className="text-xl">259 €</li>
-                        <li className="text-base">Premium Qualität</li>
-                      </ul>
+                      <div className="flex flex-col gap-y-1 font-MontserratMedium text-primary max-w-[147px]">
+                        <p className="text-base">Smart Mirror</p>
+                        <p className="text-xl">259 €</p>
+                        <p className="text-base">Premium Qualität</p>
+                      </div>
                     </div>
                   </div>
                   <div className="max-w-[336px] flex gap-x-4 absolute top-[634px] right-[130px]">
