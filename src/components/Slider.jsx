@@ -27,7 +27,7 @@ function Slider() {
         >
           {SliderData.map((slide) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide >
                 <div
                   className="w-full relative flex items-center justify-between bg-gray-800 text-white text-2xl bg-custom-gradient2 z-10"
                   key={slide.id}
@@ -35,6 +35,7 @@ function Slider() {
                   <Image
                     src={slide.img}
                     alt={slide.alt}
+                    key={slide.id}
                     width={1140}
                     height={770}
                     className="w-full max-w-[1400px] rounded-2xl absolute top-px z-0 object-stretch bg-custom-gradient2"

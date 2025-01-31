@@ -10,7 +10,7 @@ function Gifi() {
   return (
     <div className="max-w-[1400px] relative overflow-hidden rounded-2xl mt-[150px] h-[650px]">
       <Image
-        src="/images/gif.gif"
+        src="/images/gif-poster.jpeg"
         alt="gif Image"
         width={1400}
         height={650}
