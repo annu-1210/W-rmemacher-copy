@@ -50,11 +50,11 @@ export const SliderData = [
       "Entdecken Sie den Badezimmerspiegel SOLIS mit integrierter Infrarotheizung und Smart Home in Premium-Qualität.",
     MontserratLabel: "Erleben Sie schon heute das",
     Montserratstyle:
-      "text-5xl xl:text-6xl leading-[60px] xl:leading-[73.14px] transition-all mx-auto max-w-[550px] xl:max-w-[718px] font-MontserratMedium",
+      " text-4xl lg:text-5xl xl:text-6xl leading-[40px] lg:leading-[60px] xl:leading-[73.14px] transition-all mx-auto max-w-[550px] xl:max-w-[718px] font-MontserratMedium",
     EditorialLabel: "Badezimmer von Morgen",
-    EditorialStyle: "font-PpEditorialRegular italic text-5xl xl:text-6xl leading-[50px] xl:leading-[73.14px]",
-    TextWidth: "718px",
-    position: "top-[380px] xl:top-[278px]",
+    EditorialStyle: "font-PpEditorialRegular italic text-4xl lg:text-5xl xl:text-6xl leading-[40px] lg:leading-[50px] xl:leading-[73.14px]",
+    TextWidth: "w-[450px] lg:w-[718px]",
+    position: " top-[240px] lg:top-[380px] xl:top-[278px]",
   },
   {
     id: 2,
@@ -63,12 +63,12 @@ export const SliderData = [
     paragraph:
       "Entdecken Sie den Badezimmerspiegel VIVA mit integrierter Infrarotheizung und Smart Home in Premium-Qualität.",
     MontserratLabel: "Innovativste Wärmetechnik",
-    Montserratstyle: " font-PpEditorialRegular italic text-5xl xl:text-6xl  xl:leading-[73.14px]",
+    Montserratstyle: " font-PpEditorialRegular italic text-4xl lg:text-5xl xl:text-6xl  xl:leading-[73.14px]",
     EditorialLabel: "im Bad: VIVA",
     EditorialStyle:
-      "text-5xl xl:text-6xl leading-[50px] leading-[73.14px] transition-all mx-auto max-w-[550px] xl:max-w-[718px] font-MontserratMedium",
-    TextWidth: "w-[550px] xl:w-[686px]",
-    position: "top-[440px] xl:top-[365px]",
+      " text-4xl lg:text-5xl xl:text-6xl leading-[40px] lg:leading-[50px] leading-[73.14px] transition-all mx-auto max-w-[550px] xl:max-w-[718px] font-MontserratMedium",
+    TextWidth: "w-[420px] lg:w-[550px] xl:w-[686px]",
+    position: "top-[240px] lg:top-[440px] xl:top-[365px]",
   },
 ];
 

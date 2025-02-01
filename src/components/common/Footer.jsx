@@ -13,18 +13,18 @@ function Footer() {
     "Lorem ipsum dolor sit amet consect itae orci vivamus elementum.";
   return (
     <footer className="footer">
-      <div className="rounded-2xl max-w-[1920px] mx-auto px-[50px] xl:pl-[100px]  xl:pr-[118px] pt-[50px] pb-11 flex flex-col gap-[35px] justify-between items-start xl:items-center bg-secondary mt-[150px]">
+      <div className="rounded-2xl max-w-[1920px] mx-auto px-10 lg:px-[50px] xl:pl-[100px] xl:pr-[118px] pt-4 lg:pt-[50px] pb-2 flex flex-col gap-[35px] justify-between items-start xl:items-center bg-secondary mt-[100px] lg:mt-[150px]">
         <div className="flex flex-col 2xl:flex-row items-start 2xl:justify-between gap-10 xl:gap-12 2xl:gap-x-32 w-full max-w-[1400px]">
-          <div className="flex flex-col gap-y-6 w-full max-w-[290px] ">
-            <a href="/" className="flex w-[140px] h-[121px]">
+          <div className="flex flex-col gap-y-0 lg:gap-y-6 w-full max-w-[290px] ">
+            <a href="/" className="flex w-[90px] lg:w-[140px] h-[121px]">
               <FooterLogo width={140} height={121} />
             </a>
             <Text label={para} size="xsm" color="primary" />
           </div>
-          <div className="flex justify-between gap-20 xl:gap-40 2xl:gap-10 w-full max-w-[1400px]">
-            <div className="flex gap-7 w-full justify-between">
-              <FooterList title="Quick Links" items={quickLinks} fontSize="text-sm"/>
-              <FooterList title="Legal" items={legalLinks} fontSize="text-base"/>
+          <div className="flex justify-between gap-6 lg:gap-20 xl:gap-40 2xl:gap-10 w-full max-w-[1400px]">
+            <div className="flex gap-5 lg:gap-7 w-full justify-between">
+              <FooterList title="Quick Links" items={quickLinks} fontSize="text-xs lg:text-sm"/>
+              <FooterList title="Legal" items={legalLinks} fontSize="text-sm lg:text-base"/>
             </div>
             <div className="flex flex-col w-full xl:max-w-[368px] gap-y-5">
               <h4 className="text-base font-PpEditorialRegular italic text-primary">
@@ -38,7 +38,7 @@ function Footer() {
                   type="email"
                   name="email"
                   placeholder="Eingabe Ihrer E-Mail-Adresse"
-                  className=" w-full pl-1.5 bg-transparent text-sm  text-neutral font-MontserratRegular placeholder:text-sm placeholder:text-neutral placeholder:font-MontserratRegular outline-none"
+                  className=" w-full pl-1.5 bg-transparent text-xs lg:text-sm  text-neutral font-MontserratRegular placeholder:text-sm placeholder:text-neutral placeholder:font-MontserratRegular outline-none"
                 />
                 <ActionButton label="Anmelden" color="primary" size="sm" />
               </form>

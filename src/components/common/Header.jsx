@@ -4,7 +4,6 @@ import { HeaderLinks } from "./Helper";
 import { Logo } from "./Icon";
 import { VscMenu } from "react-icons/vsc";
 import HeaderMobile from "./HeaderMobile";
-import { ImCross } from "react-icons/im";
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
@@ -27,11 +26,7 @@ function Header() {
     <header className="max-w-[1920px] w-full">
       <div className="absolute z-10 bg-transparent top-0 left-0 right-0 flex items-center justify-between pt-2 xl:pt-3.5 px-8 xl:px-10 mx-auto">
         <div className="flex lg:hidden " onClick={toggleNavbar}>
-          {/* {!isOpen ? ( */}
           <VscMenu size={26} className="cursor-pointer text-neutral" />
-          {/* // ) : ( */}
-          {/* // <ImCross size={20} /> */}
-          {/* // )} */}
         </div>
         <div className="hidden lg:flex items-center gap-x-5">
           {HeaderLinks.map((link, index) => (
