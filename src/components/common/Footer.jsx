@@ -13,24 +13,24 @@ function Footer() {
     "Lorem ipsum dolor sit amet consect itae orci vivamus elementum.";
   return (
     <footer className="footer">
-      <div className="rounded-2xl max-w-[1920px] mx-auto pl-[100px] pr-[118px] pt-[50px] pb-11 flex flex-col gap-[35px] justify-between items-center bg-secondary mt-[150px]">
-        <div className="flex justify-between gap-x-32 max-w-[1400px]">
-          <div className="flex flex-col gap-y-6 max-w-[290px] ">
+      <div className="rounded-2xl max-w-[1920px] mx-auto px-[50px] xl:pl-[100px]  xl:pr-[118px] pt-[50px] pb-11 flex flex-col gap-[35px] justify-between items-start xl:items-center bg-secondary mt-[150px]">
+        <div className="flex flex-col 2xl:flex-row items-start 2xl:justify-between gap-10 xl:gap-12 2xl:gap-x-32 w-full max-w-[1400px]">
+          <div className="flex flex-col gap-y-6 w-full max-w-[290px] ">
             <a href="/" className="flex w-[140px] h-[121px]">
               <FooterLogo width={140} height={121} />
             </a>
             <Text label={para} size="xsm" color="primary" />
           </div>
-          <div className="flex justify-between gap-10 ">
-            <div className="flex gap-7">
+          <div className="flex justify-between gap-20 xl:gap-40 2xl:gap-10 w-full max-w-[1400px]">
+            <div className="flex gap-7 w-full justify-between">
               <FooterList title="Quick Links" items={quickLinks} fontSize="text-sm"/>
               <FooterList title="Legal" items={legalLinks} fontSize="text-base"/>
             </div>
-            <div className="flex flex-col max-w-[368px] gap-y-5">
+            <div className="flex flex-col w-full xl:max-w-[368px] gap-y-5">
               <h4 className="text-base font-PpEditorialRegular italic text-primary">
                 Kostenlose Newsletter-Anmeldung:
               </h4>
-              <form className="flex  w-[368px] items-center justify-between p-2 border border-borderColor rounded">
+              <form className="flex max-w-[400px] xl:w-[368px] items-center justify-between p-2 border border-borderColor rounded">
                 <div className="flex items-center justify-center py-0.5 p-px ">
                   <MailBoxIcon />
                 </div>
@@ -38,7 +38,7 @@ function Footer() {
                   type="email"
                   name="email"
                   placeholder="Eingabe Ihrer E-Mail-Adresse"
-                  className="w-full pl-1.5 bg-transparent text-sm  text-neutral font-MontserratRegular placeholder:text-sm placeholder:text-neutral placeholder:font-MontserratRegular outline-none"
+                  className=" w-full pl-1.5 bg-transparent text-sm  text-neutral font-MontserratRegular placeholder:text-sm placeholder:text-neutral placeholder:font-MontserratRegular outline-none"
                 />
                 <ActionButton label="Anmelden" color="primary" size="sm" />
               </form>

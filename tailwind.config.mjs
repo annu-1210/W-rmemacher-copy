@@ -34,6 +34,12 @@ module.exports = {
         "custom-gradient2":
           "linear-gradient(269.67deg, rgba(29, 29, 27, 0) -0.85%, rgba(29, 29, 27, 0.516785) 47.2%, #1D1D1B 100.71%)",
       },
+      screens: {
+        "xsm": "425px",
+        "2xl": "1327px",
+        "3xl": "1440px",
+        "4xl": "1536px",
+      },
     },
   },
   plugins: [],

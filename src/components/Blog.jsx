@@ -10,10 +10,10 @@ function Blog() {
     "Lorem ipsum dolor sit amet consectetur rnare pulvinar netus egestas sagittis n haretra dui congue metus eu lectu onvallis.";
   return (
     <section className="blog">
-      <div className="blog max-w-[1140px] mx-auto flex flex-col gap-[60px] justify-center mt-[150px] h-[1208px] ">
+      <div className="blog max-w-[1140px] mx-auto flex flex-col gap-12 xl:gap-[60px] justify-center mt-[150px] h-[1100px] xl:h-[1208px] ">
         <div className="flex justify-between items-center ">
-          <div className="max-w-[690px] w-full flex flex-col gap-y-2 justify-start">
-            <h3 className="text-[42px] font-MontserratMedium leading-[51.2px] text-start">
+          <div className="max-w-[690px] w-full flex flex-col gap-y-1 xl:gap-y-2 justify-start">
+            <h3 className="text-[38px] xl:text-[42px] font-MontserratMedium leading-[51.2px] text-start">
               Blog und
               <span className="font-PpEditorialRegular italic"> Ratgeber</span>
             </h3>
@@ -23,8 +23,8 @@ function Blog() {
           </div>
           <ActionButton label="Alle ansehen" color="primary" size="lg" />
         </div>
-        <div className="flex justiiy-between h-[1038px] w-full gap-6">
-          <div className="flex flex-col gap-[34px] max-w-[606px] max-h-[598px]">
+        <div className="flex flex-row-reverse xl:flex-row justiiy-between h-[1000px] xl:h-[1038px] w-full gap-6">
+          <div className="flex flex-col gap-[34px] pt-10 xl:pt-0 max-w-[500px] xl:max-w-[606px] max-h-[540px] xl:max-h-[598px]">
             {BlogData1.map((item) => {
               return (
                 <article className="flex flex-col gap-y-6 w-full" key={item.id}>
@@ -33,12 +33,13 @@ function Blog() {
                     alt="blog1"
                     width={606}
                     height={item.height}
+                    className=""
                   />
-                  <div className="flex flex-col gap-y-2 max-w-[578px] w-full ">
+                  <div className="flex flex-col gap-y-1 xl:gap-y-2 max-w-[578px] w-full ">
                     <h4 className="font-MontserratMedium leading-[30px] text-xl text-secondary">
                       {item.title}
                     </h4>
-                    <p className="text-base font-MontserratRegular leading-6 ">
+                    <p className="text-sm xl:text-base font-MontserratRegular leading-5 xl:leading-6 ">
                       {item.description}
                       <a href="/" className="text-tertiary">
                         read more...
@@ -54,11 +55,11 @@ function Blog() {
               return (
                 <article className="flex flex-col gap-y-6 w-full" key={item.id}>
                   <Image src={item.img} alt="blog1" width={510} height={230} />
-                  <div className="flex flex-col gap-y-2 max-w-[510px] w-full ">
+                  <div className="flex flex-col gap-y-1 xl:gap-y-2 max-w-[510px] w-full ">
                     <h4 className="font-MontserratMedium leading-[30px] text-xl text-secondary">
                       {item.title}
                     </h4>
-                    <p className="text-base font-MontserratRegular leading-6 ">
+                    <p className="text-sm xl:text-base font-MontserratRegular leading-5 xl:leading-6 ">
                       {item.description}
                       <a href="/" className="text-tertiary">
                         read more...

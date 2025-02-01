@@ -10,10 +10,10 @@ function FutureOfBathroom() {
     "Technologische und funktionale Maßstäbe für die nächste Generation des Bads neu definiert.";
   return (
     <section className="tab-section">
-      <div className="max-w-[1107px] mx-auto flex flex-col items-center gap-y-10 mx-auto mt-[150px]">
+      <div className="max-w-[1107px] mx-auto flex flex-col items-center gap-y-10 mx-auto mt-[120px] xl:mt-[150px]">
         <div className="max-w-[690px] text-center flex flex-col gap-y-2">
-          <h3 className="text-[42px] font-MontserratMedium leading-[51.2px] text-center">
-            Die Zukunft für
+          <h3 className="text-4xl xl:text-[42px] font-MontserratMedium leading-[51.2px] text-center">
+            Die Zukunft für {""}
             <span className="!font-PpEditorialRegular italic">
               Ihr Badezimmer
             </span>
@@ -31,7 +31,7 @@ function FutureOfBathroom() {
                   activeTab === tab.id
                     ? "border-b border-tertiary text-tertiary"
                     : "text-secondary"
-                } text-xl font-MontserratRegular w-full flex justify-center`}
+                } text-lg xl:text-xl font-MontserratRegular w-full flex justify-center`}
                 onClick={() => setActiveTab(tab.id)}
               >
                 {tab.title}

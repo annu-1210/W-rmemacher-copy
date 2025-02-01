@@ -56,20 +56,20 @@ function Slider() {
                       </p>
                     </div>
                     <div className="max-w-[306px] flex max-h-[72px] items-center">
-                      <div className="flex flex-col gap-y-1 font-MontserratMedium text-primary max-w-[95px]">
-                        <p className="text-base">Größe</p>
-                        <p className="text-xl">60x60cm</p>
-                        <p className="text-base">SOLIS</p>
+                      <div className="flex flex-col  xl:gap-y-1 font-MontserratMedium text-primary max-w-[95px]">
+                        <p className="text-sm xl:text-base">Größe</p>
+                        <p className="text-base xl:text-xl">60x60cm</p>
+                        <p className="text-sm xl:text-base">SOLIS</p>
                       </div>
                       <div className="h-[70px] border border-primary mx-8"></div>
-                      <div className="flex flex-col gap-y-1 font-MontserratMedium text-primary max-w-[147px]">
-                        <p className="text-base">Smart Mirror</p>
-                        <p className="text-xl">259 €</p>
-                        <p className="text-base">Premium Qualität</p>
+                      <div className="flex flex-col  xl:gap-y-1 font-MontserratMedium text-primary max-w-[147px]">
+                        <p className="text-sm xl:text-base">Smart Mirror</p>
+                        <p className="text-base xl:text-xl">259 €</p>
+                        <p className="text-sm xl:text-base">Premium Qualität</p>
                       </div>
                     </div>
                   </div>
-                  <div className="max-w-[336px] flex gap-x-4 absolute top-[634px] right-[130px]">
+                  <div className="max-w-[336px] flex gap-x-4 absolute top-[680px] xl:top-[634px] right-[50px] xl:right-[130px]">
                     <ActionButton
                       label="Jetzt kaufen"
                       color="primary"

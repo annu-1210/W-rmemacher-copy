@@ -12,7 +12,7 @@ function Services() {
         alt="Image"
         width={502}
         height={449}
-        className="w-full max-w-[502px] rounded-2xl "
+        className="w-full max-w-[490px] xl:max-w-[502px] rounded-2xl "
       />
       <p className="max-w-[521px] ">
         <Text label={para} size="sm" color="secondary" />

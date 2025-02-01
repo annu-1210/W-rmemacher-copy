@@ -50,25 +50,25 @@ export const SliderData = [
       "Entdecken Sie den Badezimmerspiegel SOLIS mit integrierter Infrarotheizung und Smart Home in Premium-Qualität.",
     MontserratLabel: "Erleben Sie schon heute das",
     Montserratstyle:
-      "text-6xl leading-[73.14px] transition-all mx-auto max-w-[718px] font-MontserratMedium",
+      "text-5xl xl:text-6xl leading-[60px] xl:leading-[73.14px] transition-all mx-auto max-w-[550px] xl:max-w-[718px] font-MontserratMedium",
     EditorialLabel: "Badezimmer von Morgen",
-    EditorialStyle: "font-PpEditorialRegular italic text-6xl ",
+    EditorialStyle: "font-PpEditorialRegular italic text-5xl xl:text-6xl leading-[50px] xl:leading-[73.14px]",
     TextWidth: "718px",
-    position: "top-[278px]",
+    position: "top-[380px] xl:top-[278px]",
   },
   {
-    id: 1,
+    id: 2,
     img: sliderImg2,
     alt: "Slider Image 2",
     paragraph:
       "Entdecken Sie den Badezimmerspiegel VIVA mit integrierter Infrarotheizung und Smart Home in Premium-Qualität.",
     MontserratLabel: "Innovativste Wärmetechnik",
-    Montserratstyle: " font-PpEditorialRegular italic text-6xl ",
+    Montserratstyle: " font-PpEditorialRegular italic text-5xl xl:text-6xl  xl:leading-[73.14px]",
     EditorialLabel: "im Bad: VIVA",
     EditorialStyle:
-      "text-6xl leading-[73.14px] transition-all mx-auto max-w-[718px] font-MontserratMedium",
-    TextWidth: "686px",
-    position: "top-[365px]",
+      "text-5xl xl:text-6xl leading-[50px] leading-[73.14px] transition-all mx-auto max-w-[550px] xl:max-w-[718px] font-MontserratMedium",
+    TextWidth: "w-[550px] xl:w-[686px]",
+    position: "top-[440px] xl:top-[365px]",
   },
 ];
 

@@ -17,16 +17,16 @@ function Qualities() {
           height={528}
           className="w-full max-w-[1400px] rounded-2xl "
         />
-        <div className="max-w-[1400px] flex ">
+        <div className="max-w-[1400px] flex justify-center xl:justify-between">
           {QualitiesData.map((section) => {
             return (
               <div
-                className="max-w-[467px] flex flex-col gap-y-2 p-6 cursor-pointer"
+                className="max-w-[328px]  xl:max-w-[410px]  2xl:max-w-[467px] flex flex-col gap-y-3.5 xl:gap-y-4 3xl:gap-y-2 p-6 cursor-pointer"
                 key={section.id}
                 onClick={() => setActiveTab(section)}
               >
                 <h4
-                  className={`font-MontserratMedium text-2xl leading-[29px] h-[54px] ${
+                  className={`font-MontserratMedium text-xl xl:text-2xl leading-[29px] h-[54px] ${
                     activeTab.id === section.id
                       ? "text-tertiary"
                       : "text-secondary"
