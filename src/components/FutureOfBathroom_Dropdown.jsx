@@ -4,7 +4,7 @@ import { RiArrowDownWideFill } from "react-icons/ri";
 import { navTabs } from "./common/Helper";
 
 function FutureOfBathroom_Dropdown() {
-   const [activeTab, setActiveTab] = useState(navTabs[0].id);
+  const [activeTab, setActiveTab] = useState(navTabs[0].id);
   const [selectedOption, setSelectedOption] = useState(navTabs[0]);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,10 +35,8 @@ function FutureOfBathroom_Dropdown() {
                 handleSelect(tab);
               }}
               className={`p-2.5 cursor-pointer flex justify-center items-center font-MontserratRegular text-secondary hover:bg-dropdownBg ${
-                selectedOption === tab ? "bg-primary " : ""
-              } ${
                 activeTab === tab.id
-                  ? "border-b border-tertiary text-tertiary"
+                  ? "border-b border-tertiary text-tertiary bg-primary"
                   : "text-secondary"
               }`}
             >
