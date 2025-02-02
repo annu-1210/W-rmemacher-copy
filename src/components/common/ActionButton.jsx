@@ -7,7 +7,7 @@ const button = tv(
     variants: {
       color: {
         primary: "bg-custom-gradient",
-        secondary: "bg-transparent ",
+        secondary: "bg-transparent backdrop-blur-[6px]",
       },
       size: {
         sm: "w-[95px] !h-[30px] px-2.5 py-2 xsm:py-[11.63px] !gap-[8.31px] text-[10px] xsm:!text-sm",

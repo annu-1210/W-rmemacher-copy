@@ -25,7 +25,7 @@ function Hero() {
           </div>
           <div className="flex w-full sm:w-[280px] lg:w-[340px] gap-x-4 ">
             <ActionButton label="Jetzt kaufen" color="primary" size="lg" />
-            <ActionButton label="Mehr entdecken" size="md" />
+            <ActionButton label="Mehr entdecken" size="md" color="secondary"/>
           </div>
         </div>
       </div>

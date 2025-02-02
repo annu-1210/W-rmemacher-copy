@@ -68,8 +68,8 @@ function Footer() {
                       // link={item.link}
                     >
                       <Image
-                        width={16.88}
-                        height={16.88}
+                        width={item.width}
+                        height={item.height}
                         alt="image"
                         className=""
                         src={item.image}

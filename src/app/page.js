@@ -41,7 +41,7 @@ export default function Home() {
         className="absolute top-[4450px] xsm:top-[5000px] sm:top-[4800px] lg:top-[5700px] 3xl:top-[6000px] right-[-50px] z-0 max-w-[350px] xsm:max-w-[500px] max-h-[350px] xsm:max-h-[500px] 3xl:max-h-[800px]"
       />
 
-      <div className="absolute fixed z-50 top-[40vh] right-[84px] cursor-pointer">
+      <div className="absolute fixed z-50 top-[48vh] xsm:top-[50vh] sm:top-[40vh] md:top-[50vh] lg:top-[50vh] 3xl:top-[45vh] 3xl:right-[84px] cursor-pointer">
         <FloatingActionButton />
       </div>
       <div className="relative container p-5 max-w-[1920px] mx-auto ">
