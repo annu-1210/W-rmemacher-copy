@@ -10,9 +10,9 @@ function FutureOfBathroom() {
     "Technologische und funktionale Maßstäbe für die nächste Generation des Bads neu definiert.";
   return (
     <section className="tab-section">
-      <div className="max-w-[1107px] mx-auto flex flex-col items-center gap-y-10 mx-auto mt-[120px] xl:mt-[150px]">
-        <div className="max-w-[690px] text-center justify-center items-center flex flex-col gap-y-0 lg:gap-y-2">
-          <h3 className="text-3xl lg:text-4xl xl:text-[42px] font-MontserratMedium leading-[51.2px] text-center">
+      <div className="max-w-[1107px] mx-auto flex flex-col items-center gap-y-10 mx-auto mt-[90px] md:mt-[120px] xl:mt-[150px] overflow-hidden">
+        <div className="max-w-[690px] text-center justify-center items-center flex flex-col gap-y-2  sm:gap-y-0 lg:gap-y-2">
+          <h3 className="text-3xl lg:text-4xl xl:text-[42px] font-MontserratMedium leading-8 sm:leading-[51.2px] text-center">
             Die Zukunft für {""}
             <span className="!font-PpEditorialRegular italic">
               Ihr Badezimmer
@@ -23,7 +23,7 @@ function FutureOfBathroom() {
           </p>
         </div>
         <div className="max-w-[1107px] max-h-[613px] flex items-center justify-center flex-col gap-16 lg:gap-y-[70px]">
-          <div className="w-[680px] lg:w-[753px] h-[38px] lg:h-[44px] flex gap-x-[30px] border-b border-neutral">
+          <div className="w-[400px] sm:w-[500px] md:w-[680px] lg:w-[753px] h-[38px] lg:h-[44px] flex gap-x-3 sm:gap-x-[30px] border-b border-neutral">
             {navTabs.map((tab) => (
               <button
                 key={tab.id}
@@ -31,7 +31,7 @@ function FutureOfBathroom() {
                   activeTab === tab.id
                     ? "border-b border-tertiary text-tertiary"
                     : "text-secondary"
-                } text-base lg:text-lg xl:text-xl font-MontserratRegular w-full flex justify-center`}
+                } text-xs sm:text-base lg:text-lg xl:text-xl font-MontserratRegular w-full flex justify-center`}
                 onClick={() => setActiveTab(tab.id)}
               >
                 {tab.title}

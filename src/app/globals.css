@@ -8,16 +8,22 @@
 
 @layer components {
   .gradient-border {
-    border: 1px solid transparent;
-    border-radius: 8px;
-    background: linear-gradient(0, 0) padding-box,
-      linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%) border-box;
-    height: 100%;
-    transition: 0.4s ease-in-out;
+    background: transparent;
+    background-repeat: no-repeat;
+    border: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-image-source: url(../../public/gradient.svg);
+    border-image-repeat: stretch stretch;
+    border-image-slice: 49;
+    border-image-width: 100px;
+    border-image-outset: 6px;
+    padding: 16px 28px;
+    border-radius: 100px;
   }
 }
 
-@layer components{
+@layer components {
   .gradient-icon {
     color: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%);
     -webkit-background-clip: text;

@@ -24,9 +24,9 @@ function Header() {
   }, [isOpen]);
   return (
     <header className="max-w-[1920px] w-full">
-      <div className="absolute z-10 bg-transparent top-0 left-0 right-0 flex items-center justify-between pt-2 xl:pt-3.5 px-8 xl:px-10 mx-auto">
+      <div className="absolute z-10 bg-transparent top-0 left-0 right-0 flex items-center justify-between sm:pt-2 xl:pt-3.5 px-8 xl:px-10 mx-auto">
         <div className="flex lg:hidden " onClick={toggleNavbar}>
-          <VscMenu size={26} className="cursor-pointer text-neutral" />
+          <VscMenu size={26} className="cursor-pointer text-neutral w-[20px] sm:w-[26px]" />
         </div>
         <div className="hidden lg:flex items-center gap-x-5">
           {HeaderLinks.map((link, index) => (
@@ -39,7 +39,7 @@ function Header() {
             </a>
           ))}
         </div>
-        <a href="/" className="flex w-[60px] xl:w-[77px] xl:h-[66px]">
+        <a href="/" className="flex w-[40px] sm:w-[50px] md:w-[60px] xl:w-[77px] xl:h-[66px]">
           <Logo width={77} height={66} />
         </a>
         <div className="flex lg:w-[300px] xl:w-[450px] bg-transparent justify-end text-primary font-MontserratMedium text-xs">

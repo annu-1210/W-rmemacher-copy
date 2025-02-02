@@ -6,7 +6,7 @@ function AboutSection() {
   const para =
     "Wärmemacher verkörpert den Fortschritt im Bereich der Badezimmerspiegel. Als Pioniere auf dem Gebiet der Infrarot-Heiztechnologie und Smart Home-Integration setzen wir neue Standards in Komfort, Effizienz und Nachhaltigkeit.";
   return (
-    <div className="max-w-[1107px] flex items-center justify-between gap-[60px] ">
+    <div className="max-w-[410px] sm:max-w-[1107px] flex flex-col sm:flex-row items-center justify-between gap-10 md:gap-[60px] ">
       <Image
         src="/images/w-7.jpeg"
         alt="Image"
@@ -14,7 +14,7 @@ function AboutSection() {
         height={449}
         className="w-full max-w-[300px] lg:max-w-[490px] xl:max-w-[502px] rounded-2xl "
       />
-      <p className="max-w-[545px] flex items-center justify-center">
+      <p className="max-w-[380px] sm:max-w-[545px] flex items-center justify-center text-center sm:text-start">
         <Text label={para} size="sm" color="secondary" />
       </p>
     </div>

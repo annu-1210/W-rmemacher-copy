@@ -10,10 +10,10 @@ function Blog() {
     "Lorem ipsum dolor sit amet consectetur rnare pulvinar netus egestas sagittis n haretra dui congue metus eu lectu onvallis.";
   return (
     <section className="blog">
-      <div className="blog max-w-[1140px] mx-auto flex flex-col gap-12 xl:gap-[60px] justify-center mt-[130px] lg:mt-[150px] h-[970px] lg:h-[1100px] xl:h-[1208px] ">
+      <div className="blog max-w-[1140px] mx-auto flex flex-col gap-2 sm:gap-12 xl:gap-[60px] justify-center mt-10 sm:mt-[100px] md:mt-[130px] lg:mt-[150px] h-full ">
         <div className="flex justify-between items-center ">
-          <div className="max-w-[690px] w-full flex flex-col gap-y-1 xl:gap-y-2 justify-start">
-            <h3 className="text-[38px] xl:text-[42px] font-MontserratMedium leading-[51.2px] text-start">
+          <div className="max-w-[260px] sm:max-w-[400px] md:max-w-[690px] w-full flex flex-col sm:gap-y-1 xl:gap-y-2 justify-start">
+            <h3 className="text-2xl sm:text-3xl md:text-[38px] xl:text-[42px] font-MontserratMedium leading-[51.2px] text-start">
               Blog und
               <span className="font-PpEditorialRegular italic"> Ratgeber</span>
             </h3>
@@ -23,8 +23,8 @@ function Blog() {
           </div>
           <ActionButton label="Alle ansehen" color="primary" size="lg" />
         </div>
-        <div className="flex flex-row-reverse xl:flex-row justiiy-between h-[930px] lg:h-[1000px] xl:h-[1038px] w-full gap-6">
-          <div className="flex flex-col gap-[34px] pt-6 lg:pt-10 xl:pt-0 max-w-[500px] xl:max-w-[606px] max-h-[540px] xl:max-h-[598px]">
+        <div className="flex flex-col sm:flex-row-reverse xl:flex-row  items-center sm:items-start h-full w-full gap-y-6 sm:gap-x-6">
+          <div className="flex flex-col gap-[34px] pt-6 lg:pt-10 xl:pt-0 max-w-[350px] sm:max-w-[300px] md:max-w-[500px] xl:max-w-[606px] ">
             {BlogData1.map((item) => {
               return (
                 <article className="flex flex-col gap-y-4 lg:gap-y-6 w-full" key={item.id}>
@@ -50,7 +50,7 @@ function Blog() {
               );
             })}
           </div>
-          <div className="flex flex-col gap-[30px] max-w-[510px] max-h-[598px]">
+          <div className="flex flex-col gap-[30px] max-w-[350px] sm:max-w-[510px] h-full ">
             {BlogData2.map((item) => {
               return (
                 <article className="flex flex-col gap-y-6 w-full" key={item.id}>

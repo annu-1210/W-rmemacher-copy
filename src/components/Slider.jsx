@@ -12,7 +12,7 @@ import ActionButton from "./common/ActionButton";
 
 function Slider() {
   return (
-    <section className="max-w-[1920px] w-full mx-auto mt-[120px] lg:mt-[150px] h-[520px] lg:h-[770px] rounded-2xl overflow-hidden ">
+    <section className="max-w-[1920px] w-full mx-auto mt-[100px] sm:mt-[120px] lg:mt-[150px] h-[400px] md:h-[520px] lg:h-[770px] rounded-2xl overflow-hidden ">
       <div className="max-w-[1920px] w-full ">
         <Swiper
           modules={[Pagination]}
@@ -23,7 +23,7 @@ function Slider() {
           }}
           slidesPerView={1}
           loop={true}
-          className="max-w-[1920px] h-[520px] lg:h-[770px] rounded-2xl "
+          className="max-w-[1920px] h-[400px] md:h-[520px] lg:h-[770px] rounded-2xl "
         >
           {SliderData.map((slide) => {
             return (
@@ -38,12 +38,12 @@ function Slider() {
                     key={slide.id}
                     width={1140}
                     height={770}
-                    className="w-full max-h-[520px] lg:max-h-[770px] max-w-[1920px] rounded-2xl absolute top-px z-0 object-cover object-center bg-custom-gradient2"
+                    className="w-full h-[380px] sm:h-[400px] md:h-[520px] lg:h-[770px] max-w-[1920px] rounded-2xl absolute top-px z-0 object-cover object-center bg-custom-gradient2"
                   />
                   <div
-                    className={`absolute ${slide.position} left-[40px] max-w-[718px] flex flex-col gap-y-10 ${slide.TextWidth}`}
+                    className={`absolute ${slide.position} left-[40px] max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 ${slide.TextWidth}`}
                   >
-                    <div className="w-full flex flex-col gap-y-2 ">
+                    <div className="w-full flex flex-col gap-y-2 text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl leading-6 sm:leading-8 md:leading-[40px] lg:leading-[60px] xl:leading-[73.14px] ">
                       <h1 className={`${slide.Montserratstyle} `}>
                         {slide.MontserratLabel}{" "}
                         <span className={`${slide.EditorialStyle}`}>
@@ -56,7 +56,7 @@ function Slider() {
                       </p>
                     </div>
                     <div className="max-w-[306px] flex max-h-[72px] items-center">
-                      <div className="flex flex-col  xl:gap-y-1 font-MontserratMedium text-primary max-w-[95px]">
+                      <div className="flex flex-col  xl:gap-y-1 font-MontserratMedium text-primary sm:max-w-[95px]">
                         <p className=" text-xs lg:text-sm xl:text-base">
                           Größe
                         </p>
@@ -67,8 +67,8 @@ function Slider() {
                           SOLIS
                         </p>
                       </div>
-                      <div className="h-[70px] border border-primary mx-8"></div>
-                      <div className="flex flex-col  xl:gap-y-1 font-MontserratMedium text-primary max-w-[147px]">
+                      <div className="h-[50px] sm:h-[70px] border border-primary mx-8"></div>
+                      <div className="flex flex-col  xl:gap-y-1 font-MontserratMedium text-primary sm:max-w-[147px]">
                         <p className=" text-xs lg:text-sm xl:text-base">
                           Smart Mirror
                         </p>
@@ -81,7 +81,7 @@ function Slider() {
                       </div>
                     </div>
                   </div>
-                  <div className="max-w-[336px] flex gap-x-4 absolute top-[420px] lg:top-[680px] xl:top-[634px] right-[50px] xl:right-[130px]">
+                  <div className="max-w-[336px] flex gap-x-4 absolute top-[300px] sm:top-[320px] md:top-[420px] lg:top-[680px] xl:top-[634px]   right-[110px] sm:right-[10px] md:right-[50px] xl:right-[130px]">
                     <ActionButton
                       label="Jetzt kaufen"
                       color="primary"

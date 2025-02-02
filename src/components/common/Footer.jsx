@@ -13,7 +13,7 @@ function Footer() {
     "Lorem ipsum dolor sit amet consect itae orci vivamus elementum.";
   return (
     <footer className="footer">
-      <div className="rounded-2xl max-w-[1920px] mx-auto px-10 lg:px-[50px] xl:pl-[100px] xl:pr-[118px] pt-4 lg:pt-[50px] pb-2 flex flex-col gap-[35px] justify-between items-start xl:items-center bg-secondary mt-[100px] lg:mt-[150px]">
+      <div className="rounded-2xl max-w-[1920px] mx-auto px-10 lg:px-[50px] xl:pl-[100px] xl:pr-[118px] pt-4 lg:pt-[50px] pb-4 flex flex-col gap-[35px] justify-between items-start xl:items-center bg-secondary mt-20 sm:mt-10 md:mt-[100px] lg:mt-[150px]">
         <div className="flex flex-col 2xl:flex-row items-start 2xl:justify-between gap-10 xl:gap-12 2xl:gap-x-32 w-full max-w-[1400px]">
           <div className="flex flex-col gap-y-0 lg:gap-y-6 w-full max-w-[290px] ">
             <a href="/" className="flex w-[90px] lg:w-[140px] h-[121px]">
@@ -21,12 +21,12 @@ function Footer() {
             </a>
             <Text label={para} size="xsm" color="primary" />
           </div>
-          <div className="flex justify-between gap-6 lg:gap-20 xl:gap-40 2xl:gap-10 w-full max-w-[1400px]">
+          <div className="flex flex-col md:flex-row justify-between gap-6 lg:gap-20 xl:gap-40 2xl:gap-10 w-full max-w-[1400px]">
             <div className="flex gap-5 lg:gap-7 w-full justify-between">
               <FooterList title="Quick Links" items={quickLinks} fontSize="text-xs lg:text-sm"/>
               <FooterList title="Legal" items={legalLinks} fontSize="text-sm lg:text-base"/>
             </div>
-            <div className="flex flex-col w-full xl:max-w-[368px] gap-y-5">
+            <div className="flex flex-col w-full xl:max-w-[368px] gap-y-3 md:gap-y-5">
               <h4 className="text-base font-PpEditorialRegular italic text-primary">
                 Kostenlose Newsletter-Anmeldung:
               </h4>
@@ -43,7 +43,7 @@ function Footer() {
                 <ActionButton label="Anmelden" color="primary" size="sm" />
               </form>
 
-              <div className="flex gap-[13.5px] max-w-[206px]">
+              <div className="flex gap-[13.5px] max-w-[206px] mt-2 md:mt-0">
                 {SocialLink.map((item) => {
                   return (
                     <SocialLinks
