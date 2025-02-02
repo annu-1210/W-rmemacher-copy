@@ -3,6 +3,7 @@ import React from "react";
 import Text from "./common/Text";
 import { navTabs } from "./common/Helper";
 import { useState } from "react";
+import FutureOfBathroom_Dropdown from "./FutureOfBathroom_Dropdown";
 
 function FutureOfBathroom() {
   const [activeTab, setActiveTab] = useState(navTabs[0].id);
@@ -22,7 +23,7 @@ function FutureOfBathroom() {
             <Text label={para} size="md" color="secondary" />
           </p>
         </div>
-        <div className="max-w-[1107px] max-h-[613px] flex items-center justify-center flex-col gap-16 lg:gap-y-[70px]">
+        <div className="max-w-[1107px] max-h-[613px] hidden xsm:flex items-center justify-center flex-col gap-16 lg:gap-y-[70px]">
           <div className="w-[400px] sm:w-[500px] md:w-[680px] lg:w-[753px] h-[38px] lg:h-[44px] flex gap-x-3 sm:gap-x-[30px] border-b border-neutral">
             {navTabs.map((tab) => (
               <button
@@ -42,6 +43,9 @@ function FutureOfBathroom() {
             {navTabs.find((tab) => tab.id === activeTab)?.component}
           </div>
         </div>
+        <div className="flex xsm:hidden max-w-[350px]">
+            <FutureOfBathroom_Dropdown />
+          </div>
       </div>
     </section>
   );
