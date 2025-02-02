@@ -1,8 +1,0 @@
-
-.custom-pagination-bullet {
-    @apply  opacity-50;
-  }
-  
-  .custom-pagination-bullet-active {
-    @apply !bg-primary opacity-100;
-  }

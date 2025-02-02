@@ -31,6 +31,18 @@
   }
 }
 
+.swiper-pagination{
+  @apply flex items-center justify-center gap-2 mb-4;
+}
+
+.custom-pagination-bullet {
+  @apply !w-[14px] !h-[14px] rounded-full bg-neutral  opacity-50;
+}
+
+.custom-pagination-bullet-active {
+  @apply !bg-primary opacity-100;
+}
+
 @font-face {
   font-family: "MontserratLight";
   src: url("/fonts/Montserrat-Light.ttf") format("truetype");

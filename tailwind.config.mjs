@@ -25,6 +25,7 @@ module.exports = {
         quaternary: "rgba(255, 239, 211, 1)",
         quinary: "rgba(255, 255, 255, 0.02)",
         borderColor: "rgba(42, 36, 36, 0.6)",
+        dropdownBg: "rgba(240, 240, 240, 1)",
         neutral: "rgba(178, 178, 178, 1)",
         background: "rgba(29, 29, 27, 0.86)",
       },

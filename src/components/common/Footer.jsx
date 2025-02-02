@@ -30,7 +30,7 @@ function Footer() {
               <h4 className="text-sm xsm:text-base font-PpEditorialRegular italic text-primary">
                 Kostenlose Newsletter-Anmeldung:
               </h4>
-              <form className="flex max-w-[400px] xl:w-[368px] items-center justify-between p-2 border border-borderColor rounded">
+              <form className="flex max-w-[400px] xl:w-[368px] items-center justify-between p-2 border border-neutral rounded">
                 <div className="flex items-center justify-center py-0.5 p-px ">
                   <MailBoxIcon />
                 </div>
