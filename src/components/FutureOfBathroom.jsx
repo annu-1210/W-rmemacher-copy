@@ -10,9 +10,9 @@ function FutureOfBathroom() {
     "Technologische und funktionale Maßstäbe für die nächste Generation des Bads neu definiert.";
   return (
     <section className="tab-section">
-      <div className="max-w-[1107px] mx-auto flex flex-col items-center gap-y-10 mx-auto mt-[90px] md:mt-[120px] xl:mt-[150px] overflow-hidden">
-        <div className="max-w-[690px] text-center justify-center items-center flex flex-col gap-y-2  sm:gap-y-0 lg:gap-y-2">
-          <h3 className="text-3xl lg:text-4xl xl:text-[42px] font-MontserratMedium leading-8 sm:leading-[51.2px] text-center">
+      <div className="max-w-[1107px] mx-auto flex flex-col items-center gap-y-10 mx-auto mt-16 xsm:mt-[90px] md:mt-[120px] xl:mt-[150px] overflow-hidden">
+        <div className="max-w-[690px] text-center justify-center items-center flex flex-col gap-y-2 sm:gap-y-0 lg:gap-y-2">
+          <h3 className="text-2xl xsm:text-3xl lg:text-4xl xl:text-[42px] font-MontserratMedium leading-6 xsm:leading-8 sm:leading-[51.2px] text-center">
             Die Zukunft für {""}
             <span className="!font-PpEditorialRegular italic">
               Ihr Badezimmer

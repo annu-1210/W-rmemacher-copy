@@ -54,7 +54,7 @@ export const SliderData = [
     EditorialLabel: "Badezimmer von Morgen",
     EditorialStyle: "font-PpEditorialRegular italic  ",
     TextWidth: "w-[450px] lg:w-[718px]",
-    position: "top-[100px] sm:top-[150px] md:top-[240px] lg:top-[380px] xl:top-[278px]",
+    position: "top-[100px] xsm:top-[100px] sm:top-[150px] md:top-[240px] lg:top-[380px] xl:top-[278px]",
   },
   {
     id: 2,
