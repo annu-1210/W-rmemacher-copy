@@ -26,7 +26,7 @@ function Slider() {
         >
           {SliderData.map((slide) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide  key={slide.id}>
                 <div
                   className="w-full relative flex items-center justify-between bg-gray-800 text-white text-2xl bg-custom-gradient2 z-10"
                   key={slide.id}
