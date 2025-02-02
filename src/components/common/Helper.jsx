@@ -164,27 +164,32 @@ export const BlogData2 = [
 export const SocialLink = [
   {
     id: 1,
-    icon: <FaFacebookF />,
+    // icon: <FaFacebookF />,
+    image:"/facebook.svg",
     link: "https://www.facebook.com",
   },
   {
     id: 2,
-    icon: <RiTwitterXLine />,
+    // icon: <RiTwitterXLine />,
+    image:"/twitter.svg",
     link: "https://www.twitter.com",
   },
   {
     id: 3,
-    icon: <FaInstagram />,
+    // icon: <FaInstagram />,
+    image:"/instagram.svg",
     link: "https://www.instagram.com",
   },
   {
     id: 4,
-    icon: <RiTelegram2Fill />,
+    // icon: <RiTelegram2Fill />,
+    image:"/telegram.svg",
     link: "https://www.telegram.com",
   },
   {
     id: 5,
-    icon: <FaTiktok />,
+    // icon: <FaTiktok />,
+    image:"/tiktok.svg",
     link: "https://www.tiktok.com",
   },
 ];
