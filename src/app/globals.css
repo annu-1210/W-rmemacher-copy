@@ -32,7 +32,7 @@
 }
 
 .swiper-pagination{
-  @apply flex items-center justify-center gap-2 mb-4 cursor-pointer;
+  @apply flex items-center justify-center gap-2 xsm:mb-4 cursor-pointer;
 }
 
 .custom-pagination-bullet {

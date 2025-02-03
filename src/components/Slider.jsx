@@ -35,7 +35,7 @@ function Slider() {
                     height={770}
                     className="w-full max-h-[770px] max-w-[1920px] rounded-2xl absolute inset-0 z-0 object-cover object-center "
                   />
-                  <div className="absolute max-w-[1920px] h-[770px] h-full inset-0 bg-custom-gradient2 z-10"></div>
+                  <div className="absolute max-w-[1920px] h-[770px] inset-0 bg-custom-gradient2 z-10"></div>
                   <div
                     className={`absolute ${slide.position} left-4 xsm:left-10 max-w-[250px] xsm:max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 z-20 ${slide.TextWidth}`}
                   >
@@ -77,7 +77,7 @@ function Slider() {
                       </div>
                     </div>
                   </div>
-                  <div className="max-w-[336px] flex gap-x-4 absolute top-[270px] xsm:top-[300px] sm:top-[320px] md:top-[420px] lg:top-[680px] xl:top-[634px] right-0 xsm:right-[110px] sm:right-2.5 md:right-[50px] xl:right-[130px]">
+                  <div className="max-w-[336px] flex gap-x-4 absolute top-[270px] xsm:top-[300px] sm:top-[320px] md:top-[420px] lg:top-[680px] xl:top-[634px] right-[60px] xsm:right-[110px] sm:right-2.5 md:right-[50px] xl:right-[130px] z-20">
                     <ActionButton
                       label="Jetzt kaufen"
                       color="primary"
