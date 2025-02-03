@@ -1,10 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { RiArrowDownWideFill } from "react-icons/ri";
-import { navTabs } from "./common/Helper";
 
-function FutureOfBathroom_Dropdown() {
-  const [activeTab, setActiveTab] = useState(navTabs[0].id);
+function FutureOfBathroom_Dropdown({ activeTab, setActiveTab, navTabs}) {
   const [selectedOption, setSelectedOption] = useState(navTabs[0]);
   const [isOpen, setIsOpen] = useState(false);
 

@@ -44,8 +44,12 @@ function FutureOfBathroom() {
           </div>
         </div>
         <div className="flex xsm:hidden max-w-[350px]">
-            <FutureOfBathroom_Dropdown />
-          </div>
+          <FutureOfBathroom_Dropdown
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+            navTabs={navTabs}
+          />
+        </div>
       </div>
     </section>
   );

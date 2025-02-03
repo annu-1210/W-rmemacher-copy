@@ -32,11 +32,11 @@
 }
 
 .swiper-pagination{
-  @apply flex items-center justify-center gap-2 mb-4;
+  @apply flex items-center justify-center gap-2 mb-4 cursor-pointer;
 }
 
 .custom-pagination-bullet {
-  @apply !w-[14px] !h-[14px] rounded-full bg-neutral  opacity-50;
+  @apply !w-2 xsm:!w-3 !h-2 xsm:!h-3 rounded-full bg-neutral  opacity-50;
 }
 
 .custom-pagination-bullet-active {

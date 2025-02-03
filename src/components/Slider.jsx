@@ -26,21 +26,18 @@ function Slider() {
         >
           {SliderData.map((slide) => {
             return (
-              <SwiperSlide  key={slide.id}>
-                <div
-                  className="w-full relative flex items-center justify-between bg-gray-800 text-white text-2xl bg-custom-gradient2 z-10"
-                  key={slide.id}
-                >
+              <SwiperSlide key={slide.id}>
+                <div className="w-full relative flex items-center justify-between text-white text-2xl ">
                   <Image
                     src={slide.img}
                     alt={slide.alt}
-                    key={slide.id}
                     width={1140}
                     height={770}
-                    className="w-full h-[320px] sm:h-[400px] md:h-[520px] lg:h-[770px] max-w-[1920px] rounded-2xl absolute top-px z-0 object-cover object-center bg-custom-gradient2"
+                    className="w-full max-h-[770px] max-w-[1920px] rounded-2xl absolute inset-0 z-0 object-cover object-center "
                   />
+                  <div className="absolute max-w-[1920px] h-[770px] h-full inset-0 bg-custom-gradient2 z-10"></div>
                   <div
-                    className={`absolute ${slide.position} left-4 xsm:left-10 max-w-[250px] xsm:max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 ${slide.TextWidth}`}
+                    className={`absolute ${slide.position} left-4 xsm:left-10 max-w-[250px] xsm:max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 z-20 ${slide.TextWidth}`}
                   >
                     <div className="w-full flex flex-col gap-y-2 text-base xsm:text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl leading-5 xsm:leading-6 sm:leading-8 md:leading-[40px] lg:leading-[60px] xl:leading-[73.14px] ">
                       <h1 className={`${slide.Montserratstyle} `}>
