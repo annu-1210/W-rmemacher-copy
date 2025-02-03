@@ -15,7 +15,7 @@ function Qualities() {
           alt={activeTab.label}
           width={1400}
           height={528}
-          className="w-full h-[120px] xsm:h-[170px] sm:h-full max-w-[1400px] rounded-2xl "
+          className="w-full h-[200px] sm:h-[170px] sm:h-full max-w-[1400px] rounded-2xl object-cover "
         />
         <div className="max-w-[1400px] flex flex-wrap lg:flex-nowrap justify-center xl:justify-between">
           {QualitiesData.map((section) => {
