@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { RiArrowDownWideFill } from "react-icons/ri";
 
-function FutureOfBathroom_Dropdown({ activeTab, setActiveTab, navTabs}) {
-  const [selectedOption, setSelectedOption] = useState(navTabs[0]);
+function BathroomTrends_Dropdown({ activeTab, setActiveTab, navigationTabs}) {
+  const [selectedOption, setSelectedOption] = useState(navigationTabs[0]);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleSelect = (tab) => {
@@ -16,16 +16,16 @@ function FutureOfBathroom_Dropdown({ activeTab, setActiveTab, navTabs}) {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex gap-2 bg-transparent flex justify-center items-center px-10 rounded-lg shadow-sm border border-neutral backdrop-blur-4 focus:outline-none cursor-pointer font-MontserratRegular text-secondary text-sm h-[40px]"
       >
-        <p>{selectedOption.title}</p>
+        <p>{selectedOption.label}</p>
         <RiArrowDownWideFill />
       </div>
       <div className="max-w-[1107px] max-h-[500px]">
-        {navTabs.find((tab) => tab.id === activeTab)?.component}
+        {navigationTabs.find((tab) => tab.id === activeTab)?.content}
       </div>
 
       {isOpen && (
         <ul className="absolute rounded-md w-full top-12 shadow-md text-secondary bg-primary  text-sm">
-          {navTabs.map((tab) => (
+          {navigationTabs.map((tab) => (
             <li
               key={tab.id}
               onClick={() => {
@@ -38,7 +38,7 @@ function FutureOfBathroom_Dropdown({ activeTab, setActiveTab, navTabs}) {
                   : "text-secondary"
               }`}
             >
-              <p>{tab.title}</p>
+              <p>{tab.label}</p>
             </li>
           ))}
         </ul>
@@ -47,4 +47,4 @@ function FutureOfBathroom_Dropdown({ activeTab, setActiveTab, navTabs}) {
   );
 }
 
-export default FutureOfBathroom_Dropdown;
+export default BathroomTrends_Dropdown;

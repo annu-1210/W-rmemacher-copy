@@ -21,7 +21,7 @@ function Slider() {
             bulletActiveClass: "custom-pagination-bullet-active",
           }}
           slidesPerView={1}
-          loop={true}
+          loop={false}
           className="max-w-[1920px] h-[320px] sm:h-[400px] md:h-[520px] lg:h-[770px] rounded-2xl "
         >
           {SliderData.map((slide) => {
@@ -29,26 +29,26 @@ function Slider() {
               <SwiperSlide key={slide.id}>
                 <div className="w-full relative flex items-center justify-between text-white text-2xl ">
                   <Image
-                    src={slide.img}
-                    alt={slide.alt}
+                    src={slide.image.src}
+                    alt={slide.image.alt}
                     width={1140}
                     height={770}
                     className="w-full max-h-[770px] max-w-[1920px] rounded-2xl absolute inset-0 z-0 object-cover object-center "
                   />
                   <div className="absolute max-w-[1920px] h-[770px] inset-0 bg-custom-gradient2 z-10"></div>
                   <div
-                    className={`absolute ${slide.position} left-4 xsm:left-10 max-w-[250px] xsm:max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 z-20 ${slide.TextWidth}`}
+                    className={`absolute ${slide.layout.position} left-4 xsm:left-10 max-w-[250px] xsm:max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 z-20 ${slide.layout.textWidth}`}
                   >
                     <div className="w-full flex flex-col gap-y-2 text-base xsm:text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl leading-5 xsm:leading-6 sm:leading-8 md:leading-[40px] lg:leading-[60px] xl:leading-[73.14px] ">
-                      <h1 className={`${slide.Montserratstyle} `}>
-                        {slide.MontserratLabel}{" "}
-                        <span className={`${slide.EditorialStyle}`}>
+                      <h1 className={`${slide.heading.primaryStyle} `}>
+                        {slide.heading.primaryText}{" "}
+                        <span className={`${slide.heading.secondaryStyle}`}>
                           {" "}
-                          {slide.EditorialLabel}{" "}
+                          {slide.heading.secondaryText}{" "}
                         </span>
                       </h1>
                       <p className="w-full xsm:max-w-[496px] text-primary">
-                        <Text label={slide.paragraph} size="xsm" />
+                        <Text label={slide.description} size="xsm" />
                       </p>
                     </div>
                     <div className="max-w-[306px] flex h-[50px] xsm:max-h-[72px] items-center">

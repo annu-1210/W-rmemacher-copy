@@ -20,187 +20,193 @@ import qualitiesImg3 from "../../../public/images/w-13.png";
 
 export const HeaderLinks = [
   {
-    title: "Home",
-    link: "",
+    label: "Home",
+    url: "/",
   },
   {
-    title: "Über uns",
-    link: "",
+    label: "Über uns",
+    url: "",
   },
   {
-    title: "Produkte",
-    link: "",
+    label: "Produkte",
+    url: "",
   },
   {
-    title: "Ratgeber und Blog",
-    link: "",
+    label: "Ratgeber und Blog",
+    url: "",
   },
   {
-    title: "Kontakt",
-    link: "",
+    label: "Kontakt",
+    url: "",
   },
 ];
 
 export const SliderData = [
   {
     id: 1,
-    img: sliderImg1,
-    alt: "Slider Image 1",
-    paragraph:
+    image: {
+      src: sliderImg1,
+      alt: "Slider Image 1",
+    },
+    description:
       "Entdecken Sie den Badezimmerspiegel SOLIS mit integrierter Infrarotheizung und Smart Home in Premium-Qualität.",
-    MontserratLabel: "Erleben Sie schon heute das",
-    Montserratstyle:
-      " transition-all  max-w-[550px] xl:max-w-[718px] font-MontserratMedium",
-    EditorialLabel: "Badezimmer von Morgen",
-    EditorialStyle: "font-PpEditorialRegular italic  ",
-    TextWidth: "w-[450px] lg:w-[718px]",
-    position: "top-[100px] xsm:top-[100px] sm:top-[150px] md:top-[240px] lg:top-[380px] xl:top-[278px]",
+    heading: {
+      primaryText: "Erleben Sie schon heute das",
+      primaryStyle:
+        "transition-all max-w-[550px] xl:max-w-[718px] font-MontserratMedium",
+      secondaryText: "Badezimmer von Morgen",
+      secondaryStyle: "font-PpEditorialRegular italic",
+    },
+    layout: {
+      position:
+        "top-[100px] xsm:top-[100px] sm:top-[150px] md:top-[240px] lg:top-[380px] xl:top-[278px]",
+      textWidth: "w-[450px] lg:w-[718px]",
+    },
   },
+
   {
     id: 2,
-    img: sliderImg2,
-    alt: "Slider Image 2",
-    paragraph:
+    image: {
+      src: sliderImg2,
+      alt: "Slider Image 2",
+    },
+    description:
       "Entdecken Sie den Badezimmerspiegel VIVA mit integrierter Infrarotheizung und Smart Home in Premium-Qualität.",
-    MontserratLabel: "Innovativste Wärmetechnik",
-    Montserratstyle: " font-PpEditorialRegular italic  xl:leading-[73.14px]",
-    EditorialLabel: "im Bad: VIVA",
-    EditorialStyle:
-      " transition-all  max-w-[550px] xl:max-w-[718px] font-MontserratMedium",
-    TextWidth: "w-[420px] lg:w-[550px] xl:w-[686px]",
-    position: "top-[100px] sm:top-[150px] md:top-[240px] lg:top-[440px] xl:top-[365px]",
+    heading: {
+      primaryText: "Innovativste Wärmetechnik",
+      primaryStyle: "font-PpEditorialRegular italic xl:leading-[73.14px]",
+      secondaryText: "im Bad: VIVA",
+      secondaryStyle:
+        "transition-all max-w-[550px] xl:max-w-[718px] font-MontserratMedium",
+    },
+    layout: {
+      position:
+        "top-[100px] sm:top-[150px] md:top-[240px] lg:top-[440px] xl:top-[365px]",
+      textWidth: "w-[420px] lg:w-[550px] xl:w-[686px]",
+    },
   },
 ];
 
-export const navTabs = [
+export const navigationTabs = [
   {
-    id: "uber-uns",
-    title: "Über uns",
-    component: <AboutSection />,
+    id: "about-us",
+    label: "Über uns",
+    content: <AboutSection />,
   },
   {
     id: "sustainability",
-    title: "Nachhaltigkeit",
-    component: <Sustainability />,
+    label: "Nachhaltigkeit",
+    content: <Sustainability />,
   },
   {
     id: "technology",
-    title: "Technologie",
-    component: <Technology className="gradient-icon" />,
+    label: "Technologie",
+    content: <Technology className="gradient-icon" />,
   },
   {
     id: "services",
-    title: "Service",
-    component: <Services />,
+    label: "Service",
+    content: <Services />,
   },
 ];
 
-export const QualitiesData = [
+export const productQualities = [
   {
-    id: "innovative",
-    label: "Zeitlose Eleganz trifft auf innovative Technologie",
+    id: "innovative-design",
+    title: "Zeitlose Eleganz trifft auf innovative Technologie",
     description:
       "Wärmemacher Badezimmerspiegel setzen neue Maßstäben in Design und Funktionalität – für ein Badezimmer, das durch zeitlose Ästhetik und höchste technische Raffinesse überzeugt.",
-    image: qualitiesImg1,
+    imageSrc: qualitiesImg1,
   },
   {
-    id: "smart-home",
-    label: "Smart Home Funktionalität",
+    id: "smart-home-features",
+    title: "Smart Home Funktionalität",
     description:
       "Mit unseren Badezimmerspiegeln erleben Sie Smart Home neu – von der Weckfunktion über Wetter- und Temperaturanzeigen bis hin zur nahtlosen WiFi-Konnektivität. Erweitern Sie Ihren Alltag mit intelligentem Luxus, der Ihr Badezimmer revolutioniert.",
-    image: qualitiesImg2,
+    imageSrc: qualitiesImg2,
   },
   {
-    id: "infrared-heating",
-    label: "Wärme und Vitalität durch Infrarotheizung",
+    id: "infrared-heating-benefits",
+    title: "Wärme und Vitalität durch Infrarotheizung",
     description:
       "Unsere Badezimmerspiegel bieten nicht nur kristallklare Reflexionen, sondern fördern mit sanfter Infrarotwärme Ihr Wohlbefinden und Ihre Vitalität. Die integrierte Anti-Beschlagsfunktion sorgt zudem jederzeit für klare Sicht – für ein Badeerlebnis, das Komfort und Stil bietet.",
-    image: qualitiesImg3,
+    imageSrc: qualitiesImg3,
   },
 ];
 
-export const BlogData1 = [
-  {
-    id: 1,
-    title: "Lorem ipsum dolor sit amet consectet onsequat.",
-    img: blogImg1,
-    height: 494,
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Erat sociis risus dignissim feugiat amet a molestie habitasse elis congue odio ",
-  },
-  {
-    id: 2,
-    title: "Lorem ipsum do et consectet onsequat.",
-    img: blogImg4,
-    height: 302,
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Erat sociis risus dignissim feugiat amet a molestie habitasse elis congue odio ",
-  },
-];
+export const BlogData = {
+  section1: [
+    {
+      id: 1,
+      title: "Lorem ipsum dolor sit amet consectet onsequat.",
+      img: blogImg1,
+      height: 494,
+      description:
+        "Lorem ipsum dolor sit amet consectetur. Erat sociis risus dignissim feugiat amet a molestie habitasse elis congue odio ",
+    },
+    {
+      id: 2,
+      title: "Lorem ipsum do et consectet onsequat.",
+      img: blogImg4,
+      height: 302,
+      description:
+        "Lorem ipsum dolor sit amet consectetur. Erat sociis risus dignissim feugiat amet a molestie habitasse elis congue odio ",
+    },
+  ],
+  section2: [
+    {
+      id: 1,
+      title: "Amet consectet onsequat.",
+      img: blogImg2,
+      description:
+        "Lorem ipsum dolor sit amet cat sociis risus dignissim feugiat amet a molestie habitasse elis congue odio ",
+    },
+    {
+      id: 2,
+      title: "Amet consectet onsequat.",
+      img: blogImg3,
+      description: "Lorem ipsum dolor sit amemtasse elngue odio ",
+    },
+    {
+      id: 3,
+      title: "Amet consectet onsequat.",
+      img: blogImg5,
+      description:
+        "Lorem ipsum dolor sit amet cat sociis risus dignissim feugiat amet a molestie habitasse elis congue odio ",
+    },
+  ],
+};
 
-export const BlogData2 = [
+export const socialLinksData = [
   {
-    id: 1,
-    title: "Amet consectet onsequat.",
-    img: blogImg2,
-    description:
-      "Lorem ipsum dolor sit amet cat sociis risus dignissim feugiat amet a molestie habitasse elis congue odio ",
+    id: "facebook",
+    iconSrc: "/facebook.svg",
+    dimensions: { width: 20.25, height: 16.88 },
+    url: "https://www.facebook.com",
   },
   {
-    id: 2,
-    title: "Amet consectet onsequat.",
-    img: blogImg3,
-    description: "Lorem ipsum dolor sit amemtasse elngue odio ",
+    id: "twitter",
+    iconSrc: "/twitter.svg",
+    dimensions: { width: 13.12, height: 13.5 },
+    url: "https://www.twitter.com",
   },
   {
-    id: 3,
-    title: "Amet consectet onsequat.",
-    img: blogImg5,
-    description:
-      "Lorem ipsum dolor sit amet cat sociis risus dignissim feugiat amet a molestie habitasse elis congue odio ",
-  },
-];
-
-export const SocialLink = [
-  {
-    id: 1,
-    // icon: <FaFacebookF />,
-    image:"/facebook.svg",
-    width: 20.25,
-    height: 16.88,
-    link: "https://www.facebook.com",
+    id: "instagram",
+    iconSrc: "/instagram.svg",
+    dimensions: { width: 16.88, height: 16.88 },
+    url: "https://www.instagram.com",
   },
   {
-    id: 2,
-    // icon: <RiTwitterXLine />,
-    image:"/twitter.svg",
-    width: 13.12,
-    height: 13.5,
-    link: "https://www.twitter.com",
+    id: "telegram",
+    iconSrc: "/telegram.svg",
+    dimensions: { width: 20.25, height: 16.88 },
+    url: "https://www.telegram.com",
   },
   {
-    id: 3,
-    // icon: <FaInstagram />,
-    image:"/instagram.svg",
-    width: 16.88,
-    height: 16.88,
-    link: "https://www.instagram.com",
-  },
-  {
-    id: 4,
-    // icon: <RiTelegram2Fill />,
-    image:"/telegram.svg",
-    width: 20.25,
-    height: 16.88,
-    link: "https://www.telegram.com",
-  },
-  {
-    id: 5,
-    // icon: <FaTiktok />,
-    image:"/tiktok.svg",
-    width: 20,
-    height: 20,
-    link: "https://www.tiktok.com",
+    id: "tiktok",
+    iconSrc: "/tiktok.svg",
+    dimensions: { width: 20, height: 20 },
+    url: "https://www.tiktok.com",
   },
 ];
 
@@ -218,3 +224,18 @@ export const legalLinks = [
   { tag: "Datenschutz und Richtlinien" },
   { tag: "FAQs" },
 ];
+
+// export const quickLinks = [
+//   { id: "home", label: "Home", link: "/" },
+//   { id: "about-us", label: "Über uns", link: "/uber-uns" },
+//   { id: "products", label: "Produkte", link: "/produkte" },
+//   { id: "blog", label: "Ratgeber und Blog", link: "/ratgeber-blog" },
+//   { id: "contact", label: "Kontakt", link: "/kontakt" },
+// ];
+
+// export const legalLinks = [
+//   { id: "imprint", label: "Impressum", link: "/impressum" },
+//   { id: "terms-conditions", label: "Allgemeine Geschäftsbedingungen", link: "/agb" },
+//   { id: "privacy-policy", label: "Datenschutz und Richtlinien", link: "/datenschutz" },
+//   { id: "faqs", label: "FAQs", link: "/faqs" },
+// ];

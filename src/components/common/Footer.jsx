@@ -1,9 +1,8 @@
 import React from "react";
 import { FooterLogo, MailBoxIcon } from "./Icon";
 import Text from "./Text";
-import SocialLinks from "./SocialLinks";
 import ActionButton from "./ActionButton";
-import { SocialLink, quickLinks, legalLinks } from "./Helper";
+import { socialLinksData, quickLinks, legalLinks } from "./Helper";
 import FooterList from "../FooterList";
 import Image from "next/image";
 
@@ -56,23 +55,21 @@ function Footer() {
               </form>
 
               <div className="flex gap-[13.5px] max-w-[206px] mt-2 md:mt-0">
-                {SocialLink.map((item) => {
+                {socialLinksData.map((item) => {
                   return (
                     <a
                       key={item.id}
-                      href={item.link ?? "/"}
+                      href={item.url ?? "/"}
                       className="flex items-center justify-center w-[31px] h-[31px] rounded-full cursor-pointer bg-transparent border border-neutral  "
                       target="_blank"
                       rel="noopener noreferrer"
-                      // className="text-primary"
-                      // link={item.link}
                     >
                       <Image
-                        width={item.width}
-                        height={item.height}
-                        alt="image"
+                        width={item.dimensions.width}
+                        height={item.dimensions.height}
+                        alt={item.id}
                         className=""
-                        src={item.image}
+                        src={item.iconSrc}
                       />
                     </a>
                   );

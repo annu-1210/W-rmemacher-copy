@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Text from "./common/Text";
-import { navTabs } from "./common/Helper";
+import { navigationTabs } from "./common/Helper";
 import { useState } from "react";
-import FutureOfBathroom_Dropdown from "./FutureOfBathroom_Dropdown";
+import BathroomTrends_Dropdown from "./BathroomTrends_Dropdown";
 
-function FutureOfBathroom() {
-  const [activeTab, setActiveTab] = useState(navTabs[0].id);
+function BathroomTrends() {
+  const [activeTab, setActiveTab] = useState(navigationTabs[0].id);
   const para =
     "Technologische und funktionale Maßstäbe für die nächste Generation des Bads neu definiert.";
   return (
@@ -25,7 +25,7 @@ function FutureOfBathroom() {
         </div>
         <div className="max-w-[1107px] max-h-[613px] hidden xsm:flex items-center justify-center flex-col gap-16 lg:gap-y-[70px]">
           <div className="w-[400px] sm:w-[500px] md:w-[680px] lg:w-[753px] h-[38px] lg:h-[44px] flex gap-x-3 sm:gap-x-[30px] border-b border-neutral">
-            {navTabs.map((tab) => (
+            {navigationTabs.map((tab) => (
               <button
                 key={tab.id}
                 className={`${
@@ -35,19 +35,19 @@ function FutureOfBathroom() {
                 } text-xs sm:text-base lg:text-lg xl:text-xl font-MontserratRegular w-full flex justify-center`}
                 onClick={() => setActiveTab(tab.id)}
               >
-                {tab.title}
+                {tab.label}
               </button>
             ))}
           </div>
           <div className="max-w-[1107px] max-h-[500px]">
-            {navTabs.find((tab) => tab.id === activeTab)?.component}
+            {navigationTabs.find((tab) => tab.id === activeTab)?.content}
           </div>
         </div>
         <div className="flex xsm:hidden max-w-[350px]">
-          <FutureOfBathroom_Dropdown
+          <BathroomTrends_Dropdown
             activeTab={activeTab}
             setActiveTab={setActiveTab}
-            navTabs={navTabs}
+            navigationTabs={navigationTabs}
           />
         </div>
       </div>
@@ -55,4 +55,4 @@ function FutureOfBathroom() {
   );
 }
 
-export default FutureOfBathroom;
+export default BathroomTrends;

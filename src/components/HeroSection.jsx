@@ -4,7 +4,7 @@ import Image from "next/image";
 import Text from "./common/Text";
 import ActionButton from "./common/ActionButton";
 
-function Hero() {
+function HeroSection() {
   const paragraph =
     "Verbinden Sie Ästhetik mit intelligenter Funktionalität in elegantem Design.";
   return (
@@ -33,4 +33,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default HeroSection;

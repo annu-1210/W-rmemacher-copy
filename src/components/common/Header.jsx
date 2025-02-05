@@ -36,10 +36,10 @@ function Header() {
           {HeaderLinks.map((link, index) => (
             <a
               key={index}
-              href={link.link}
+              href={link.url}
               className="text-neutral text-xs xl:text-sm font-MontserratRegular"
             >
-              {link.title}
+              {link.label}
             </a>
           ))}
         </div>

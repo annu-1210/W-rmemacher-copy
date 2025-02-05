@@ -3,7 +3,7 @@ import React from "react";
 import ActionButton from "./common/ActionButton";
 import Text from "./common/Text";
 
-function Gifi() {
+function InteractiveDemoSection() {
   const para =
     "Lorem ipsum dolor sit amet consectetur. Nulla ridicu lus musto ferme ntum ame ictum sed amet mi in du uspe ndisse habitant sed am mentum ame.";
   return (
@@ -33,4 +33,4 @@ function Gifi() {
   );
 }
 
-export default Gifi;
+export default InteractiveDemoSection;
