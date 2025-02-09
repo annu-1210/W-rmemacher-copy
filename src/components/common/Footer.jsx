@@ -79,7 +79,7 @@ function Footer() {
           </div>
         </div>
         <div className="flex justify-center pt-4 pb-1 border-t border-neutral max-w-[1140px] w-full text-neutral text-center sm:text-start text-xs xsm:text-sm sm:text-base font-Gilroy">
-          <p>&copy; Wärmemacher {currentYear}, Alle Rechte vorbehalten</p>
+          <p>&copy;Wärmemacher {currentYear}, Alle Rechte vorbehalten</p>
         </div>
       </div>
     </footer>

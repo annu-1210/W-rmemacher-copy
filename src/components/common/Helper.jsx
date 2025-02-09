@@ -225,17 +225,3 @@ export const legalLinks = [
   { tag: "FAQs" },
 ];
 
-// export const quickLinks = [
-//   { id: "home", label: "Home", link: "/" },
-//   { id: "about-us", label: "Über uns", link: "/uber-uns" },
-//   { id: "products", label: "Produkte", link: "/produkte" },
-//   { id: "blog", label: "Ratgeber und Blog", link: "/ratgeber-blog" },
-//   { id: "contact", label: "Kontakt", link: "/kontakt" },
-// ];
-
-// export const legalLinks = [
-//   { id: "imprint", label: "Impressum", link: "/impressum" },
-//   { id: "terms-conditions", label: "Allgemeine Geschäftsbedingungen", link: "/agb" },
-//   { id: "privacy-policy", label: "Datenschutz und Richtlinien", link: "/datenschutz" },
-//   { id: "faqs", label: "FAQs", link: "/faqs" },
-// ];

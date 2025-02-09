@@ -11,12 +11,12 @@ function Blog() {
     <section className="blog">
       <div className="blog max-w-[1140px] mx-auto flex flex-col gap-2 sm:gap-12 xl:gap-[60px] justify-center mt-16 sm:mt-[100px] md:mt-[130px] lg:mt-[150px] h-full ">
         <header className="flex justify-between items-center ">
-          <div className="max-w-[180px] xsm:max-w-[260px] sm:max-w-[400px] md:max-w-[690px] w-full flex flex-col gap-y-1 xl:gap-y-2 justify-start">
+          <div className="max-w-[180px] xsm:max-w-[260px] sm:max-w-[400px] md:max-w-[690px] w-full flex flex-col gap-y-1 md:gap-y-5 justify-start">
             <h3 className="text-xl xsm:text-2xl sm:text-3xl md:text-[38px] xl:text-[42px] font-MontserratMedium leading-5 xsm:leading-[51.2px] text-start">
               Blog und
               <span className="font-PpEditorialRegular italic "> Ratgeber</span>
             </h3>
-            <p className="max-w-[558px]">
+            <p className="max-w-[558px] text-textColor">
               <Text label={introText} size="xsm" />
             </p>
           </div>

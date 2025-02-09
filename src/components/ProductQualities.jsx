@@ -21,7 +21,7 @@ function Qualities() {
           {productQualities.map((section) => {
             return (
               <div
-                className="w-full lg:max-w-[328px] xl:max-w-[410px]  2xl:max-w-[467px] items-center lg:items-start flex flex-col gap-y-2 lg:gap-y-3.5 xl:gap-y-4 3xl:gap-y-4 p-4 xsm:p-6 cursor-pointer"
+                className={`w-full lg:max-w-[328px] xl:max-w-[410px]  2xl:max-w-[466px] items-center lg:items-start flex flex-col gap-y-2 lg:gap-y-3.5 xl:gap-y-4 3xl:gap-y-4 cursor-pointer ${section.id === "innovative-design" ? "pr-4 xsm:pr-6 2xl:pr-20 pl-4 xsm:pl-6 pt-4 xsm:pt-6" :" p-4 xsm:p-6"}`}
                 key={section.id}
                 onClick={() => setActiveTab(section)}
               >
@@ -34,11 +34,10 @@ function Qualities() {
                 >
                   {section.title}
                 </h4>
-                <p className="text-center lg:text-start">
+                <p className="text-center lg:text-start text-textColor">
                   <Text
                     label={section.description}
                     size="sm"
-                    color="secondary"
                   />
                 </p>
               </div>

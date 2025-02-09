@@ -2,36 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --red-linear: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%);
-}
-
 @layer components {
   .gradient-border {
-    background: transparent;
-    background-repeat: no-repeat;
-    border: 3px;
-    border-style: solid;
-    border-color: transparent;
-    border-image-source: url(../../public/gradient.svg);
-    border-image-repeat: stretch stretch;
-    border-image-slice: 49;
-    border-image-width: 100px;
-    border-image-outset: 6px;
-    padding: 16px 28px;
-    border-radius: 100px;
+    position: relative;
+    backdrop-filter: blur(6px);
+  }
+
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    backdrop-filter: blur(6px);
+    border-radius: inherit;
+    background: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%);
+    -webkit-mask: linear-gradient(white, white) content-box,
+      linear-gradient(white, white);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
   }
 }
 
-@layer components {
-  .gradient-icon {
-    color: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%);
-    -webkit-background-clip: text;
-    /* color: transparent; */
-  }
-}
-
-.swiper-pagination{
+.swiper-pagination {
   @apply flex items-center justify-center gap-2 xsm:mb-4 cursor-pointer;
 }
 

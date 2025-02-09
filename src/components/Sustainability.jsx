@@ -14,8 +14,8 @@ function Sustainability() {
         height={449}
         className="w-full max-w-[300px] lg:max-w-[490px] xl:max-w-[502px] rounded-2xl "
       />
-      <p className="max-w-[380px] sm:max-w-[545px] text-center sm:text-start">
-        <Text label={para} size="sm" color="secondary" />
+      <p className="max-w-[380px] sm:max-w-[545px] text-center sm:text-start !text-textColor">
+        <Text label={para} size="md"/>
       </p>
     </div>
   );

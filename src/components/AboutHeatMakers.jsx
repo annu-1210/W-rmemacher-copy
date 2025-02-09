@@ -13,11 +13,11 @@ function AboutHeatMakers() {
         Über <span className="!font-PpEditorialRegular italic ">Wärmemacher</span>
       </h3>
       <div className="flex flex-col items-center md:items-start gap-y-6 max-w-[440px] pt-3 lg:pt-0 lg:max-w-[530px] xl:max-w-[655px]">
-        <div className="flex flex-col gap-y-4 text-center md:text-start">
-          <Text label={para1} size="md" color="secondary" />
-          <Text label={para2} size="md" color="secondary" />
+        <div className="flex flex-col gap-y-4 text-center md:text-start !text-textColor">
+          <Text label={para1} size="md" />
+          <Text label={para2} size="md" />
         </div>
-        <ActionButton label="Mehr entdecken" color="primary" size="md"/>
+        <ActionButton label="Mehr entdecken" color="primary" size="xl"/>
       </div>
     </div>
   );

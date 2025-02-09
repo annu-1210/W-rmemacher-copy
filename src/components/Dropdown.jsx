@@ -42,13 +42,13 @@ function Dropdown() {
       </div>
 
       {isOpen && (
-        <ul className="absolute rounded-md w-full mt-2 shadow-md text-secondary bg-primary font-MontserratMedium text-[10px] xsm:text-xs">
+        <ul className="absolute rounded-md w-full mt-2 ml-2 shadow-md text-secondary bg-primary font-MontserratMedium text-[10px] xsm:text-xs">
           {options.map((option) => (
             <li
-              key={option.index}
+              key={option.id}
               onClick={() => handleSelect(option)}
-              className={`p-2.5 cursor-pointer flex justify-center items-center gap-x-2 hover:bg-dropdownBg ${
-                selectedOption === option ? "bg-primary " : ""
+              className={`p-2.5 cursor-pointer flex justify-center items-center gap-x-2 hover:bg-dropdownBg rounded-md${
+                selectedOption === option ? "bg-dropdownBg " : ""
               }`}
             >
               <img

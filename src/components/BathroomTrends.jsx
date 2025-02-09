@@ -3,7 +3,7 @@ import React from "react";
 import Text from "./common/Text";
 import { navigationTabs } from "./common/Helper";
 import { useState } from "react";
-import BathroomTrends_Dropdown from "./BathroomTrends_Dropdown";
+import BathroomTrendsDropdown from "./BathroomTrendsDropdown";
 
 function BathroomTrends() {
   const [activeTab, setActiveTab] = useState(navigationTabs[0].id);
@@ -44,7 +44,7 @@ function BathroomTrends() {
           </div>
         </div>
         <div className="flex xsm:hidden max-w-[350px]">
-          <BathroomTrends_Dropdown
+          <BathroomTrendsDropdown
             activeTab={activeTab}
             setActiveTab={setActiveTab}
             navigationTabs={navigationTabs}

@@ -6,12 +6,12 @@ import BathroomTrends from "@/components/BathroomTrends";
 import InteractiveDemoSection from "@/components/InteractiveDemoSection";
 import HeroSection from "@/components/HeroSection";
 import Qualities from "@/components/ProductQualities";
-import Slider from "@/components/Slider";
+import ProductSlider from "@/components/ProductSlider";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden ">
       <Image
         width={500}
         height={900}
@@ -41,35 +41,17 @@ export default function Home() {
         className="absolute top-[4450px] xsm:top-[5000px] sm:top-[4800px] lg:top-[5700px] 3xl:top-[6000px] right-[-50px] z-0 max-w-[350px] xsm:max-w-[500px] max-h-[350px] xsm:max-h-[500px] 3xl:max-h-[800px]"
       />
 
-      <div className="absolute fixed z-50 top-[48vh] xsm:top-[50vh] sm:top-[40vh] md:top-[50vh] lg:top-[50vh] 3xl:top-[45vh] 3xl:right-[84px] cursor-pointer">
+      <div className="absolute fixed z-50 top-[48vh] xsm:top-[50vh] sm:top-[40vh] md:top-[50vh] lg:top-[50vh] 3xl:top-[470px] 3xl:right-[70px] cursor-pointer">
         <FloatingActionButton />
       </div>
       <main className="relative container p-5 max-w-[1920px] mx-auto ">
         <HeroSection />
-        <section>
-          <AboutHeatMakers />
-        </section>
-
-        <section>
-          <Slider />
-        </section>
-
-        <section>
-          <BathroomTrends />
-        </section>
-
-        <section>
-          <Qualities />
-        </section>
-
-        <section>
-          <InteractiveDemoSection />
-        </section>
-
-        <section>
-          <Blog />
-        </section>
-
+        <AboutHeatMakers />
+        <ProductSlider />
+        <BathroomTrends />
+        <Qualities />
+        <InteractiveDemoSection />
+        <Blog />
         <Footer />
       </main>
     </div>

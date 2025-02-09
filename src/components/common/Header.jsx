@@ -26,7 +26,10 @@ function Header() {
   return (
     <header className="max-w-[1920px] w-full">
       <div className="absolute z-10 bg-transparent top-0 left-0 right-0 flex items-center justify-between sm:pt-2 xl:pt-3.5 px-4 xsm:px-8 xl:px-10 mx-auto">
-        <div className="flex lg:hidden w-[50px] xsm:w-10 sm:w-20" onClick={toggleNavbar}>
+        <div
+          className="flex lg:hidden w-[50px] xsm:w-10 sm:w-20"
+          onClick={toggleNavbar}
+        >
           <VscMenu
             size={26}
             className="cursor-pointer text-neutral w-[20px] sm:w-[26px]"
@@ -49,7 +52,7 @@ function Header() {
         >
           <Logo width={77} height={66} />
         </a>
-        <div className="flex lg:w-[300px] xl:w-[450px] bg-transparent justify-end ">
+        <div className="flex lg:w-[300px] xl:w-[450px] bg-transparent justify-end">
           <Dropdown />
         </div>
         {isOpen && (

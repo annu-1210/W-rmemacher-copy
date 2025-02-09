@@ -9,7 +9,7 @@ import Text from "./common/Text";
 import Image from "next/image";
 import ActionButton from "./common/ActionButton";
 
-function Slider() {
+function ProductSlider() {
   return (
     <section className="max-w-[1920px] w-full mx-auto mt-[100px] sm:mt-[120px] lg:mt-[150px] h-[320px] sm:h-[400px] md:h-[520px] lg:h-[770px] rounded-2xl overflow-hidden ">
       <div className="max-w-[1920px] w-full ">
@@ -64,7 +64,7 @@ function Slider() {
                         </p>
                       </div>
                       <div className="h-[50px] sm:h-[70px] border border-primary mx-8"></div>
-                      <div className="flex flex-col  xl:gap-y-1 font-MontserratMedium text-primary sm:max-w-[147px]">
+                      <div className="flex flex-col xsm:gap-y-1 font-MontserratMedium text-primary sm:max-w-[147px]">
                         <p className="text-[10px] xsm:text-xs lg:text-sm xl:text-base">
                           Smart Mirror
                         </p>
@@ -99,4 +99,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default ProductSlider;

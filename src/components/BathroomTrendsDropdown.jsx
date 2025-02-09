@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { RiArrowDownWideFill } from "react-icons/ri";
 
-function BathroomTrends_Dropdown({ activeTab, setActiveTab, navigationTabs}) {
+function BathroomTrendsDropdown({ activeTab, setActiveTab, navigationTabs}) {
   const [selectedOption, setSelectedOption] = useState(navigationTabs[0]);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -47,4 +47,4 @@ function BathroomTrends_Dropdown({ activeTab, setActiveTab, navigationTabs}) {
   );
 }
 
-export default BathroomTrends_Dropdown;
+export default BathroomTrendsDropdown;
