@@ -13,10 +13,10 @@ function HeaderMobile() {
         {HeaderLinks.map((link, index) => (
           <a
             key={index}
-            href={link.link}
+            href={link.url}
             className="text-neutral text-base sm:text-lg font-MontserratMedium"
           >
-            {link.title}
+            {link.label}
           </a>
         ))}
       </div>

@@ -44,7 +44,7 @@ export default function Home() {
       <div className="absolute fixed z-50 top-[48vh] xsm:top-[50vh] sm:top-[40vh] md:top-[50vh] lg:top-[50vh] 3xl:top-[470px] 3xl:right-[70px] cursor-pointer">
         <FloatingActionButton />
       </div>
-      <main className="relative container p-5 max-w-[1920px] mx-auto ">
+      <main className="relative container p-3 xsm:p-5 max-w-[1920px] mx-auto ">
         <HeroSection />
         <AboutHeatMakers />
         <ProductSlider />

@@ -59,7 +59,7 @@ export const SliderData = [
     },
     layout: {
       position:
-        "top-[100px] xsm:top-[100px] sm:top-[150px] md:top-[240px] lg:top-[380px] xl:top-[278px]",
+        "top-[60px] xsm:top-[30px] sm:top-[70px] md:top-[160px] lg:top-[330px] xl:top-[278px]",
       textWidth: "w-[450px] lg:w-[718px]",
     },
   },
@@ -81,7 +81,7 @@ export const SliderData = [
     },
     layout: {
       position:
-        "top-[100px] sm:top-[150px] md:top-[240px] lg:top-[440px] xl:top-[365px]",
+        "top-[60px] xsm:top-[30px] sm:top-[70px] md:top-[160px] lg:top-[390px] xl:top-[365px]",
       textWidth: "w-[420px] lg:w-[550px] xl:w-[686px]",
     },
   },

@@ -27,7 +27,7 @@ module.exports = {
         borderColor: "rgba(42, 36, 36, 0.6)",
         dropdownBg: "rgba(240, 240, 240, 1)",
         neutral: "rgba(178, 178, 178, 1)",
-        textColor: "rgb(95, 94, 94)",
+        ironGray: "rgb(95, 94, 94)",
         background: "rgba(29, 29, 27, 0.86)",
       },
       backgroundImage: {

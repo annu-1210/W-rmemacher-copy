@@ -11,7 +11,7 @@ import ActionButton from "./common/ActionButton";
 
 function ProductSlider() {
   return (
-    <section className="max-w-[1920px] w-full mx-auto mt-[100px] sm:mt-[120px] lg:mt-[150px] h-[320px] sm:h-[400px] md:h-[520px] lg:h-[770px] rounded-2xl overflow-hidden ">
+    <section className="max-w-[1920px] w-full mx-auto mt-[80px] sm:mt-[120px] lg:mt-[150px] h-[320px] sm:h-[400px] md:h-[520px] lg:h-[770px] rounded-2xl overflow-hidden ">
       <div className="max-w-[1920px] w-full ">
         <Swiper
           modules={[Pagination]}
@@ -33,66 +33,71 @@ function ProductSlider() {
                     alt={slide.image.alt}
                     width={1140}
                     height={770}
-                    className="w-full max-h-[770px] max-w-[1920px] rounded-2xl absolute inset-0 z-0 object-cover object-center "
+                    priority={true}
+                    className="w-full h-[320px] sm:h-[400px] md:h-[520px] lg:h-[770px] max-w-[1920px] rounded-2xl absolute inset-0 z-0 object-cover object-center "
                   />
                   <div className="absolute max-w-[1920px] h-[770px] inset-0 bg-custom-gradient2 z-10"></div>
                   <div
-                    className={`absolute ${slide.layout.position} left-4 xsm:left-10 max-w-[250px] xsm:max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 z-20 ${slide.layout.textWidth}`}
+                    className={`absolute ${slide.layout.position} w-full flex flex-col gap-y-6 md:flex-row justify-between pr-4 sm:pr-10 xl:pr-[130px] pl-4 sm:pl-10 z-20 `}
                   >
-                    <div className="w-full flex flex-col gap-y-2 text-base xsm:text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl leading-5 xsm:leading-6 sm:leading-8 md:leading-[40px] lg:leading-[60px] xl:leading-[73.14px] ">
-                      <h1 className={`${slide.heading.primaryStyle} `}>
-                        {slide.heading.primaryText}{" "}
-                        <span className={`${slide.heading.secondaryStyle}`}>
-                          {" "}
-                          {slide.heading.secondaryText}{" "}
-                        </span>
-                      </h1>
-                      <p className="w-full xsm:max-w-[496px] text-primary">
-                        <Text label={slide.description} size="xsm" />
-                      </p>
-                    </div>
-                    <div className="max-w-[306px] flex h-[50px] xsm:max-h-[72px] items-center">
-                      <div className="flex flex-col gap-y-0 xsm:gap-y-1 font-MontserratMedium text-primary sm:max-w-[95px]">
-                        <p className="text-[10px] xsm:text-xs lg:text-sm xl:text-base">
-                          Größe
-                        </p>
-                        <p className="text-xs xsm:text-sm lg:text-base xl:text-xl">
-                          60x60cm
-                        </p>
-                        <p className="text-[10px] text-xs lg:text-sm xl:text-base">
-                          SOLIS
+                    <div className={`max-w-[250px] xsm:max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 ${slide.layout.textWidth}`}>
+                      <div className="w-full flex flex-col gap-y-2 text-base xsm:text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl leading-5 xsm:leading-6 sm:leading-8 md:leading-[40px] lg:leading-[60px] xl:leading-[73.14px] ">
+                        <h1 className={`${slide.heading.primaryStyle} `}>
+                          {slide.heading.primaryText}{" "}
+                          <span className={`${slide.heading.secondaryStyle}`}>
+                            {" "}
+                            {slide.heading.secondaryText}{" "}
+                          </span>
+                        </h1>
+                        <p className="w-full xsm:max-w-[496px] text-primary">
+                          <Text label={slide.description} size="xsm" />
                         </p>
                       </div>
-                      <div className="h-[50px] sm:h-[70px] border border-primary mx-8"></div>
-                      <div className="flex flex-col xsm:gap-y-1 font-MontserratMedium text-primary sm:max-w-[147px]">
-                        <p className="text-[10px] xsm:text-xs lg:text-sm xl:text-base">
-                          Smart Mirror
-                        </p>
-                        <p className="text-xs xsm:text-sm lg:text-base xl:text-xl">
-                          259 €
-                        </p>
-                        <p className="text-[10px] xsm:text-xs lg:text-sm xl:text-base">
-                          Premium Qualität
-                        </p>
+                      <div className="max-w-[306px] flex items-center">
+                        <div className="flex flex-col gap-y-1 font-MontserratMedium text-primary sm:max-w-[95px]">
+                          <p className="text-xs lg:text-sm xl:text-base">
+                            Größe
+                          </p>
+                          <p className="text-xs xsm:text-sm lg:text-base xl:text-xl ">
+                            60x60cm
+                          </p>
+                          <p className=" text-xs lg:text-sm xl:text-base">
+                            SOLIS
+                          </p>
+                        </div>
+                        <div className="h-[50px] sm:h-[70px] border border-primary mx-8"></div>
+                        <div className="flex flex-col gap-y-1 font-MontserratMedium text-primary sm:max-w-[147px]">
+                          <p className="text-xs lg:text-sm xl:text-base">
+                            Smart Mirror
+                          </p>
+                          <p className="text-xs xsm:text-sm lg:text-base xl:text-xl">
+                            259 €
+                          </p>
+                          <p className="text-xs lg:text-sm xl:text-base">
+                            Premium Qualität
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="max-w-[336px] flex gap-x-4 absolute top-[270px] xsm:top-[300px] sm:top-[320px] md:top-[420px] lg:top-[680px] xl:top-[634px] right-[60px] xsm:right-[110px] sm:right-2.5 md:right-[50px] xl:right-[130px] z-20">
-                    <ActionButton
-                      label="Jetzt kaufen"
-                      color="primary"
-                      size="lg"
-                    />
-                    <ActionButton
-                      label="Mehr erfahren"
-                      size="md"
-                      color="secondary"
-                    />
+
+                    <div className="w-full flex items-end gap-x-4 justify-start md:justify-end max-w-[260px] lg:max-w-[336px]">
+                      <ActionButton
+                        label="Jetzt kaufen"
+                        color="primary"
+                        size="lg"
+                      />
+                      <ActionButton
+                        label="Mehr erfahren"
+                        size="md"
+                        color="secondary"
+                      />
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
             );
           })}
+          {/* max-w-[336px] flex gap-x-4 absolute top-[240px] xsm:top-[300px] sm:top-[320px] md:top-[420px] lg:top-[680px] xl:top-[634px] right-[60px] xsm:right-[110px] sm:right-2.5 md:right-[50px] xl:right-[130px] z-20 */}
         </Swiper>
       </div>
     </section>

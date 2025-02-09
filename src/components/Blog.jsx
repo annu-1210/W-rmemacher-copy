@@ -16,7 +16,7 @@ function Blog() {
               Blog und
               <span className="font-PpEditorialRegular italic "> Ratgeber</span>
             </h3>
-            <p className="max-w-[558px] text-textColor">
+            <p className="max-w-[558px] text-ironGray">
               <Text label={introText} size="xsm" />
             </p>
           </div>

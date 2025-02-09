@@ -9,7 +9,7 @@ function Qualities() {
   const [activeTab, setActiveTab] = useState(productQualities[0]);
   return (
     <section className="qualities-section">
-      <div className="flex flex-col max-w-[1400px] gap-y-4 xsm:gap-y-6 mx-auto mt-[120px] md:mt-[130px] lg:mt-[150px]">
+      <div className="flex flex-col max-w-[1400px] gap-y-4 xsm:gap-y-6 mx-auto mt-[60px] xsm:mt-[120px] md:mt-[130px] lg:mt-[150px]">
         <Image
           src={activeTab.imageSrc}
           alt={activeTab.title}
@@ -21,7 +21,7 @@ function Qualities() {
           {productQualities.map((section) => {
             return (
               <div
-                className={`w-full lg:max-w-[328px] xl:max-w-[410px]  2xl:max-w-[466px] items-center lg:items-start flex flex-col gap-y-2 lg:gap-y-3.5 xl:gap-y-4 3xl:gap-y-4 cursor-pointer ${section.id === "innovative-design" ? "pr-4 xsm:pr-6 2xl:pr-20 pl-4 xsm:pl-6 pt-4 xsm:pt-6" :" p-4 xsm:p-6"}`}
+                className={`w-full md:max-w-[700px] lg:max-w-[328px] xl:max-w-[410px]  2xl:max-w-[466px] items-center lg:items-start flex flex-col gap-y-2 lg:gap-y-3.5 xl:gap-y-4 3xl:gap-y-4 cursor-pointer ${section.id === "innovative-design" ? "pr-0 xsm:pr-6 2xl:pr-20 pl-0 pb-4 xsm:pl-6 pt-4 xsm:pt-6" :" px-0 py-4 sm:p-6"}`}
                 key={section.id}
                 onClick={() => setActiveTab(section)}
               >
@@ -34,7 +34,7 @@ function Qualities() {
                 >
                   {section.title}
                 </h4>
-                <p className="text-center lg:text-start text-textColor">
+                <p className="text-center lg:text-start text-ironGray ">
                   <Text
                     label={section.description}
                     size="sm"
