@@ -57,7 +57,7 @@ function Header() {
         </div>
         {isOpen && (
           <div
-            className="transform transition-transform duration-300 ease-in-out absolute top-0 z-50 left-0 w-[740px] rounded-lg  w-full"
+            className="fixed inset-0 z-[999] w-[740px] rounded-lg w-full h-screen"
             onClick={toggleNavbar}
           >
             <HeaderMobile />

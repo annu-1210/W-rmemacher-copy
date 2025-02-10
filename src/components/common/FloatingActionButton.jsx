@@ -9,7 +9,7 @@ function FloatingActionButton() {
         height={33}
         alt="support-image"
         src="/support.svg"
-        className="max-w-8 xsm:max-w-10 max-h-8 xsm:max-h-[33px]"
+        className="max-w-8 lg:max-w-10 max-h-8 lg:max-h-[33px]"
       />
     </div>
   );

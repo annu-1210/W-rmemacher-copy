@@ -32,7 +32,7 @@ export default function Home() {
         height={900}
         alt="Yellow circular graphic adding contrast to the design"
         src="/images/yellow-circle.png"
-        className="absolute top-[2850px] xsm:top-[3100px] sm:top-[3700px] lg:top-[4300px] 3xl:top-[4550px] left-[-40px] z-0 max-w-[350px] xsm:max-w-[500px] max-h-[350px] xsm:max-h-[500px] 3xl:max-h-[800px]"
+        className="absolute top-[2850px] xsm:top-[3100px] sm:top-[3500px] lg:top-[4300px] 3xl:top-[4550px] left-[-40px] z-0 max-w-[350px] xsm:max-w-[500px] max-h-[350px] xsm:max-h-[500px] 3xl:max-h-[800px]"
       />
       <Image
         width={500}
