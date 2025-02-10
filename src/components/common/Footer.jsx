@@ -41,7 +41,7 @@ function Footer() {
               <h4 className="text-sm xsm:text-base font-PpEditorialRegular italic text-primary">
                 Kostenlose Newsletter-Anmeldung:
               </h4>
-              <form className="flex max-w-[400px] xl:w-[368px] items-center justify-between p-2 border border-neutral rounded">
+              <form className="flex max-w-[400px] xl:w-[367px] items-center justify-between p-2 border border-neutral rounded">
                 <div className="flex items-center justify-center py-0.5 p-px ">
                   <MailBoxIcon />
                 </div>
@@ -78,7 +78,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pt-4 pb-1 border-t border-neutral max-w-[1140px] w-full text-neutral text-center sm:text-start text-xs xsm:text-sm sm:text-base font-Gilroy">
+        <div className="flex justify-center 2xl:ml-6 pt-4 pb-1 border-t border-neutral max-w-[1165px] w-full text-neutral text-center sm:text-start text-xs xsm:text-sm sm:text-base font-Gilroy">
           <p>&copy;Wärmemacher {currentYear}, Alle Rechte vorbehalten</p>
         </div>
       </div>

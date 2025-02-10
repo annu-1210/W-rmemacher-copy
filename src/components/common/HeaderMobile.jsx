@@ -14,7 +14,7 @@ function HeaderMobile() {
           <a
             key={index}
             href={link.url}
-            className="text-neutral text-base sm:text-lg font-MontserratMedium"
+            className="text-neutral text-base sm:text-lg font-MontserratMedium underline-animation "
           >
             {link.label}
           </a>

@@ -24,6 +24,15 @@
   }
 }
 
+.underline-animation {
+  @apply relative;
+}
+
+.underline-animation::after {
+  @apply absolute content-[''] w-full left-0 border bottom-[-5px] scale-x-0 hover:scale-x-100 transition-transform duration-300 border-primary;
+}
+
+
 .swiper-pagination {
   @apply flex items-center justify-center gap-2 xsm:mb-4 cursor-pointer;
 }

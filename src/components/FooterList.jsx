@@ -8,7 +8,7 @@ function FooterList({ title, items, fontSize}) {
       <ul className={`${fontSize} flex flex-col w-full gap-y-1 lg:gap-y-2 font-MontserratRegular leading-4 xsm:leading-5 lg:leading-6 text-neutral`}>
         {items.map((item, index) => (
           <li key={index}>
-            <a href="/" className="cursor-pointer">
+            <a href="/" className="cursor-pointer underline-animation hover:text-primary">
               {item.tag}
             </a>
           </li>

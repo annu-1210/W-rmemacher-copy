@@ -8,6 +8,7 @@ import HeroSection from "@/components/HeroSection";
 import Qualities from "@/components/ProductQualities";
 import ProductSlider from "@/components/ProductSlider";
 import Image from "next/image";
+import Header from "@/components/common/Header";
 
 export default function Home() {
   return (
@@ -41,10 +42,11 @@ export default function Home() {
         className="absolute top-[4450px] xsm:top-[5000px] sm:top-[4800px] lg:top-[5700px] 3xl:top-[6000px] right-[-50px] z-0 max-w-[350px] xsm:max-w-[500px] max-h-[350px] xsm:max-h-[500px] 3xl:max-h-[800px]"
       />
 
-      <div className="absolute fixed z-50 top-[48vh] xsm:top-[50vh] sm:top-[40vh] md:top-[50vh] lg:top-[50vh] 3xl:top-[470px] 3xl:right-[70px] cursor-pointer">
+      <div className="absolute fixed z-50 top-[220px] sm:top-[210px] md:top-[300px] lg:top-[410px] 3xl:top-[470px] 3xl:right-[70px] cursor-pointer">
         <FloatingActionButton />
       </div>
       <main className="relative container p-3 xsm:p-5 max-w-[1920px] mx-auto ">
+        <Header/>
         <HeroSection />
         <AboutHeatMakers />
         <ProductSlider />
