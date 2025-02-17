@@ -7,7 +7,7 @@ function InfoBlock({ width, height, imageSrc, description, rowDirection }) {
     <div
       className={`max-w-[1400px] flex gap-7 justify between mx-auto bg-transparent flex-${rowDirection}`}
     >
-      <div className="w-[686px] bg-primary rounded-2xl pl-10 py-10 ">
+      <div className="max-w-[686px] bg-primary rounded-2xl pl-10 py-10 ">
         <div className="max-w-[648px] flex flex-col gap-2 justify-start items-start">
           {description.map((item, index) => (
             <div key={index} className="flex flex-col gap-2">
@@ -35,7 +35,7 @@ function InfoBlock({ width, height, imageSrc, description, rowDirection }) {
       </div>
 
       <div
-        className="max-w-[686px] rounded-2xl "
+        className="max-w-[608px] 2xl:max-w-[686px] rounded-2xl "
         style={{ height: `${height}px` }}
       >
         <Image

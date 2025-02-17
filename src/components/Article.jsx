@@ -14,7 +14,7 @@ function Article({ image, height, id, description }) {
           width={558}
           height={height}
           alt={id}
-          className="rounded-2xl w-full h-full object-center object-cover"
+          className="rounded-2xl max-w-[558px] 4xl:max-w-[600px] w-full h-full object-center object-cover"
         />
       </div>
       <p>

@@ -3,7 +3,7 @@ import { FooterLogo, MailBoxIcon } from "./Icon";
 import Text from "./Text";
 import ActionButton from "./ActionButton";
 import { socialLinksData, quickLinks, legalLinks } from "./Helper";
-import FooterList from "../FooterList";
+import FooterList from "./FooterList";
 import Image from "next/image";
 
 function Footer() {

@@ -26,7 +26,7 @@ function Header() {
   }, [isOpen]);
   return (
     <header className="max-w-[1880px] w-full ">
-      <div className="w-full overflow-hidden max-w-[296px] xxsm:max-w-[351px] xsm:max-w-[385px] sm:max-w-[600px] md:max-w-[728px] lg:max-w-[984px] 2xl:max-w-[1400px] 4xl:max-w-[1880px] absolute z-10 bg-transparent top-5 left-0 right-0 flex items-center justify-between sm:pt-2 xl:pt-3.5 px-6 md:px-8 xl:px-10 mx-auto">
+      <div className="w-full overflow-hidden max-w-[296px] xxsm:max-w-[351px] xsm:max-w-[385px] sm:max-w-[600px] md:max-w-[728px] lg:max-w-[984px] xl:max-w-[1400px] 4xl:max-w-[1880px] absolute z-10 bg-transparent top-5 left-0 right-0 flex items-center justify-between sm:pt-2 xl:pt-3.5 px-6 md:px-8 xl:px-10 mx-auto">
         <div
           className="flex lg:hidden w-[50px] xsm:w-10 sm:w-20"
           onClick={toggleNavbar}

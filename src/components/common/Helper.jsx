@@ -346,3 +346,30 @@ export const bathroomTransformationArticles = [
       "Im gedrückten Zustand der digitalen Taste wird die Anti-Beschlagsfunktion am Spiegel aktiviert.",
   },
 ];
+
+export const aboutSectionSlides = [
+  {
+    imageSrc: "/images/w-15.png",
+    title: "Steigerung der Vitalität und Wärme",
+    description:
+      "Steigerung Sie Ihre Vitalität und sorgen Sie für eine gleichverteilte Wärme in Ihrem Bad durch integrierte Infrarotheizung",
+  },
+  {
+    imageSrc: "/images/w-12.png",
+    title: "Smart Home",
+    description:
+      "Intelligenter Spiegel mit innovativen Dual-Bluetooth-Lautsprechern – genießen Sie Ihre Lieblingsmusik mit 360-Grad-Surround-Sound",
+  },
+  {
+    imageSrc: "/images/w-7.jpeg",
+    title: "Anti-Beschlagsfunktion",
+    description:
+      "Halten Sie die digitale Taste gedrückt und beginnen Sie die Anti-Beschlagsfunktion – innerhalb von 5-10 Minuten weist der Spiegel ein klares Bild auf.",
+  },
+  {
+    imageSrc: "/images/w-18.jpeg",
+    title: "Technologische Funktionalität",
+    description:
+      "Erleichtern Sie Ihren Tag morgens und abends mit integrierten Funktionalitäten wie bspw. Wetter-Anzeige, Kalender oder der Temperatur-Anzeige",
+  },
+];

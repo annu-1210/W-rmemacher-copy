@@ -5,7 +5,7 @@ import { articles } from "./common/Helper";
 function WarmemacherMission() {
   
   return (
-    <div className="max-w-[1140px] mx-auto mt-40">
+    <div className="max-w-[1140px] 4xl:max-w-[1400px] flex justify-center items-center mx-auto mt-40">
       <div className="flex gap-6">
         <div className="max-w-[558px]">
           <Article

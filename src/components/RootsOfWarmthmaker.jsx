@@ -20,14 +20,14 @@ function RootsOfWarmthmaker() {
         className="absolute bottom-0 left-[-50px] max-w-[612px] max-h-[715px]"
       />
       <div className="w-full flex flex-col gap-y-16">
-        <div className="flex flex-col gap-y-3 items-start justify-start">
+        <div className="flex flex-col gap-y-3 items-start justify-start w-full">
           <h3 className="text-2xl xsm:text-3xl lg:text-4xl xl:text-[42px] font-MontserratMedium leading-[45px] max-w-[620px] lg:w-full xl:leading-[51.2px] text-center">
             Die Wurzeln von{" "}
             <span className="!font-PpEditorialRegular italic ">
               Wärmemacher
             </span>
           </h3>
-          <div className="flex flex-col max-w-[1135px] text-ironGray gap-y-3">
+          <div className="flex flex-col max-w-[1135px] 4xl:max-w-[1620px] text-ironGray gap-y-3">
             <p>
               <Text label={para1} size="md" />
             </p>
@@ -36,11 +36,11 @@ function RootsOfWarmthmaker() {
             </p>
           </div>
         </div>
-        <div className="max-w-[1135px] flex flex-wrap gap-5">
+        <div className="max-w-[1135px] 4xl:max-w-[1620px] flex flex-wrap gap-5 4xl:gap-x-40 4xl:gap-y-20">
           {features.map((feat) => {
             return (
               <div
-                className="flex justify-center items-center w-[267px] h-[188px] border-2 rounded-xl "
+                className="flex justify-center items-center w-[267px] h-[188px] border-2 border-primary bg-glassWhite rounded-xl "
                 key={feat.id}
               >
                 <div className="flex flex-col justify-center items-center max-w-[182px] gap-y-3">

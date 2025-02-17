@@ -12,7 +12,7 @@ function SmartHomeCard() {
           Intelligente Steuerung durch Smart Home
         </p>
       </div>
-      <div className="w-[686px] h-[574px] flex items-center justify-center bg-primary rounded-2xl">
+      <div className="max-w-[686px] h-[574px] flex items-center justify-center bg-primary rounded-2xl px-[38px]">
         <div className="max-w-[601px] flex flex-col gap-2 justify-start items-start">
           <h3 className="text-xl xsm:text-2xl sm:text-3xl md:text-[38px] xl:text-[42px] leading-5 xsm:leading-[51.2px] text-start max-w-[510px]">
             <span className="font-MontserratMedium">Smart Home mit</span> <br />
