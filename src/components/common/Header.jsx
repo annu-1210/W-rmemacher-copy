@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { HeaderLinks } from "./Helper";
 import { Logo } from "./Icon";
 import { VscMenu } from "react-icons/vsc";
+import Link from "next/link";
 import HeaderMobile from "./HeaderMobile";
 import Dropdown from "../Dropdown";
 
@@ -37,13 +38,13 @@ function Header() {
         </div>
         <div className="hidden lg:flex items-center gap-x-5">
           {HeaderLinks.map((link, index) => (
-            <a
+            <Link
               key={index}
               href={link.url}
               className="text-neutral text-xs xl:text-sm font-MontserratRegular underline-animation hover:text-primary"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
         <a

@@ -21,7 +21,11 @@ function Qualities() {
           {productQualities.map((section) => {
             return (
               <div
-                className={`w-full md:max-w-[700px] lg:max-w-[328px] xl:max-w-[410px]  2xl:max-w-[466px] items-center lg:items-start flex flex-col gap-y-2 lg:gap-y-3.5 xl:gap-y-4 3xl:gap-y-4 cursor-pointer ${section.id === "innovative-design" ? "pr-0 xsm:pr-6 2xl:pr-20 pl-0 pb-4 xsm:pl-6 pt-4 xsm:pt-6" :" px-0 py-4 sm:p-6"}`}
+                className={`w-full md:max-w-[700px] lg:max-w-[328px] xl:max-w-[410px]  2xl:max-w-[466px] items-center lg:items-start flex flex-col gap-y-2 lg:gap-y-3.5 xl:gap-y-4 3xl:gap-y-4 cursor-pointer ${
+                  section.id === "innovative-design"
+                    ? "pr-0 xsm:pr-6 2xl:pr-20 pl-0 pb-4 xsm:pl-6 pt-4 xsm:pt-6"
+                    : " px-0 py-4 sm:p-6"
+                }`}
                 key={section.id}
                 onClick={() => setActiveTab(section)}
               >
@@ -35,10 +39,7 @@ function Qualities() {
                   {section.title}
                 </h4>
                 <p className="text-center lg:text-start text-ironGray ">
-                  <Text
-                    label={section.description}
-                    size="sm"
-                  />
+                  <Text label={section.description} size="sm" />
                 </p>
               </div>
             );

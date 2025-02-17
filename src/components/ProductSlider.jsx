@@ -40,7 +40,9 @@ function ProductSlider() {
                   <div
                     className={`absolute ${slide.layout.position} w-full flex flex-col gap-y-6 md:flex-row justify-between pr-4 sm:pr-10 xl:pr-[130px] pl-4 sm:pl-10 z-20 `}
                   >
-                    <div className={`max-w-[250px] xsm:max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 ${slide.layout.textWidth}`}>
+                    <div
+                      className={`max-w-[250px] xsm:max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 ${slide.layout.textWidth}`}
+                    >
                       <div className="w-full flex flex-col gap-y-2 text-base xsm:text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl leading-5 xsm:leading-6 sm:leading-8 md:leading-[40px] lg:leading-[60px] xl:leading-[73.14px] ">
                         <h1 className={`${slide.heading.primaryStyle} `}>
                           {slide.heading.primaryText}{" "}

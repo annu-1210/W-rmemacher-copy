@@ -20,9 +20,9 @@ function HeroSection() {
               <Text label={paragraph} size="xsm" />
             </p>
           </div>
-          <div className="flex w-full  gap-x-4 justify-start sm:justify-end">
+          <div className="flex w-full gap-x-4 justify-start sm:justify-end">
             <ActionButton label="Jetzt kaufen" color="primary" size="lg" />
-            <ActionButton label="Mehr entdecken" size="md" color="secondary"/>
+            <ActionButton label="Mehr entdecken" size="md" color="secondary" />
           </div>
         </div>
       </div>

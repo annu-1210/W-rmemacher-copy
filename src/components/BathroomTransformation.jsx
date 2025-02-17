@@ -1,0 +1,50 @@
+import React from "react";
+import { bathroomTransformationArticles } from "./common/Helper";
+import Text from "./common/Text";
+import Article from "./Article";
+
+function BathroomTransformation() {
+  const introText =
+    "Leicht zu bedienende und kompakte Funktionen, die Ihr Badezimmer in eine Wohlfühloase verwandeln";
+  return (
+    <div className="max-w-[1140px] mx-auto mt-40 flex flex-col gap-[60px] mt-40">
+      <div className="max-w-[831px] flex flex-col gap-y-3">
+        <h3 className="text-xl xsm:text-2xl sm:text-3xl md:text-[38px] xl:text-[42px] font-MontserratMedium leading-5 xsm:leading-[91.2px] text-start max-w-[734px]">
+          Verwandeln Sie Ihr Badezimmer in {""}
+          <span className="font-PpEditorialRegular italic leading-5 xsm:leading-[53.7px]">
+            eine neue Wohlfühloase
+          </span>
+        </h3>
+        <p className="max-w-[734px] text-ironGray">
+          <Text label={introText} size="md" />
+        </p>
+      </div>
+      <div className="flex flex-row-reverse gap-6 w-full">
+        <div className="max-w-[558px]">
+          <Article
+            image={bathroomTransformationArticles[0].img}
+            height={bathroomTransformationArticles[0].height}
+            id={bathroomTransformationArticles[0].id}
+            description={bathroomTransformationArticles[0].description}
+          />
+        </div>
+        <div className="flex flex-col gap-y-6">
+          <Article
+            image={bathroomTransformationArticles[1].img}
+            height={bathroomTransformationArticles[1].height}
+            id={bathroomTransformationArticles[1].id}
+            description={bathroomTransformationArticles[1].description}
+          />
+          <Article
+            image={bathroomTransformationArticles[2].img}
+            height={bathroomTransformationArticles[2].height}
+            id={bathroomTransformationArticles[2].id}
+            description={bathroomTransformationArticles[2].description}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default BathroomTransformation;

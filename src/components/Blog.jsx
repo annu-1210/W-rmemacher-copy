@@ -41,13 +41,13 @@ function Blog() {
             {BlogData.section2.map((item) => {
               return (
                 <BlogCard
-                key={item.id}
-                img={item.img}
-                title={item.title}
-                description={item.description}
-                width={510}
-                height={item.height}
-              />
+                  key={item.id}
+                  img={item.img}
+                  title={item.title}
+                  description={item.description}
+                  width={510}
+                  height={item.height}
+                />
               );
             })}
           </section>

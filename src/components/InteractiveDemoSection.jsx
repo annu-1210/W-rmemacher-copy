@@ -25,7 +25,7 @@ function InteractiveDemoSection() {
             </p>
           </div>
           <div className="w-full z-10 flex items-center justify-center ">
-          <ActionButton label="Mehr erfahren" color="primary" size="md"/>
+            <ActionButton label="Mehr erfahren" color="primary" size="md" />
           </div>
         </div>
       </div>

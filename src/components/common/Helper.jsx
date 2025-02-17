@@ -1,8 +1,3 @@
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { RiTwitterXLine } from "react-icons/ri";
-import { RiTelegram2Fill } from "react-icons/ri";
-import { FaTiktok } from "react-icons/fa";
 import blogImg1 from "../../../public/images/blog1.png";
 import blogImg2 from "../../../public/images/blog2.png";
 import blogImg3 from "../../../public/images/blog3.png";
@@ -10,7 +5,7 @@ import blogImg4 from "../../../public/images/blog4.png";
 import blogImg5 from "../../../public/images/blog5.png";
 import sliderImg1 from "../../../public/images/w-6.png";
 import sliderImg2 from "../../../public/images/w-14.jpeg";
-import AboutSection from "../AboutSection";
+import UeberUns from "../UeberUns";
 import Sustainability from "../Sustainability";
 import Technology from "../Technology";
 import Services from "../Services";
@@ -25,7 +20,7 @@ export const HeaderLinks = [
   },
   {
     label: "Über uns",
-    url: "",
+    url: "/about",
   },
   {
     label: "Produkte",
@@ -91,7 +86,7 @@ export const navigationTabs = [
   {
     id: "about-us",
     label: "Über uns",
-    content: <AboutSection />,
+    content: <UeberUns />,
   },
   {
     id: "sustainability",
@@ -101,7 +96,7 @@ export const navigationTabs = [
   {
     id: "technology",
     label: "Technologie",
-    content: <Technology className="gradient-icon" />,
+    content: <Technology />,
   },
   {
     id: "services",
@@ -225,3 +220,129 @@ export const legalLinks = [
   { tag: "FAQs" },
 ];
 
+export const features = [
+  {
+    id: 1,
+    imgSrc: "/MiMedia.svg",
+    label: "Anti-Beschlags funktion",
+  },
+  {
+    id: 2,
+    imgSrc: "/wifi.svg",
+    label: "Smart Home / WiFi",
+  },
+  {
+    id: 3,
+    imgSrc: "/weather.svg",
+    label: "Wetter-Station",
+  },
+  {
+    id: 4,
+    imgSrc: "/temperature.svg",
+    label: "Temperatur anzeige",
+  },
+  {
+    id: 5,
+    imgSrc: "/calender.svg",
+    label: "Integrierter Kalender",
+  },
+  {
+    id: 6,
+    imgSrc: "/Uhrzeit.svg",
+    label: "Uhrzeit",
+  },
+  {
+    id: 7,
+    imgSrc: "/LED.svg",
+    label: "LED-\nAnzeige",
+  },
+  {
+    id: 8,
+    imgSrc: "/alarm-clock1.svg",
+    label: "Alarm\nfunktion",
+  },
+];
+
+export const articles = [
+  {
+    id: 1,
+    img: "/images/w-16.png",
+    height: 850,
+    description:
+      "Mit integrierter Infrarotheizung und Smart-Home-Technologie verwandeln unsere Spiegel das Badezimmer in einen Ort der Ruhe, Schönheit und des modernen Komforts",
+  },
+  {
+    id: 2,
+    img: "/images/w-15.png",
+    height: 341,
+    description:
+      "Bei Wärmemacher glauben wir, dass das Badezimmer der Ort ist, an dem jeder Tag beginnt und endet – und deshalb sollte es ein Raum sein, der nicht nur funktional, sondern inspirierend ist. Unsere Mission ist es, mit technologischer Innovation und exzellentem Design ein Badezimmererlebnis zu schaffen, das weit über das Gewöhnliche hinausgeht.  ",
+  },
+  {
+    id: 3,
+    img: "/images/w-17.png",
+    height: 345,
+    description:
+      "Bis zu 90% der Wärme wird direkt an den Körper abgegeben – für eine gezielte und effiziente Wärmeverteilung in Ihrem Badezimmer.",
+  },
+];
+
+export const featureHighlightDescription1 = [
+  {
+    heading: {
+      regular: "Innovation trifft auf",
+      italic: "zeitlosen Luxus",
+    },
+  },
+  {
+    paragraph:
+      "Wärmemacher setzt neue Maßstäbe für Ihr Badezimmer – ein Spiegel, der weit mehr kann als nur reflektieren. Unsere integrierte Infrarotheizung liefert nicht nur wohltuende Wärme, sondern fördert auch Ihre Vitalität und schützt Ihr Badezimmer vor Schimmelbildung",
+  },
+  {
+    paragraph:
+      "Die intelligenten Smart Home Funktionen machen Ihren Alltag komfortabler: Mit Wecker, Wetterstation, Temperaturanzeige und WiFi haben Sie alles im Blick, während die Anti-Beschlagsfunktion und die elegante LED-Beleuchtung für klare Sicht sorgen, wann immer Sie sie brauchen.",
+  },
+  {
+    paragraph:
+      "Dieses zeitlos edle Design verwandelt Ihr Badezimmer in einen Raum, der perfekt auf Ihre Bedürfnisse abgestimmt ist und Ihnen täglich ein Höchstmaß an Komfort und Stil bietet",
+  },
+];
+
+export const featureHighlightDescription2 = [
+  {
+    paragraph:
+      "Wärmemacher steht für unvergleichliche Qualität und höchste Handwerkskunst. Unsere Badezimmerspiegel werden mit größter Sorgfalt und Präzision gefertigt, um den höchsten Ansprüchen gerecht zu werden. Jedes Detail wird sorgfältig durchdacht, von der Auswahl der hochwertigsten Materialien bis hin zur Integration modernster Technologien",
+  },
+  {
+    paragraph:
+      "Wir kombinieren zeitloses Design mit zukunftsweisender Funktionalität, um Produkte zu schaffen, die nicht nur optisch beeindrucken, sondern auch durch ihre Langlebigkeit und Leistungsfähigkeit überzeugen",
+  },
+  {
+    paragraph:
+      "Bei Wärmemacher verschmelzen Ästhetik und Technik zu einem einzigartigen Erlebnis, das Ihrem Badezimmer eine neue Dimension verleiht",
+  },
+];
+
+export const bathroomTransformationArticles = [
+  {
+    id: 1,
+    img: "/images/w-16.png",
+    height: 778,
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Consectetur platea tortor id pretium m commodo penatibus aenean molestie.  ",
+  },
+  {
+    id: 2,
+    img: "/images/w-15.png",
+    height: 341,
+    description:
+      "Integrierte Funktion für Wettervorhersage und Temperatur – behalten Sie jederzeit die Uhrzeit und Temperatur im Auge.  ",
+  },
+  {
+    id: 3,
+    img: "/images/w-18.jpeg",
+    height: 345,
+    description:
+      "Im gedrückten Zustand der digitalen Taste wird die Anti-Beschlagsfunktion am Spiegel aktiviert.",
+  },
+];

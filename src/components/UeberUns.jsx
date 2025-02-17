@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Text from "./common/Text";
 
-function AboutSection() {
+function UeberUns() {
   const para =
     "Wärmemacher verkörpert den Fortschritt im Bereich der Badezimmerspiegel. Als Pioniere auf dem Gebiet der Infrarot-Heiztechnologie und Smart Home-Integration setzen wir neue Standards in Komfort, Effizienz und Nachhaltigkeit.";
   return (
@@ -15,10 +15,10 @@ function AboutSection() {
         className="w-full max-w-[300px] lg:max-w-[490px] xl:max-w-[502px] rounded-2xl "
       />
       <p className="max-w-[380px] sm:!max-w-[545px] flex items-center justify-center text-center sm:text-start !text-ironGray">
-        <Text label={para} size="md"  />
+        <Text label={para} size="md" />
       </p>
     </div>
   );
 }
 
-export default AboutSection;
+export default UeberUns;

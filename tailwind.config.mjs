@@ -29,6 +29,8 @@ module.exports = {
         neutral: "rgba(178, 178, 178, 1)",
         ironGray: "rgb(95, 94, 94)",
         background: "rgba(29, 29, 27, 0.86)",
+        glassWhite: "rgba(255, 255, 255, 0.4)",
+        bodyBg: "rgba(242, 246, 249, 1)",
       },
       backgroundImage: {
         "custom-gradient":
@@ -38,7 +40,14 @@ module.exports = {
         "custom-gradient3":
           "linear-gradient(284.9deg, rgba(29, 29, 27, 0) 24.78%, rgba(29, 29, 27, 0.6) 89.59%)",
         "gif-bg": "url('/images/gif-poster.jpeg')",
+        "custom-gradient4":
+          "linear-gradient(106.11deg, #E94E1B 0.6%, #FFFFFF 54.16%, #FDC801 98.88%)",
+        "custom-gradient5":
+          "background: linear-gradient(0deg, #FFFFFF, #FFFFFF)",
+        "custom-gradient6":
+          " linear-gradient(180deg, #E94E1B 0%, #FDC801 100%)",
         "hero-bg": "url('/images/w-1.png')",
+        "aboutHero-bg": "url('/images/w-6.png')",
       },
       screens: {
         xxsm: "375px",
