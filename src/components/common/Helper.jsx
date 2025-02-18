@@ -24,7 +24,7 @@ export const HeaderLinks = [
   },
   {
     label: "Produkte",
-    url: "",
+    url: "/products",
   },
   {
     label: "Ratgeber und Blog",
@@ -287,39 +287,24 @@ export const articles = [
   },
 ];
 
-export const featureHighlightDescription1 = [
+export const featureHighlightDescription = [
   {
     heading: {
       regular: "Innovation trifft auf",
       italic: "zeitlosen Luxus",
     },
-  },
-  {
-    paragraph:
+    content: [
       "Wärmemacher setzt neue Maßstäbe für Ihr Badezimmer – ein Spiegel, der weit mehr kann als nur reflektieren. Unsere integrierte Infrarotheizung liefert nicht nur wohltuende Wärme, sondern fördert auch Ihre Vitalität und schützt Ihr Badezimmer vor Schimmelbildung",
-  },
-  {
-    paragraph:
       "Die intelligenten Smart Home Funktionen machen Ihren Alltag komfortabler: Mit Wecker, Wetterstation, Temperaturanzeige und WiFi haben Sie alles im Blick, während die Anti-Beschlagsfunktion und die elegante LED-Beleuchtung für klare Sicht sorgen, wann immer Sie sie brauchen.",
-  },
-  {
-    paragraph:
       "Dieses zeitlos edle Design verwandelt Ihr Badezimmer in einen Raum, der perfekt auf Ihre Bedürfnisse abgestimmt ist und Ihnen täglich ein Höchstmaß an Komfort und Stil bietet",
+    ],
   },
-];
-
-export const featureHighlightDescription2 = [
   {
-    paragraph:
+    content: [
       "Wärmemacher steht für unvergleichliche Qualität und höchste Handwerkskunst. Unsere Badezimmerspiegel werden mit größter Sorgfalt und Präzision gefertigt, um den höchsten Ansprüchen gerecht zu werden. Jedes Detail wird sorgfältig durchdacht, von der Auswahl der hochwertigsten Materialien bis hin zur Integration modernster Technologien",
-  },
-  {
-    paragraph:
       "Wir kombinieren zeitloses Design mit zukunftsweisender Funktionalität, um Produkte zu schaffen, die nicht nur optisch beeindrucken, sondern auch durch ihre Langlebigkeit und Leistungsfähigkeit überzeugen",
-  },
-  {
-    paragraph:
       "Bei Wärmemacher verschmelzen Ästhetik und Technik zu einem einzigartigen Erlebnis, das Ihrem Badezimmer eine neue Dimension verleiht",
+    ],
   },
 ];
 
@@ -371,5 +356,35 @@ export const aboutSectionSlides = [
     title: "Technologische Funktionalität",
     description:
       "Erleichtern Sie Ihren Tag morgens und abends mit integrierten Funktionalitäten wie bspw. Wetter-Anzeige, Kalender oder der Temperatur-Anzeige",
+  },
+];
+
+export const smartMirrorsData = [
+  {
+    heading: {
+      regular: "Erleben Sie unbegrenzte Möglichkeiten ",
+      italic: "unserer Smart Mirror Spiegel",
+    },
+    content:
+      "Entdecken Sie einzigartig technologische Funktionalität unserer Wärmemacher Badezimmerspiegel.",
+    list: [
+      "LED Display",
+      "Wetterstation",
+      "Anti-Beschlagsfunktion",
+      "Temperatur- und Uhranzeige",
+      "WiFi (Bluetooth)",
+      "Timer",
+    ],
+    footerNote: "Machen Sie Ihr Bad bereit für Morgen – schon heute.",
+  },
+  {
+    heading: {
+      regular: "Einfache Konnektivität mit ",
+      italic: "der Wise App",
+    },
+    content: [
+      "Der intelligente Badezimmerspiegel von Wärmemacher kann über die App WiseMirror gesteuert werden und unterstützt nur das 2,4-GHz-Netzwerk.",
+      "Wenn Sie also einen Dualband-Router verwenden, trennen Sie bitte die 2,4G- und 5G-Netzwerke oder schalten Sie 5G aus, bis die WLAN-Verbindung hergestellt ist. Alternativ können Sie es über einen Hotspot verbinden. ",
+    ],
   },
 ];

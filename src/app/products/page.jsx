@@ -1,11 +1,12 @@
-import AboutPageHeroSection from "@/components/AboutPageHeroSection";
 import AboutSectionSlider from "@/components/common/AboutSectionSlider";
 import WarmemacherMission from "@/components/ArticlesSection";
 import BathroomTransformation from "@/components/BathroomTransformation";
 import FloatingActionButton from "@/components/common/FloatingActionButton";
 import Footer from "@/components/common/Footer";
 import FeatureHighlight from "@/components/FeatureHighlight";
+import HighlightSection from "@/components/HighlightSection";
 import InstaProductGrid from "@/components/InstaProductGrid";
+import ProductsPageHeroSection from "@/components/ProductsPageHeroSection";
 import RootsOfWarmthmaker from "@/components/RootsOfWarmthmaker";
 import WarmMakersInfo from "@/components/WarmMakersInfo";
 import React from "react";
@@ -13,20 +14,19 @@ import React from "react";
 function page() {
   return (
     <div className="relative overflow-hidden bg-bodyBg">
-      <div className="absolute fixed z-50 top-[220px] sm:top-[210px] md:top-[300px] lg:top-[410px] 3xl:top-[601px] 3xl:right-[70px] cursor-pointer">
-        <FloatingActionButton />
-      </div>
-      <main className="relative container p-3 xsm:p-5 max-w-[1920px] mx-auto ">
-        <AboutPageHeroSection />
-        <RootsOfWarmthmaker />
-        <WarmemacherMission />
-        <section className="mt-40">
+      <main className="container p-3 xsm:p-5 max-w-[1920px] mx-auto ">
+        <ProductsPageHeroSection />
+        <HighlightSection />
+        <section className="mt-10">
           <AboutSectionSlider />
         </section>
+
+        {/* 
+        <WarmemacherMission />
         <FeatureHighlight />
         <BathroomTransformation />
         <WarmMakersInfo />
-        <InstaProductGrid />
+        <InstaProductGrid /> */}
         <Footer />
       </main>
     </div>

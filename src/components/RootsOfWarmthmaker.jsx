@@ -21,7 +21,7 @@ function RootsOfWarmthmaker() {
       />
       <div className="w-full flex flex-col gap-y-16">
         <div className="flex flex-col gap-y-3 items-start justify-start w-full">
-          <h3 className="text-2xl xsm:text-3xl lg:text-4xl xl:text-[42px] font-MontserratMedium leading-[45px] max-w-[620px] lg:w-full xl:leading-[51.2px] text-center">
+          <h3 className="text-2xl xsm:text-3xl lg:text-4xl xl:text-[42px] font-MontserratMedium leading-[45px] max-w-[620px] lg:w-full xl:leading-[51.2px] text-start">
             Die Wurzeln von{" "}
             <span className="!font-PpEditorialRegular italic ">
               Wärmemacher

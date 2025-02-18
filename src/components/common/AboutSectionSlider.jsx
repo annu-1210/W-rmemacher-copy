@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import Text from "./common/Text";
+import Text from "./Text";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 import Image from "next/image";
-import { aboutSectionSlides } from "./common/Helper";
+import { aboutSectionSlides } from "./Helper";
 
 export default function AboutSectionSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -21,7 +21,7 @@ export default function AboutSectionSlider() {
     "Unsere Spiegel setzen neue Maßstäbe in Ihrem Badezimmer und definieren Technologie, Funktionalität, Design und Komfort völlig neu. Erleben Sie mit Wärmemacher die nächste Generation Ihres Badezimmers.";
 
   return (
-    <section className="aboutSectionSlider relative max-w-[1920px] mx-auto bg-secondary p-[60px] rounded-2xl mt-40 flex items-center justify-center">
+    <div className="SectionSlider relative max-w-[1920px] mx-auto bg-secondary p-[60px] rounded-2xl flex items-center justify-center">
       <Image
         src="/images/yellow-blur.png"
         width={500}
@@ -106,6 +106,6 @@ export default function AboutSectionSlider() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

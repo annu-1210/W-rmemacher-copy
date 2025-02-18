@@ -99,7 +99,6 @@ function ProductSlider() {
               </SwiperSlide>
             );
           })}
-          {/* max-w-[336px] flex gap-x-4 absolute top-[240px] xsm:top-[300px] sm:top-[320px] md:top-[420px] lg:top-[680px] xl:top-[634px] right-[60px] xsm:right-[110px] sm:right-2.5 md:right-[50px] xl:right-[130px] z-20 */}
         </Swiper>
       </div>
     </section>
