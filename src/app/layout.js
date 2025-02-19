@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="antialiased">
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow bg-bodyBg">{children}</main>
       </body>
     </html>
   );

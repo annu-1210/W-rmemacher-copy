@@ -24,9 +24,122 @@
   }
 }
 
-.custom-next.swiper-button-active, 
+@layer components {
+  .gradient-border2 {
+    position: relative;
+    border: 1px solid;
+    border-image-source: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)
+      ),
+      linear-gradient(
+        101.49deg,
+        rgba(233, 78, 27, 0.4) 0.92%,
+        rgba(253, 200, 1, 0.4) 96.93%
+      );
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.04),
+        rgba(255, 255, 255, 0.04)
+      ),
+      linear-gradient(
+        101.49deg,
+        rgba(233, 78, 27, 0.04) 0.92%,
+        rgba(253, 200, 1, 0.04) 96.93%
+      );
+    border-radius: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .gradient-border2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(
+      101.49deg,
+      rgba(233, 78, 27, 0.4) 0.92%,
+      rgba(253, 200, 1, 0.4) 96.93%
+    );
+    -webkit-mask: linear-gradient(white, white) content-box,
+      linear-gradient(white, white);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+/* 
+@layer components {
+  .textOnInput {
+    position: relative;
+  }
+
+  .textOnInput label {
+    position: absolute;
+    top: -12px;
+    left: 14px;
+    padding: 2px;
+    background: white;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    z-index: 1;
+  }
+
+  .textOnInput label:after {
+    content: "";
+    background-color: white;
+    width: 100%;
+    height: 13px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .input-field {
+    @apply w-full p-2 border-2 border-gray-300 rounded-lg text-base outline-none focus:border-orange-500;
+  }
+
+  /* Custom Checkbox */
+  /* .custom-checkbox {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .custom-checkbox:checked {
+    background: linear-gradient(90deg, #ff7e00, #ffc107);
+    border: none;
+  }
+
+  .custom-checkbox:checked::after {
+    content: "✔";
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+} */ 
+
+
+.custom-next.swiper-button-active,
 .custom-prev.swiper-button-active {
-  background-color: linear-gradient(180deg, #E94E1B 0%, #FDC801 100%) !important;
+  background-color: linear-gradient(
+    180deg,
+    #e94e1b 0%,
+    #fdc801 100%
+  ) !important;
   color: white !important;
 }
 
@@ -37,7 +150,6 @@
 .underline-animation::after {
   @apply absolute content-[''] w-full left-0 border bottom-[-5px] scale-x-0 hover:scale-x-100 transition-transform duration-300 border-primary;
 }
-
 
 .swiper-pagination {
   @apply flex items-center justify-center gap-2 xsm:mb-4 cursor-pointer;

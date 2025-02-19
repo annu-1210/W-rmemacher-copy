@@ -7,7 +7,7 @@ function BathroomTransformation() {
   const introText =
     "Leicht zu bedienende und kompakte Funktionen, die Ihr Badezimmer in eine Wohlfühloase verwandeln";
   return (
-    <div className="max-w-[1140px] mx-auto mt-40 flex flex-col gap-[60px] mt-40">
+    <div className="max-w-[1140px] mx-auto flex flex-col gap-[60px] mt-[150px]">
       <div className="max-w-[831px] flex flex-col gap-y-3">
         <h3 className="text-xl xsm:text-2xl sm:text-3xl md:text-[38px] xl:text-[42px] font-MontserratMedium leading-5 xsm:leading-[91.2px] text-start max-w-[734px]">
           Verwandeln Sie Ihr Badezimmer in {""}

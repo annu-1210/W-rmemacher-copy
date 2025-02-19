@@ -25,7 +25,7 @@ function InstaProductGrid() {
     },
   ];
   return (
-    <div className="max-w-[1140px] mx-auto flex flex-col gap-y-[60px] justiy-center items-center mt-40">
+    <div className="max-w-[1140px] mx-auto flex flex-col gap-y-[60px] justiy-center items-center mt-[150px]">
       <div className="flex justify-between gap-x-3.5 max-w-[414px]">
         <div className="w-[42px] h-[42px]">
           {" "}

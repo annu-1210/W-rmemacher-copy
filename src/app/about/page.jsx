@@ -12,7 +12,7 @@ import React from "react";
 
 function page() {
   return (
-    <div className="relative overflow-hidden bg-bodyBg">
+    <div className="relative overflow-hidden">
       <div className="absolute fixed z-50 top-[220px] sm:top-[210px] md:top-[300px] lg:top-[410px] 3xl:top-[601px] 3xl:right-[70px] cursor-pointer">
         <FloatingActionButton />
       </div>
@@ -20,7 +20,7 @@ function page() {
         <AboutPageHeroSection />
         <RootsOfWarmthmaker />
         <WarmemacherMission />
-        <section className="mt-40">
+        <section className="mt-[150px]">
           <AboutSectionSlider />
         </section>
         <FeatureHighlight />

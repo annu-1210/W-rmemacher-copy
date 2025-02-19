@@ -8,7 +8,7 @@ function WarmMakersInfo() {
     "Hier trifft modernes und zeitloses Design auf technologische Funktionalität von Morgen. Unsere Wärmemacher Produkte steigern deine Vitalität durch Infrarotheizung, erleichtern dir den Alltag zwecks Smart Home und sorgen für eine wohltuende Atmosphäre während du am duschen oder baden bist. Verwandele dein Badezimmer in eine zukunftsausgerichtete Wohlfühloase – schon heute.";
   return (
     <section>
-      <div className="max-w-[1400px] mt-40 flex flex-col gap-y-7 mx-auto">
+      <div className="max-w-[1400px] mt-[150px] flex flex-col gap-y-7 mx-auto">
         <div className="w-full flex items-center justify-center bg-custom-gradient6 rounded-2xl">
           <div className="max-w-[1057px] flex flex-col gap-[50px] items-center justify-center py-[68px] mx-auto">
             <div className="max-w-[146px] max-h-[127px]">

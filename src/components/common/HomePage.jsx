@@ -12,7 +12,7 @@ import FloatingActionButton from './FloatingActionButton'
 
 function HomePage() {
   return (
-    <div className="relative overflow-hidden bg-bodyBg ">
+    <div className="relative overflow-hidden">
       <Image
         width={500}
         height={900}

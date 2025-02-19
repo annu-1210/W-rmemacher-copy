@@ -22,6 +22,7 @@ module.exports = {
         primary: " rgba(255, 255, 255, 1)",
         secondary: "rgba(29, 29, 27, 1) ",
         tertiary: "rgba(233, 78, 27, 1)",
+        tertiaryRed: "rgba(191, 47, 0, 1)",
         quaternary: "rgba(255, 239, 211, 1)",
         quinary: "rgba(255, 255, 255, 0.02)",
         borderColor: "rgba(42, 36, 36, 0.6)",
@@ -30,7 +31,11 @@ module.exports = {
         ironGray: "rgb(95, 94, 94)",
         background: "rgba(29, 29, 27, 0.86)",
         glassWhite: "rgba(255, 255, 255, 0.4)",
+        glassLight: "rgba(255, 255, 255, 0.04)",
+        glassMedium:  "rgba(255, 255, 255, 0.2)",
         bodyBg: "rgba(242, 246, 249, 1)",
+        mutedCharcoal: "rgba(29, 29, 27, 0.2)",
+
       },
       backgroundImage: {
         "custom-gradient":
@@ -46,6 +51,7 @@ module.exports = {
           "background: linear-gradient(0deg, #FFFFFF, #FFFFFF)",
         "custom-gradient6":
           " linear-gradient(180deg, #E94E1B 0%, #FDC801 100%)",
+          
         "hero-bg": "url('/images/w-1.png')",
         "aboutHero-bg": "url('/images/w-6.png')",
       },

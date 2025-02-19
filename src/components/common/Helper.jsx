@@ -28,7 +28,7 @@ export const HeaderLinks = [
   },
   {
     label: "Ratgeber und Blog",
-    url: "",
+    url: "/blogs",
   },
   {
     label: "Kontakt",
@@ -378,6 +378,7 @@ export const smartMirrorsData = [
     footerNote: "Machen Sie Ihr Bad bereit für Morgen – schon heute.",
   },
   {
+    imageSrc: "/images/w-3.png",
     heading: {
       regular: "Einfache Konnektivität mit ",
       italic: "der Wise App",
@@ -386,5 +387,12 @@ export const smartMirrorsData = [
       "Der intelligente Badezimmerspiegel von Wärmemacher kann über die App WiseMirror gesteuert werden und unterstützt nur das 2,4-GHz-Netzwerk.",
       "Wenn Sie also einen Dualband-Router verwenden, trennen Sie bitte die 2,4G- und 5G-Netzwerke oder schalten Sie 5G aus, bis die WLAN-Verbindung hergestellt ist. Alternativ können Sie es über einen Hotspot verbinden. ",
     ],
+    dimensions: {
+      width: 529,
+      height: 578,
+      gap: 58,
+    },
   },
 ];
+
+
