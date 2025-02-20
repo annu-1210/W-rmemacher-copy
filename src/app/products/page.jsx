@@ -4,6 +4,7 @@ import HighlightSection from "@/components/HighlightSection";
 import ProductsPageHeroSection from "@/components/ProductsPageHeroSection";
 import React from "react";
 import SmartMirrors from "@/components/SmartMirrors";
+import ProductsFeaturesGrid from "@/components/ProductsFeaturesGrid";
 
 function page() {
   return (
@@ -15,6 +16,7 @@ function page() {
           <AboutSectionSlider />
         </section>
         <SmartMirrors />
+        <ProductsFeaturesGrid/>
         <Footer />
       </main>
     </div>
