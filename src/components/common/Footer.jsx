@@ -51,7 +51,7 @@ function Footer() {
                   placeholder="Eingabe Ihrer E-Mail-Adresse"
                   className=" w-full pl-1.5 bg-transparent text-xs lg:text-sm  text-neutral font-MontserratRegular  placeholder:text-neutral placeholder:font-MontserratRegular outline-none"
                 />
-                <ActionButton label="Anmelden" color="primary" size="sm" />
+                <ActionButton label="Anmelden" color="primary" size="xsm" />
               </form>
 
               <div className="flex gap-[13.5px] max-w-[206px] mt-2 md:mt-0">

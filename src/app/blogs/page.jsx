@@ -3,6 +3,8 @@ import React from "react";
 import GuideAndBlogHeroSection from "@/components/GuideAndBlogHeroSection";
 import GuidAndBlogSliderWrapper from "@/components/GuidAndBlogSliderWrapper";
 import GuideImageSection from "@/components/GuideImageSection";
+import NewsletterSection from "@/components/NewsletterSection";
+import GuideAndBlogFAQs from "@/components/GuideAndBlogFAQs";
 
 function page() {
   return (
@@ -11,6 +13,8 @@ function page() {
         <GuideAndBlogHeroSection />
         <GuidAndBlogSliderWrapper />
         <GuideImageSection />
+        <GuideAndBlogFAQs />
+        <NewsletterSection />
         <Footer />
       </main>
     </div>

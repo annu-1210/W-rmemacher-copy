@@ -395,4 +395,35 @@ export const smartMirrorsData = [
   },
 ];
 
-
+export const GuideAndBlogFaqs = [
+  {
+    question: "Lorem ipsum dolor sit amet cmentum purus cum?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet cmentum purus cum?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet cmentum purus cum?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet cmentum purus cum?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet cmentum purus cum?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet cmentum purus cum?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+];

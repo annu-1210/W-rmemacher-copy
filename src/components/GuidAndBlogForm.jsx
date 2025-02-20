@@ -2,6 +2,7 @@
 import { React, useState } from "react";
 import Text from "./common/Text";
 import ActionButton from "./common/ActionButton";
+import { RiH3 } from "react-icons/ri";
 
 function GuidAndBlogForm() {
   const [isChecked, setIsChecked] = useState(false);
@@ -9,11 +10,11 @@ function GuidAndBlogForm() {
     "Ich möchte den Newsletter abonnieren und über Neuigkeiten, Rabatte und Veranstaltungen auf dem Laufenden bleiben.";
 
   return (
-    <div className="max-w-[696px] max-h-[723px] mx-auto p-10 bg-primary shadow-lg rounded-2xl">
+    <div className="w-[686px] max-h-[723px] mx-auto p-10 bg-primary shadow-lg rounded-2xl">
       <div className="flex flex-col gap-y-[35px] w-full">
-        <h2 className="text-4xl font-MontserratMedium leading-[43.88px] text-start w-full">
+        <h3 className="text-4xl font-MontserratMedium leading-[43.88px] text-start w-full">
           Schreiben Sie Uns
-        </h2>
+        </h3>
         <div className="flex flex-col gap-y-16 w-full">
           <form className="flex flex-col gap-y-6 w-full text-ironGray text-[10px] sm:text-xs lg:text-sm xl:text-base font-MontserratRegular leading-3 sm:leading-4 lg:leading-5 xl:leading-6 ">
             <div className="flex items-center gap-3.5 w-full">
