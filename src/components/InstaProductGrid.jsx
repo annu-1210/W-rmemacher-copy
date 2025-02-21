@@ -25,7 +25,7 @@ function InstaProductGrid() {
     },
   ];
   return (
-    <div className="max-w-[1140px] mx-auto flex flex-col gap-y-[60px] justiy-center items-center mt-[150px]">
+    <div className="max-w-[1140px] mx-auto flex flex-col gap-y-10 lg:gap-y-[60px] justiy-center items-center mt-28 lg:mt-[150px]">
       <div className="flex justify-between gap-x-3.5 max-w-[414px]">
         <div className="w-[42px] h-[42px]">
           {" "}
@@ -41,13 +41,13 @@ function InstaProductGrid() {
           @wärmemacher
         </p>
       </div>
-      <div className="flex items-center justify-between gap-5 w-full">
-        <div className="flex flex-wrap  gap-4 max-w-[569px]">
+      <div className="flex items-center justify-between gap-4 lg:gap-5 w-full">
+        <div className="flex flex-wrap gap-3 lg:gap-4 max-w-[569px]">
           {gramGallery.map((item) => {
             return (
               <div
-                className="h-[283px] rounded-2xl "
-                style={{ width: `${item.width}px` }}
+                className="rounded-2xl lg:h-[283px]"
+                style={{ maxWidth: `${item.width}px` }}
                 key={item.id}
               >
                 <Image
@@ -55,13 +55,13 @@ function InstaProductGrid() {
                   alt={item.id}
                   width={item.width}
                   height={283}
-                  className=" rounded-2xl w-full h-full object-center object-cover"
+                  className=" rounded-2xl w-[213px] lg:w-full h-[200px] lg:h-full object-center object-cover"
                 />
               </div>
             );
           })}
         </div>
-        <div className="w-[552px] h-[586px]">
+        <div className="w-[552px] h-[416px] lg:h-[586px]">
           <Image
             src="/images/w-19.jpeg"
             alt="smart-home-5"

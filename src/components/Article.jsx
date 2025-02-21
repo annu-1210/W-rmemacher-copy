@@ -4,10 +4,10 @@ import Text from "./common/Text";
 
 function Article({ image, height, id, description }) {
   return (
-    <article className="flex flex-col gap-y-3 xl:gap-y-5 max-h-[942px] max-w-[558px] ">
+    <article className="flex flex-col gap-y-3 xl:gap-y-5 max-h-[942px] max-w-[558px] h-full">
       <div
-        className="max-w-full rounded-2xl "
-        style={{ height: `${height}px` }}
+        className="max-w-full rounded-2xl h-full"
+        style={{ maxHeight: `${height}px` }}
       >
         <Image
           src={image}

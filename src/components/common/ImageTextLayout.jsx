@@ -6,7 +6,7 @@ import SecondaryButton from "./SecondaryButton";
 function ImageTextLayout({ layout, direction }) {
   return (
     <div className={`flex items-center justify-between ${direction}`} style={{ gap: `${layout.dimensions.gap}px` }}>
-      <div className="w-[529px] h-[578px]">
+      <div className={`w-[${layout.dimensions.width}px] h-[${layout.dimensions.height}px]`}>
         <Image
           src={layout.imageSrc}
           alt="image"

@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export default function Accordion({ faqs }) {
   return (
-    <div className="flex flex-col max-w-[881px] gap-y-2.5 bg-transparent">
+    <div className="flex flex-col w-full max-w-[881px] gap-y-2.5 bg-transparent">
       {faqs.map((faq, index) => (
         <Disclosure key={index}>
           {({ open }) => (

@@ -5,9 +5,9 @@ import { articles } from "./common/Helper";
 function WarmemacherMission() {
   
   return (
-    <div className="max-w-[1140px] 4xl:max-w-[1400px] flex justify-center items-center mx-auto mt-[150px]">
-      <div className="flex gap-6">
-        <div className="max-w-[558px]">
+    <div className="max-w-[860px] xl:max-w-[1140px] 4xl:max-w-[1400px] flex justify-center items-center mx-auto mt-28 lg:mt-[150px]">
+      <div className="flex gap-4 md:gap-6">
+        <div className="max-w-[558px] ">
           <Article
             image={articles[0].img}
             height={articles[0].height}

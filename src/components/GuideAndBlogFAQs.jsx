@@ -38,7 +38,7 @@ function GuideAndBlogFAQs() {
             })}
           </div>
         </div>
-        <div className="w-[850px] w-full">
+        <div className="w-[850px] w-full flex items-center justify-center">
           <Accordion faqs={GuideAndBlogFaqs}/>
         </div>
       </div>

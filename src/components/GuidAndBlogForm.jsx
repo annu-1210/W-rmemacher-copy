@@ -10,7 +10,7 @@ function GuidAndBlogForm() {
     "Ich möchte den Newsletter abonnieren und über Neuigkeiten, Rabatte und Veranstaltungen auf dem Laufenden bleiben.";
 
   return (
-    <div className="w-[686px] max-h-[723px] mx-auto p-10 bg-primary shadow-lg rounded-2xl">
+    <div className="w-[686px] max-h-[723px] p-10 bg-primary shadow-lg rounded-2xl">
       <div className="flex flex-col gap-y-[35px] w-full">
         <h3 className="text-4xl font-MontserratMedium leading-[43.88px] text-start w-full">
           Schreiben Sie Uns

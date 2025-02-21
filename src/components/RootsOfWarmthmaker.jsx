@@ -10,7 +10,7 @@ function RootsOfWarmthmaker() {
     "So entstand die Idee, einen Spiegel zu entwickeln, der die Essenz dieses Wohlbefindens verkörpert und das Badezimmer in einen Ort der Ruhe und Erneuerung verwandelt. Wärmemacher steht heute für die Verschmelzung von Luxus, Innovation und einer Vision des perfekten Badezimmers – ein Raum, der nicht nur den Körper, sondern auch den Geist revitalisiert.";
 
   return (
-    <div className="max-w-[1920px] py-[60px] px-[130px] rounded-2xl flex items-center justify-center overflow-hidden relative mt-10">
+    <div className="max-w-[1920px] py-10 md:py-[60px] px-10 md:px-20 xl:px-[130px] rounded-2xl flex items-center justify-center overflow-hidden relative mt-5 lg:mt-10">
       <div className="absolute inset-0 bg-custom-gradient4 opacity-10 rounded-2xl"></div>
       <Image
         src="/images/blur.png"
@@ -40,7 +40,7 @@ function RootsOfWarmthmaker() {
           {features.map((feat) => {
             return (
               <div
-                className="flex justify-center items-center w-[267px] h-[188px] border-2 border-primary bg-glassWhite rounded-xl "
+                className="flex justify-center items-center w-[250px] md:w-[260px] xl:w-[267px] h-[188px] border-2 border-primary bg-glassWhite rounded-xl "
                 key={feat.id}
               >
                 <div className="flex flex-col justify-center items-center max-w-[182px] gap-y-3">
