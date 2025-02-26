@@ -10,7 +10,7 @@ function RootsOfWarmthmaker() {
     "So entstand die Idee, einen Spiegel zu entwickeln, der die Essenz dieses Wohlbefindens verkörpert und das Badezimmer in einen Ort der Ruhe und Erneuerung verwandelt. Wärmemacher steht heute für die Verschmelzung von Luxus, Innovation und einer Vision des perfekten Badezimmers – ein Raum, der nicht nur den Körper, sondern auch den Geist revitalisiert.";
 
   return (
-    <div className="max-w-[1920px] py-10 md:py-[60px] px-10 md:px-20 xl:px-[130px] rounded-2xl flex items-center justify-center overflow-hidden relative mt-5 lg:mt-10">
+    <div className="max-w-[1920px] py-5 xsm:py-10 md:py-[60px] px-5 sm:px-10 md:px-20 xl:px-[130px] rounded-2xl flex items-center justify-center overflow-hidden relative mt-5 lg:mt-10">
       <div className="absolute inset-0 bg-custom-gradient4 opacity-10 rounded-2xl"></div>
       <Image
         src="/images/blur.png"
@@ -21,7 +21,7 @@ function RootsOfWarmthmaker() {
       />
       <div className="w-full flex flex-col gap-y-16">
         <div className="flex flex-col gap-y-3 items-start justify-start w-full">
-          <h3 className="text-2xl xsm:text-3xl lg:text-4xl xl:text-[42px] font-MontserratMedium leading-[45px] max-w-[620px] lg:w-full xl:leading-[51.2px] text-start">
+          <h3 className="text-2xl xsm:text-3xl lg:text-4xl xl:text-[42px] font-MontserratMedium leading-8 xsm:leading-[45px] max-w-[620px] lg:w-full xl:leading-[51.2px] text-start">
             Die Wurzeln von{" "}
             <span className="!font-PpEditorialRegular italic ">
               Wärmemacher
@@ -36,22 +36,25 @@ function RootsOfWarmthmaker() {
             </p>
           </div>
         </div>
-        <div className="max-w-[1135px] 4xl:max-w-[1620px] flex flex-wrap gap-5 4xl:gap-x-40 4xl:gap-y-20">
+        <div className="max-w-[1135px] 4xl:max-w-[1620px] flex flex-wrap gap-4 sm:gap-5 4xl:gap-x-40 4xl:gap-y-20">
           {features.map((feat) => {
             return (
               <div
-                className="flex justify-center items-center w-[250px] md:w-[260px] xl:w-[267px] h-[188px] border-2 border-primary bg-glassWhite rounded-xl "
+                className="flex justify-center items-center w-full xsm:w-[164px] sm:w-[250px] md:w-[260px] xl:w-[267px] h-[150px] sm:h-[188px] border-2 border-primary bg-glassWhite rounded-xl "
                 key={feat.id}
               >
-                <div className="flex flex-col justify-center items-center max-w-[182px] gap-y-3">
-                  <Image
-                    width={70}
-                    height={70}
-                    alt={feat.label}
-                    className=""
-                    src={feat.imgSrc}
-                  />
-                  <p className="font-MontserratRegular font-normal leading-[18px] xsm:leading-6 text-xs xsm:text-sm md:text-base lg:text-lg xl:text-xl text-center">
+                <div className="flex flex-col justify-center items-center max-w-[100px] sm:max-w-[182px] gap-y-3">
+                  <div className="max-w-12 sm:max-w-[70px] max-h-12 sm:max-h-[70px]">
+                    <Image
+                      width={70}
+                      height={70}
+                      alt={feat.label}
+                      src={feat.imgSrc}
+                      className="w-ful h-full relative"
+                    />
+                  </div>
+
+                  <p className="font-MontserratRegular font-normal leading-[18px] xsm:leading-5 sm:leading-6 text-xs xsm:text-sm md:text-base lg:text-lg xl:text-xl text-center">
                     {feat.label.split("\n").map((line, index) => (
                       <span key={index}>
                         {line}

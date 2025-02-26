@@ -35,7 +35,7 @@ function page() {
         <AboutPageHeroSection />
         <RootsOfWarmthmaker />
         <WarmemacherMission />
-        <section className="mt-28 lg:mt-[150px]">
+        <section className="mt-20 sm:mt-28 lg:mt-[150px]">
           <AboutSectionSlider />
         </section>
         <FeatureHighlight />

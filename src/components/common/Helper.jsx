@@ -32,7 +32,7 @@ export const HeaderLinks = [
   },
   {
     label: "Kontakt",
-    url: "/",
+    url: "",
   },
 ];
 
