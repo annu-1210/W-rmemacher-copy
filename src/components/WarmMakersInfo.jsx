@@ -10,8 +10,8 @@ function WarmMakersInfo() {
     <section>
       <div className="max-w-[1400px] mt-28 lg:mt-[150px] flex flex-col gap-4 lg:gap-y-7 mx-auto">
         <div className="w-full flex items-center justify-center bg-custom-gradient6 rounded-2xl">
-          <div className="max-w-[1057px] flex flex-col gap-y-16 md:gap-y-[50px] items-center justify-center py-10 md:py-[68px] px-10 mx-auto">
-            <div className="max-w-[120px] md:max-w-[146px] md:max-h-[127px]">
+          <div className="max-w-[1057px] flex flex-col gap-y-16 md:gap-y-[50px] items-center justify-center py-5 sm:py-10 md:py-[68px] px-5 sm:px-10 mx-auto">
+            <div className="max-w-[90px] sm:max-w-[120px] md:max-w-[146px] md:max-h-[127px]">
               <Image
                 src="/white-logo.svg"
                 alt="logo"

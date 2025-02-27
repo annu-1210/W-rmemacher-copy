@@ -6,9 +6,9 @@ import ImageTextLayout from "./common/ImageTextLayout";
 
 function SmartMirrors() {
   return (
-    <div className="container max-w-[1140px] mx-auto flex flex-col items-center justify-center bg-transparent mt-[150px] gap-y-36">
-      <div className="flex items-center justify-between gap-6 ">
-        <div className="flex flex-col gap-y-5 max-w-[587px] ">
+    <div className="container max-w-[950px] xl:max-w-[1140px] mx-auto flex flex-col items-center justify-center bg-transparent mt-[150px] gap-y-28 xl:gap-y-36">
+      <div className="flex xl:items-center justify-between gap-0 xl:gap-6 ">
+        <div className="flex flex-col px-5 xl:px-0 gap-y-5 max-w-[587px] ">
           <h3 className="text-xl xsm:text-2xl sm:text-3xl md:text-[38px] xl:text-[42px] leading-5 xsm:leading-[51.2px] text-start max-w-[542px]">
             <span className="font-MontserratMedium">
               {smartMirrorsData[0].heading.regular}
@@ -34,7 +34,7 @@ function SmartMirrors() {
             {smartMirrorsData[0].footerNote}
           </p>
         </div>
-        <div className="w-[529px] h-[608px]">
+        <div className="max-w-[420px] xl:max-w-[529px] h-[560px] xl:h-[608px]">
           <Image
             src="/images/w-13.png"
             alt=""

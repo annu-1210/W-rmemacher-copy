@@ -62,7 +62,7 @@ export default function AboutSectionSlider() {
           >
             {aboutSectionSlides.map((slide, index) => (
               <SwiperSlide key={index}>
-                <div className="flex items-center justify-center mx-auto h-64 bg-transparent md:max-w-[600px] lg:max-w-[790px] xl:max-w-[1000px] 2xl:max-w-[1140px] h-[180px] xsm:h-[220px] sm:h-[320px] lg:h-[400px] xl:h-[498px] rounded-2xl">
+                <div className="flex items-center justify-center mx-auto h-64 bg-transparent md:max-w-[600px] lg:max-w-[790px] xl:max-w-[1000px] 2xl:max-w-[1140px] 4xl:max-w-[1610px] h-[180px] xsm:h-[220px] sm:h-[320px] lg:h-[400px] xl:h-[498px] rounded-2xl">
                   <Image
                     width={1140}
                     height={498}
@@ -80,11 +80,11 @@ export default function AboutSectionSlider() {
           <div className="custom-next absolute top-48 xsm:top-60 sm:top-[330px] md:top-36 lg:top-48 xl:top-[225px] right-[38%] xsm:right-[41%] sm:right-[43%] md:right-0 rounded-full bg-transparent text-primary w-6 sm:w-8 lg:w-[47.14px] h-6 sm:h-8 lg:h-[47.14px] cursor-pointer border-[0.93px] border-primary flex items-center justify-center">
             <SlArrowRight size={20} className="w-2 sm:w-2.5 lg:w-5 h-2 sm:h-2.5 lg:h-5"/>
           </div>
-          <div className="flex flex-wrap gap-5 md:gap-7 xl:gap-4 2xl:gap-6 4xl:gap-12 max-w-[544px] md:max-w-[600px] lg:max-w-[790px] xl:max-w-[1000px] 3xl:max-w-[1140px] 4xl:max-w-[1480px]">
+          <div className="flex flex-wrap gap-5 md:gap-7 xl:gap-4 2xl:gap-6 4xl:gap-12 max-w-[544px] md:max-w-[600px] lg:max-w-[790px] xl:max-w-[1000px] 3xl:max-w-[1140px] 4xl:max-w-[1610px]">
             {aboutSectionSlides.map((slide, index) => (
               <div
                 key={index}
-                className="p-4 rounded-lg sm:max-w-[262px] md:max-w-[284px] lg:max-w-[380px] xl:max-w-[238px] 2xl:max-w-[267px] 4xl:max-w-[340px] h-[130px] sm:h-[170px] xl:h-[280px] 2xl:h-[232px]  border border-glassWhite bg-transparent"
+                className="p-4 rounded-lg sm:max-w-[262px] md:max-w-[284px] lg:max-w-[380px] xl:max-w-[238px] 2xl:max-w-[267px] 4xl:max-w-[365px] h-[130px] sm:h-[170px] xl:h-[280px] 2xl:h-[232px]  border border-glassWhite bg-transparent"
               >
                 <div className="flex flex-col items-start justify-start gap-y-2">
                   <h3

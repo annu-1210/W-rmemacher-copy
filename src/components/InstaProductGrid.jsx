@@ -25,8 +25,8 @@ function InstaProductGrid() {
     },
   ];
   return (
-    <div className="max-w-[1140px] mx-auto flex flex-col gap-y-8 md:gap-y-10 lg:gap-y-[60px] justiy-center items-center mt-28 lg:mt-[150px]">
-      <div className="flex justify-between gap-x-3.5 max-w-[414px]">
+    <div className="max-w-[1140px] mx-auto flex flex-col gap-y-8 md:gap-y-10 lg:gap-y-[60px] justiy-center items-center mt-28 lg:mt-[150px] overflow-hidden">
+      <div className="flex items-center justify-between gap-x-3.5 max-w-[414px]">
         <div className="w-[42px] h-[42px]">
           {" "}
           <Image
@@ -42,11 +42,11 @@ function InstaProductGrid() {
         </p>
       </div>
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-4 lg:gap-5 w-full">
-        <div className="flex flex-wrap items-center justify-center gap-3 lg:gap-4 max-w-[569px]">
+        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 lg:gap-4 w-full max-w-[569px]">
           {gramGallery.map((item) => {
             return (
               <div
-                className="rounded-2xl lg:h-[283px]"
+                className="rounded-2xl h-full lg:h-[283px]"
                 style={{ maxWidth: `${item.width}px` }}
                 key={item.id}
               >
@@ -55,13 +55,13 @@ function InstaProductGrid() {
                   alt={item.id}
                   width={item.width}
                   height={283}
-                  className=" rounded-2xl w-[310px] md:w-[213px] lg:w-full h-[200px] lg:h-full object-center object-cover"
+                  className=" rounded-2xl w-full sm:w-[310px] md:w-[195.5px] lg:w-full h-full sm:h-[200px] lg:h-full object-center object-cover"
                 />
               </div>
             );
           })}
         </div>
-        <div className="w-[569px] md:w-[552px] h-[416px] lg:h-[586px]">
+        <div className="w-full sm:w-[569px] md:w-[552px] h-[416px] lg:h-[586px]  rounded-2xl">
           <Image
             src="/images/w-19.jpeg"
             alt="smart-home-5"

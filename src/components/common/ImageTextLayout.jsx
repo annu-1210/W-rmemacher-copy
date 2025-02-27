@@ -3,10 +3,23 @@ import Image from "next/image";
 import Text from "./Text";
 import SecondaryButton from "./SecondaryButton";
 
-function ImageTextLayout({ layout, direction }) {
+function ImageTextLayout({ layout }) {
   return (
-    <div className={`flex items-center justify-between ${direction}`} style={{ gap: `${layout.dimensions.gap}px` }}>
-      <div className={`w-[${layout.dimensions.width}px] h-[${layout.dimensions.height}px]`}>
+    <div
+      className="flex items-center justify-between"
+      style={{
+        gap: `${layout.dimensions.gap}px`,
+        display: "flex",
+        flexDirection: `${layout.flexDirection}`,
+      }}
+    >
+      <div
+        className="flex items-center justify-center"
+        style={{
+          height: `${layout.dimensions.height}px`,
+          width: `${layout.dimensions.width}px`,
+        }}
+      >
         <Image
           src={layout.imageSrc}
           alt="image"

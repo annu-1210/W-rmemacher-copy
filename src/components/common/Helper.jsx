@@ -392,6 +392,7 @@ export const smartMirrorsData = [
       height: 578,
       gap: 58,
     },
+    flexDirection: "row",
   },
 ];
 
