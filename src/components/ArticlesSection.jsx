@@ -6,8 +6,8 @@ function WarmemacherMission() {
   
   return (
     <div className="max-w-[860px] xl:max-w-[1140px] 4xl:max-w-[1400px] flex justify-center items-center mx-auto mt-20 sm:mt-28 lg:mt-[150px]">
-      <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-stretch">
-        <div className="max-w-[558px] ">
+      <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-stretch min-h-[500px] sm:min-h-0">
+        <div className="max-w-[558px]">
           <Article
             image={articles[0].img}
             height={articles[0].height}

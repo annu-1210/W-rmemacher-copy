@@ -5,7 +5,7 @@ import { SliderData } from "./common/Helper";
 function HighlightSection() {
   const layout = {
     position:
-      "top-[40px] xsm:top-[30px] sm:top-[30px] md:top-[110px] lg:top-[340px] xl:top-[321px]",
+      "top-[70px] sm:top-[100px] md:top-[200px] lg:top-[360px] xl:top-[321px]",
     textWidth: "w-[420px] lg:w-[550px] xl:w-[686px]",
   };
   return (

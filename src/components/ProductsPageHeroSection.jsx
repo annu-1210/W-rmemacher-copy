@@ -5,7 +5,7 @@ import { SliderData } from "./common/Helper";
 function ProductsPageHeroSection() {
   const layout = {
     position:
-      "top-[40px] xsm:top-[20px] sm:top-[50px] md:top-[130px] lg:top-[300px] xl:top-[234px]",
+      "top-[80px] xsm:top-[70px] sm:top-[100px] md:top-[210px] lg:top-[300px] xl:top-[234px]",
     textWidth: "w-[450px] lg:w-[718px]",
   };
   return (

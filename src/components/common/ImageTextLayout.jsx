@@ -2,22 +2,22 @@ import React from "react";
 import Image from "next/image";
 import Text from "./Text";
 import SecondaryButton from "./SecondaryButton";
+import clsx from "clsx";
 
 function ImageTextLayout({ layout }) {
   return (
     <div
-      className="flex items-center justify-between"
-      style={{
-        gap: `${layout.dimensions.gap}px`,
-        display: "flex",
-        flexDirection: `${layout.flexDirection}`,
-      }}
+      className={clsx(
+        "flex items-center justify-between flex-col",
+        layout.flexDirection === "row" ? "lg:flex-row" : "lg:flex-row-reverse"
+      )}
+      style={{ gap: `${layout.dimensions.gap}px` }}
     >
       <div
-        className="flex items-center justify-center"
+        className="flex items-center justify-center w-full"
         style={{
-          height: `${layout.dimensions.height}px`,
-          width: `${layout.dimensions.width}px`,
+        height: `${layout.dimensions.height}px`,
+         width: `${layout.dimensions.width}px`,
         }}
       >
         <Image
@@ -28,10 +28,10 @@ function ImageTextLayout({ layout }) {
           className="rounded-2xl relative w-full h-full object-cover"
         />
       </div>
-      <div className="flex flex-col gap-y-3 max-w-[553px] ">
+      <div className="flex flex-col gap-y-3 max-w-[480px] xl:max-w-[553px] ">
         {layout.buttonText && (
           <div className="w-full max-w-[172px] flex items-center justify-center">
-            <SecondaryButton
+            <SecondaryButton 
               label={layout.buttonText}
               size="xl"
               color="secondary"

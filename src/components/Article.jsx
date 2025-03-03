@@ -6,11 +6,10 @@ function Article({ image, height, id, description }) {
   return (
     <article className="flex flex-col gap-y-3 xl:gap-y-5 max-h-[942px] max-w-[558px] h-full">
       <div
-      className="max-w-full rounded-2xl w-full h-full"
-
+        className="max-w-full rounded-2xl w-full h-full"
         style={{
-          maxHeight: height ? `${height}px` : "h-full",
-          height: height ? "auto" : "250px", 
+          maxHeight: height ? `${height}px` : "100%",
+          height: height ? "auto" : "100%",
         }}
       >
         <Image
@@ -20,7 +19,7 @@ function Article({ image, height, id, description }) {
           alt={id}
           className="rounded-2xl max-w-[558px] 4xl:max-w-[600px] w-full h-full object-center object-cover"
           style={{
-            height: height ? `${height}px` : "250px",
+            height: id === 1 ? "clamp(300px, 50vh, 850px)" : `${height}px`,
           }}
         />
       </div>
