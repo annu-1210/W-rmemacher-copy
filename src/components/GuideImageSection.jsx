@@ -25,13 +25,13 @@ function GuideImageSection() {
     { index: 2, imageSrc: "/images/w-7.jpeg" },
   ];
   return (
-    <section className="max-w-[1120px] w-full mt-[150px] mx-auto items-center justify-center">
-      <div className=" w-full max-w-[1140px] 4xl:max-w-[1120px] mx-auto flex flex-col items-center justify-center gap-y-[30px] ">
+    <section className="max-w-[1120px] 4xl:max-w-[1440px] w-full mt-[150px] mx-auto items-center justify-center">
+      <div className=" w-full max-w-[1140px] 4xl:max-w-[1440px] flex flex-col items-center justify-center gap-y-16 md:gap-y-[30px] sm:px-8 md:px-0">
         <ImageTextLayout layout={imageTextLayoutData} direction="flex-row-reverse"/>
-        <div className="flex items-center justify-between gap-9 w-full">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 lg:gap-9 w-full h-full">
           {images.map((img) => {
             return (
-              <div key={img.index} className="w-[552px] h-[530px]">
+              <div key={img.index} className="w-full sm:h-[300px] md:h-[380px] xl:!h-[530px] 4xl:!h-[620px]">
                 <Image
                   src={img.imageSrc}
                   alt="image"

@@ -41,12 +41,12 @@ function InstaProductGrid() {
           @wärmemacher
         </p>
       </div>
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-4 lg:gap-5 w-full">
+      <div className="gridContainer flex flex-col-reverse md:flex-row items-center justify-between gap-4 lg:gap-5 w-full">
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 lg:gap-4 w-full max-w-[569px]">
           {gramGallery.map((item) => {
             return (
               <div
-                className="rounded-2xl h-full lg:h-[283px]"
+                className="rounded-2xl max-w-full sm:max-w-[310px] md:max-w-[195.5px] lg:max-w-full h-full lg:h-[283px]"
                 style={{ maxWidth: `${item.width}px` }}
                 key={item.id}
               >
@@ -55,7 +55,7 @@ function InstaProductGrid() {
                   alt={item.id}
                   width={item.width}
                   height={283}
-                  className=" rounded-2xl w-full sm:w-[310px] md:w-[195.5px] lg:w-full h-full sm:h-[200px] lg:h-full object-center object-cover"
+                  className="rounded-2xl w-full h-full sm:h-[200px] lg:h-full object-center object-cover"
                 />
               </div>
             );

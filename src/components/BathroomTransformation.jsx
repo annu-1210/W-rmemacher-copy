@@ -23,28 +23,32 @@ function BathroomTransformation() {
           <Text label={introText} size="md" />
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row-reverse gap-5 lg:gap-6 w-full">
-        <div className="max-w-[558px]">
-          <Article
-            image={bathroomTransformationArticles[0].img}
-            height={bathroomTransformationArticles[0].height}
-            id={bathroomTransformationArticles[0].id}
-            description={bathroomTransformationArticles[0].description}
-          />
+      <div className="flex flex-col sm:flex-row-reverse gap-y-4 sm:gap-4 md:gap-6 justify-between w-full">
+        <div className="w-full h-full">
+          <div className="max-w-[558px] !h-full sm:!h-[590px] md:!h-[600px] lg:!h-[760px] xl:!h-[778px]">
+            <Article
+              image={bathroomTransformationArticles[0].img}
+              id={bathroomTransformationArticles[0].id}
+              description={bathroomTransformationArticles[0].description}
+            />
+          </div>
         </div>
-        <div className="flex flex-col gap-5 lg:gap-y-6 ">
-          <Article
-            image={bathroomTransformationArticles[1].img}
-            height={bathroomTransformationArticles[1].height}
-            id={bathroomTransformationArticles[1].id}
-            description={bathroomTransformationArticles[1].description}
-          />
-          <Article
-            image={bathroomTransformationArticles[2].img}
-            height={bathroomTransformationArticles[2].height}
-            id={bathroomTransformationArticles[2].id}
-            description={bathroomTransformationArticles[2].description}
-          />
+        <div className="flex flex-col gap-5 lg:gap-y-6 w-full h-full">
+          <div className="h-full">
+            <Article
+              image={bathroomTransformationArticles[1].img}
+              id={bathroomTransformationArticles[1].id}
+              description={bathroomTransformationArticles[1].description}
+            />
+          </div>
+
+          <div className="h-full ">
+            <Article
+              image={bathroomTransformationArticles[2].img}
+              id={bathroomTransformationArticles[2].id}
+              description={bathroomTransformationArticles[2].description}
+            />
+          </div>
         </div>
       </div>
     </div>

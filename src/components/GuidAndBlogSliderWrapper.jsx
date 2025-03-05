@@ -17,8 +17,7 @@ function GuidAndBlogSliderWrapper() {
         secondaryText: "cteturet aliquet tellus et.",
       },
       layout: {
-        position:
-          "top-[60px] xsm:top-[30px] sm:top-[30px] md:top-[120px] lg:top-[270px] xl:top-[155px]",
+        position: "top-[80px] xsm:top-[120px] sm:top-[125px] md:top-[155px]",
         textWidth: "w-[450px] lg:w-[718px]",
       },
       dimensions: {
@@ -42,8 +41,7 @@ function GuidAndBlogSliderWrapper() {
         secondaryText: "cteturet aliquet tellus et.",
       },
       layout: {
-        position:
-          "top-[60px] xsm:top-[30px] sm:top-[30px] md:top-[120px] lg:top-[270px] xl:top-[155px]",
+        position: "top-[80px] xsm:top-[120px] sm:top-[125px] md:top-[155px]",
         textWidth: "w-[450px] lg:w-[718px]",
       },
       dimensions: {
@@ -54,7 +52,7 @@ function GuidAndBlogSliderWrapper() {
     },
   ];
   return (
-    <div className="max-w-[1920px] w-full mx-auto mt-[30px] h-[690px]">
+    <div className="max-w-[1920px] w-full mx-auto mt-[30px] h-[350px] sm:h-[440px] md:h-[520px] lg:h-[662px] xl:h-[690px]">
       <GuideAndBlogSlider SliderData={guideAndBlogHeroSlider} />
     </div>
   );

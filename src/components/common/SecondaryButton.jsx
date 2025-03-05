@@ -10,7 +10,7 @@ const button = tv(
         secondary: "gradient-border2",
       },
       size: {
-        xl: "w-[100px] xsm:w-[120px] lg:w-[150px] xl:w-[172px] px-4 xsm:px-5 py-2.5 xsm:py-3 md:py-3.5",
+        xl: "w-[116px] xsm:w-[132px] md:w-[157px] lg:w-[172px] px-4 md:px-5 py-2.5 xsm:py-3 md:py-3.5",
       },
     },
   },

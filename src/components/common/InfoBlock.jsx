@@ -5,7 +5,7 @@ import Image from "next/image";
 function InfoBlock({ width, height, imageSrc, description, rowDirection }) {
   return (
     <div
-      className={`max-w-[610px] lg:max-w-[1400px] flex gap-7 items-center justify-between mx-auto bg-transparent flex-col xl:flex xl:${rowDirection}`}
+      className={`max-w-[610px] lg:max-w-[1400px] flex gap-7 items-center justify-between mx-auto bg-transparent flex-col ${rowDirection === 'flex-row' ? 'xl:flex-row' : 'xl:flex-row-reverse'}`}
     >
       <div className="max-w-[680px] xl:max-w-[686px] bg-primary rounded-2xl p-5 xsm:p-10 ">
         <div className="w-full xl:max-w-[648px] flex flex-col gap-2 justify-start items-start">

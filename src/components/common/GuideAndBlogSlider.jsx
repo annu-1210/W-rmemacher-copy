@@ -22,12 +22,12 @@ function GuideAndBlogSlider({ SliderData }) {
           }}
           slidesPerView={1}
           loop={false}
-          className="max-w-[1920px] rounded-2xl "
+          className="max-w-[1920px] rounded-2xl h-full "
         >
           {SliderData.map((slide) => {
             return (
               <SwiperSlide key={slide.id}>
-                <div className="w-full relative flex items-center justify-between ">
+                <div className="w-full relative flex items-center justify-between h-full">
                   <div
                     className={`w-[${slide.dimensions.width}px] h-[${slide.dimensions.height}px] `}
                   >
@@ -41,12 +41,12 @@ function GuideAndBlogSlider({ SliderData }) {
                     />
                   </div>
 
-                  <div className="absolute max-w-[1920px] h-[770px] inset-0 bg-custom-gradient2 z-10"></div>
+                  <div className="absolute max-w-[1920px] h-[350px] sm:h-[440px] md:h-[520px] lg:h-[662px] xl:h-[770px] inset-0 bg-custom-gradient2 z-10"></div>
                   <div
-                    className={`absolute ${slide.layout.position} w-full flex flex-col gap-y-10 px-4 sm:px-10 z-20 `}
+                    className={`absolute ${slide.layout.position} w-full flex flex-col gap-y-5 md:gap-y-10 px-4 sm:px-8 lg:px-10 z-20 `}
                   >
                     {slide.buttonText && (
-                      <div className="w-full max-w-[172px] flex items-center justify-center">
+                      <div className="w-full max-w-[172px] flex items-center justify-start">
                         <SecondaryButton
                           label={slide.buttonText}
                           size="xl"

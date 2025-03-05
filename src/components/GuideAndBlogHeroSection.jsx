@@ -18,7 +18,7 @@ function GuideAndBlogHeroSection() {
       },
       layout: {
         position:
-          "top-[60px] xsm:top-[30px] sm:top-[70px] md:top-[160px] lg:top-[330px] xl:top-[278px]",
+          "top-[160px] md:top-[240px] lg:top-[260px] xl:top-[278px]",
         textWidth: "w-[450px] lg:w-[718px]",
       },
       dimensions: {
@@ -42,7 +42,7 @@ function GuideAndBlogHeroSection() {
       },
       layout: {
         position:
-          "top-[60px] xsm:top-[30px] sm:top-[70px] md:top-[160px] lg:top-[330px] xl:top-[278px]",
+          "top-[160px] md:top-[240px] lg:top-[260px] xl:top-[278px]",
         textWidth: "w-[450px] lg:w-[718px]",
       },
       dimensions: {
@@ -65,7 +65,7 @@ function GuideAndBlogHeroSection() {
       },
       layout: {
         position:
-          "top-[60px] xsm:top-[30px] sm:top-[70px] md:top-[160px] lg:top-[330px] xl:top-[278px]",
+          "top-[160px] md:top-[240px] lg:top-[260px] xl:top-[278px]",
         textWidth: "w-[450px] lg:w-[718px]",
       },
       dimensions: {
@@ -76,7 +76,7 @@ function GuideAndBlogHeroSection() {
   ];
 
   return (
-    <div className="max-w-[1920px] w-full mx-auto">
+    <div className="max-w-[1920px] w-full mx-auto h-[350px] sm:h-[440px] md:h-[520px] lg:h-[662px] xl:h-[770px]">
       <GuideAndBlogSlider SliderData={guideAndBlogHeroSlider} />
     </div>
   );
