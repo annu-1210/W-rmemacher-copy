@@ -95,11 +95,7 @@
 
 .custom-next.swiper-button-active,
 .custom-prev.swiper-button-active {
-  background-color: linear-gradient(
-    180deg,
-    #e94e1b 0%,
-    #fdc801 100%
-  ) !important;
+  background: linear-gradient(180deg, #e94e1b 0%, #fdc801 100%) !important;
   color: white !important;
 }
 

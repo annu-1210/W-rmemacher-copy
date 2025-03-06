@@ -1,6 +1,6 @@
 import React from "react";
 import GuideAndBlogSlider from "./common/GuideAndBlogSlider";
-
+import Header from "./common/Header";
 function GuideAndBlogHeroSection() {
   const guideAndBlogHeroSlider = [
     {
@@ -17,14 +17,13 @@ function GuideAndBlogHeroSection() {
         secondaryText: "cteturet aliquet tellus et.",
       },
       layout: {
-        position:
-          "top-[160px] md:top-[240px] lg:top-[260px] xl:top-[278px]",
+        position: "top-[160px] md:top-[240px] lg:top-[260px] xl:top-[278px]",
         textWidth: "w-[450px] lg:w-[718px]",
       },
       dimensions: {
         width: 1920,
         height: 770,
-      }
+      },
     },
 
     {
@@ -41,14 +40,13 @@ function GuideAndBlogHeroSection() {
         secondaryText: "cteturet aliquet tellus et.",
       },
       layout: {
-        position:
-          "top-[160px] md:top-[240px] lg:top-[260px] xl:top-[278px]",
+        position: "top-[160px] md:top-[240px] lg:top-[260px] xl:top-[278px]",
         textWidth: "w-[450px] lg:w-[718px]",
       },
       dimensions: {
         width: 1920,
         height: 770,
-      }
+      },
     },
     {
       id: 3,
@@ -64,19 +62,19 @@ function GuideAndBlogHeroSection() {
         secondaryText: "cteturet aliquet tellus et.",
       },
       layout: {
-        position:
-          "top-[160px] md:top-[240px] lg:top-[260px] xl:top-[278px]",
+        position: "top-[160px] md:top-[240px] lg:top-[260px] xl:top-[278px]",
         textWidth: "w-[450px] lg:w-[718px]",
       },
       dimensions: {
         width: 1920,
         height: 770,
-      }
+      },
     },
   ];
 
   return (
-    <div className="max-w-[1920px] w-full mx-auto h-[350px] sm:h-[440px] md:h-[520px] lg:h-[662px] xl:h-[770px]">
+    <div className="max-w-[1920px] w-full mx-auto h-[350px] sm:h-[440px] md:h-[520px] lg:h-[662px] xl:h-[770px] relative">
+      <Header />
       <GuideAndBlogSlider SliderData={guideAndBlogHeroSlider} />
     </div>
   );

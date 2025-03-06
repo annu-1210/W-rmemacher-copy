@@ -13,7 +13,7 @@ export default function Accordion({ faqs }) {
               <DisclosureButton className="flex justify-between text-start sm:items-center w-full bg-primary text-secondary font-MontserratMedium text-xs xsm:text-sm lg:text-xl xl:text-2xl leading-4 xsm:leading-5 sm:leading-6 lg:leading-8 xl:leading-9 ">
                 {faq.question}
                 <IoIosArrowDown
-                  className={`md:w-[30px] md:h-[30px] transition-transform duration-300 ${
+                  className={`md:w-[19px] md:h-[19px] transition-transform duration-300 ${
                     open ? "rotate-180" : ""
                   }`}
                 />

@@ -5,12 +5,15 @@ import ActionButton from "./ActionButton";
 import Link from "next/link";
 
 function FeatureSection({ imageSrc, heading, description, layout }) {
+  // Ensure imageSrc is a string path
+  const imagePath = imageSrc || '/images/w-6.png';
+  
   return (
     <div className="max-w-[1920px] w-full">
       <div className="w-full relative flex items-center justify-between text-white text-2xl bg-cover">
-        <Link href="/products/solis">
+        <Link href={`/products/solis?image=${encodeURIComponent(imagePath)}`}>
           <Image
-            src={imageSrc}
+            src={imagePath}
             alt={heading}
             width={1140}
             height={770}
@@ -20,7 +23,7 @@ function FeatureSection({ imageSrc, heading, description, layout }) {
         </Link>
         <div className="absolute max-w-[1920px] h-[696px] inset-0 bg-custom-gradient2 z-10"></div>
         <div
-          className={`absolute ${layout.position} w-full flex flex-col gap-y-6 md:flex-row justify-between px-4 sm:px-10 z-20`}
+          className={`absolute ${layout.position} w-full flex flex-col gap-y-6 md:flex-row justify-between px-4 sm:px-10 z-10`}
         >
           <div
             className={`max-w-[250px] xsm:max-w-[300px] md:max-w-[718px] flex flex-col gap-y-6 md:gap-y-10 ${layout.textWidth}`}
@@ -59,10 +62,10 @@ function FeatureSection({ imageSrc, heading, description, layout }) {
           </div>
 
           <div className="w-full flex items-end gap-x-4 justify-start md:justify-end max-w-[260px] lg:max-w-[336px]">
-            <Link href="/products/solis">
+            <Link href={`/products/solis?image=${encodeURIComponent(imagePath)}`}>
               <ActionButton label="Jetzt kaufen" color="primary" size="lg" />
             </Link>
-            <Link href="/products/solis">
+            <Link href={`/products/solis?image=${encodeURIComponent(imagePath)}`}>
               <ActionButton label="Mehr erfahren" size="md" color="secondary" />
             </Link>
           </div>

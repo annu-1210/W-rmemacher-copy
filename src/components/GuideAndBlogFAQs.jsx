@@ -14,7 +14,7 @@ function GuideAndBlogFAQs() {
       <div className="w-full flex flex-col items-center justify-center gap-y-[30px]">
         <div className="max-w-[690px] w-full flex flex-col gap-y-[30px] items-center justify-center">
           <div className="flex flex-col gap-y-2 w-full items-center justify-center">
-            <h3 className="text-secondary text-2xl xsm:text-3xl sm:text-4xl md:text-[42px] font-MontserratMedium leading-[51.2px] text-cente">
+            <h3 className="text-secondary text-2xl xsm:text-3xl sm:text-4xl md:text-[42px] font-MontserratMedium leading-[51.2px] text-center">
               Häufig gestellt
               <span className="text-transparent bg-clip-text bg-custom-gradient">
                 {" "}

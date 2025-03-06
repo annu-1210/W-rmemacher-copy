@@ -34,15 +34,13 @@ function SmartMirrors() {
           <p className="max-w-[474px] text-tertiaryRed font-MontserratMedium italic text-xs xsm:text-sm sm:text-base lg:text-xl xl:text-2xl leading-4 xsm:leading-5 sm:leading-6 lg:leading-8 xl:leading-[33.6px]">
             {smartMirrorsData[0].footerNote}
           </p>
-          <Link 
-            href="/products/solis" 
-            className="w-full sm:w-auto px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-center"
-          >
-            Learn More
-          </Link>
         </div>
         <div className="max-w-full md:max-w-[310px] lg:max-w-[450px] xl:max-w-[529px] h-[380px] lg:h-[560px] xl:h-[608px]">
-          <Link href="/products/solis">
+          <Link
+            href={`/products/solis?image=${encodeURIComponent(
+              "/images/w-13.png"
+            )}`}
+          >
             <Image
               src="/images/w-13.png"
               alt="Solis Smart Mirror"
@@ -54,9 +52,7 @@ function SmartMirrors() {
         </div>
       </div>
       <div className="w-full h-full lg:h-[578px]">
-        <Link href="/products/viva">
-          <ImageTextLayout layout={smartMirrorsData[1]} />
-        </Link>
+        <ImageTextLayout layout={smartMirrorsData[1]} />
       </div>
     </div>
   );

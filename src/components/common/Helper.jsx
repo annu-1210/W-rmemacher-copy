@@ -39,10 +39,7 @@ export const HeaderLinks = [
 export const SliderData = [
   {
     id: 1,
-    image: {
-      src: sliderImg1,
-      alt: "Slider Image 1",
-    },
+    image: "/images/w-6.png",
     description:
       "Entdecken Sie den Badezimmerspiegel SOLIS mit integrierter Infrarotheizung und Smart Home in Premium-Qualität.",
     heading: {
@@ -61,10 +58,7 @@ export const SliderData = [
 
   {
     id: 2,
-    image: {
-      src: sliderImg2,
-      alt: "Slider Image 2",
-    },
+    image: "/images/w-14.jpeg",
     description:
       "Entdecken Sie den Badezimmerspiegel VIVA mit integrierter Infrarotheizung und Smart Home in Premium-Qualität.",
     heading: {
@@ -424,6 +418,70 @@ export const GuideAndBlogFaqs = [
   },
   {
     question: "Lorem ipsum dolor sit amet cmentum purus cum?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+];
+
+export const productFeatureHighlightDescription = [
+  {
+    heading: {
+      regular: "Lorem ipsum dolor sit ",
+      italic: "amet consecte Arcu",
+    },
+    content: [
+      "Lorem ipsum dolor sit amet consectetur. Id interdum habitasse habitant id amet eget lorem. Nulla elit neque pharetra a. Quam eget amet neque nulla fermentum nam vitae sagittis. A neque vestibulum in dui bibendum. Cras porttitor molestie amet eget diam enim suspendisse pellentesque. Eget enim massa amet fringilla pharetra convallis turpis. Egestas sit congue faucibus pellentesque id sed cras sit. Ut nisi euismod urna sollicitudin commodo gravida sed. Nunc in cras donec facilisi. Nibh imperdiet faucibus dignissim ac massa nec.",
+    ],
+  },
+  {
+    heading: {
+      regular: "Erleben Sie",
+      italic: " wohltuende Wärme",
+    },
+    content: [
+      "Steigern Sie Ihre Vitalität und entdecken Sie die zahlreichen Vorteile durch die Infrarotheizung wie bspw. gleichmäßige Wärmeverteilung im Raum, keine trockne Luft und ein umweltfreundliches System im Vergleich zu konventionellen Heizsystemen.",
+    ],
+  },
+];
+
+export const productDetailsFaqs = [
+  {
+    question: "Wie funktioniert die integrierte Infrarotheizung im Spiegel?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Welche Smart Home Funktionen bietet der Spiegel?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Ist die Installation des Spiegels kompliziert?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Kann der Spiegel auch in feuchten Räumen verwendet werden?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Welche Vorteile hat die LED-Beleuchtung des Spiegels?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Wie wird die Infrarotheizung gesteuert?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Wie lange dauert es, bis der Spiegel versandfertig ist?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
+  },
+  {
+    question: "Welche Garantie bieten wir auf den Spiegel?",
     answer:
       "Lorem ipsum dolor sit amet consectetur. Molestie duis tincidunt ferme ntum eleifend tristique scelerisque. Consectetur cursus faucibus.",
   },

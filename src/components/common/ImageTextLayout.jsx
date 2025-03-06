@@ -4,9 +4,11 @@ import Image from "next/image";
 import Text from "./Text";
 import SecondaryButton from "./SecondaryButton";
 import clsx from "clsx";
+import Link from "next/link";
 
 function ImageTextLayout({ layout }) {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const imagePath = layout.imageSrc || "/images/w-6.png";
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 1024px)");
@@ -34,16 +36,18 @@ function ImageTextLayout({ layout }) {
           : undefined
       }
     >
-      <div className="flex  justify-center max-w-full md:max-w-[450px] xl:max-w-full 4xl:w-full  h-full 4xl:h-[580px]">
-        <Image
-          src={layout.imageSrc}
-          alt="image"
-          width={layout.dimensions.width}
-          height={layout.dimensions.height}
-          className="rounded-2xl relative md:w-full h-[380px] lg:h-full object-cover"
-        />
-      </div>
-      <div className="flex items-start justify-start flex-col gap-y-3 md:max-w-[360px] lg:max-w-[460px] xl:max-w-[553px] 4xl:max-w-[702px] h-full ">
+      <Link href={`/products/solis?image=${encodeURIComponent(imagePath)}`} className="flex  justify-center max-w-full md:max-w-[450px] xl:max-w-full 4xl:w-full  h-full 4xl:h-[580px]">
+        <div className="flex  justify-center max-w-full md:max-w-[450px] xl:max-w-full 4xl:w-full  h-full 4xl:h-[580px]">
+          <Image
+            src={layout.imageSrc}
+            alt="image"
+            width={layout.dimensions.width}
+            height={layout.dimensions.height}
+            className="rounded-2xl relative md:w-full h-[380px] lg:h-full object-cover"
+          />
+        </div>
+      </Link>
+      <div className="flex items-center justify-center flex-col gap-y-3 md:max-w-[360px] lg:max-w-[460px] xl:max-w-[553px] 4xl:max-w-[702px] h-full ">
         {layout.buttonText && (
           <div className="w-full max-w-[172px] flex items-center justify-start">
             <SecondaryButton

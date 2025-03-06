@@ -9,7 +9,6 @@ import Blog from '../Blog'
 import Footer from './Footer'
 import Image from "next/image";
 import FloatingActionButton from './FloatingActionButton'
-
 function HomePage() {
   return (
     <div className="relative overflow-hidden">
@@ -45,7 +44,7 @@ function HomePage() {
       <div className="absolute fixed z-50 top-[220px] sm:top-[210px] md:top-[300px] lg:top-[410px] 3xl:top-[470px] 3xl:right-[70px] cursor-pointer">
         <FloatingActionButton />
       </div>
-      <main className="relative container p-3 xsm:p-5 max-w-[1920px] mx-auto ">
+      <main className="relative p-3 xsm:p-5 max-w-[1920px] mx-auto overflow-hidden">
         <HeroSection />
         <AboutHeatMakers />
         <ProductSlider />

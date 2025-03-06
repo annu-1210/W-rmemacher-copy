@@ -13,7 +13,8 @@ function Header() {
   const pathname = usePathname();
 
   // Determine if we're on a product detail page
-  const isProductDetailPage = pathname.startsWith("/products/") && pathname !== "/products";
+  const isProductDetailPage =
+    pathname.startsWith("/products/") && pathname !== "/products";
 
   const toggleNavbar = () => {
     setOpen(!isOpen);
@@ -31,8 +32,8 @@ function Header() {
   }, [isOpen]);
 
   return (
-    <header className="max-w-[1880px] w-full">
-      <div className="w-full overflow-hidden max-w-[310px] xxsm:max-w-[360px] xsm:max-w-[385px] sm:max-w-[600px] md:max-w-[728px] lg:max-w-[984px] xl:max-w-[1400px] 4xl:max-w-[1880px] absolute z-20 bg-transparent top-2 xsm:top-5 left-0 right-0 flex items-center justify-between sm:pt-2 xl:pt-3.5 px-6 md:px-8 xl:px-10 mx-auto">
+    <header className="w-full max-w-[1880px] mx-auto overflow-hidden">
+      <div className="w-full absolute z-20 bg-transparent top-0 flex items-center justify-between sm:pt-2 xl:pt-3.5 px-5 lg:px-10 ">
         <div
           className="flex lg:hidden w-[50px] xsm:w-10 sm:w-20"
           onClick={toggleNavbar}
@@ -41,7 +42,7 @@ function Header() {
             size={26}
             className={`cursor-pointer ${
               isProductDetailPage ? "text-gray-900" : "text-neutral"
-            } w-[20px] sm:w-[26px]`}
+            } w-[24px] sm:w-[26px]`}
           />
         </div>
         <div className="hidden lg:flex items-center gap-x-5">
@@ -52,8 +53,8 @@ function Header() {
                 key={index}
                 href={link.url}
                 className={`${
-                  isProductDetailPage ? "text-gray-900" : "text-neutral"
-                } text-xs xl:text-sm font-MontserratRegular underline-animation hover:text-primary ${
+                  isProductDetailPage ? "text-secondary opacity-80 hover:text-secondary hover:opacity-100 hover:font-MontserratMedium" : "hover:text-primary"
+                } text-sm font-MontserratRegular underline-animation text-neutral ${
                   isActive ? "text-primary" : ""
                 }`}
               >
@@ -71,21 +72,21 @@ function Header() {
         <div className="flex lg:w-[300px] xl:w-[450px] bg-transparent justify-end">
           <Dropdown />
         </div>
-        
+
         {/* Mobile Menu Overlay */}
-        <div 
+        <div
           className={`fixed inset-0 z-50 transition-opacity duration-300 ${
             isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
         >
           {/* Backdrop */}
-          <div 
+          <div
             className="absolute inset-0 bg-black/20 backdrop-blur-sm"
             onClick={toggleNavbar}
           />
-          
+
           {/* Mobile Menu */}
-          <div 
+          <div
             className={`absolute left-0 top-0 h-full transition-transform duration-300 ease-in-out ${
               isOpen ? "translate-x-0" : "-translate-x-full"
             }`}

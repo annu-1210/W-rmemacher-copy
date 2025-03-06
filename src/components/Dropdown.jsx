@@ -26,7 +26,7 @@ function Dropdown() {
     <div className="relative w-24 sm:w-[116px] ">
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex gap-2 bg-transparent flex justify-end rounded-lg shadow-sm focus:outline-none cursor-pointer"
+        className="w-full flex gap-2 bg-transparent flex justify-end rounded-lg  focus:outline-none cursor-pointer"
       >
         <div className="flex items-center gap-x-1.5">
           <img

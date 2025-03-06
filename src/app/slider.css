@@ -1,0 +1,63 @@
+/* Product Details Slider Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 47.14px !important;
+  height: 47.14px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(255, 255, 255, 1) !important;
+  background: transparent !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 19px !important;
+  font-weight: bold !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.swiper-button-next {
+  right: 10px !important;
+}
+
+.swiper-button-prev {
+  left: 10px !important;
+}
+
+/* Active state with gradient background */
+.swiper-button-next.swiper-button-active,
+.swiper-button-prev.swiper-button-active {
+  background: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%) !important;
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 1) !important;
+  border: none !important;
+  opacity: 1 !important;
+}
+
+.swiper-button-next.swiper-button-active:after,
+.swiper-button-prev.swiper-button-active:after {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Thumbnail styles */
+.swiper-slide-thumb-active {
+  position: relative !important;
+}
+
+.swiper-slide-thumb-active > div {
+  position: relative !important;
+}
+
+.swiper-slide-thumb-active > div::before {
+  content: '' !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(101.49deg, rgba(233, 78, 27, 0.4) 0.92%, rgba(253, 200, 1, 0.4) 96.93%) !important;
+  border-radius: 1rem !important;
+  z-index: 2 !important;
+}
+
+.swiper-slide-thumb-active img {
+  position: relative !important;
+  z-index: 1 !important;
+} 
