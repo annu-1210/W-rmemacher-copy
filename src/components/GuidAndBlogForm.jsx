@@ -94,7 +94,7 @@ function GuidAndBlogForm() {
               </label>
             </div>
           </form>
-          <ActionButton label="Senden" color="primary" size="xxl" />
+          <ActionButton label="Senden" color="quaternary" size="xxxl" />
         </div>
       </div>
     </div>

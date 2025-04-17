@@ -32,15 +32,20 @@ function BathroomTrends() {
                   activeTab === tab.id
                     ? "border-b border-tertiary text-tertiary"
                     : "text-secondary"
-                } text-xs sm:text-base lg:text-lg xl:text-xl font-MontserratRegular w-full flex justify-center`}
+                } text-xs sm:text-base lg:text-lg xl:text-xl font-MontserratRegular w-full flex justify-center transition-all duration-300 hover:text-tertiary`}
                 onClick={() => setActiveTab(tab.id)}
               >
                 {tab.label}
               </button>
             ))}
           </div>
-          <div className="max-w-[1107px] max-h-[500px]">
-            {navigationTabs.find((tab) => tab.id === activeTab)?.content}
+          <div className="relative w-full overflow-hidden">
+            <div 
+              key={activeTab}
+              className="max-w-[1107px] max-h-[500px] animate-smoothSlide"
+            > 
+              {navigationTabs.find((tab) => tab.id === activeTab)?.content}
+            </div>
           </div>
         </div>
         <div className="flex xsm:hidden max-w-[350px]">

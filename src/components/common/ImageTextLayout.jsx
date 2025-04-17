@@ -37,7 +37,7 @@ function ImageTextLayout({ layout }) {
       }
     >
       <Link href={`/products/solis?image=${encodeURIComponent(imagePath)}`} className="flex  justify-center max-w-full md:max-w-[450px] xl:max-w-full 4xl:w-full  h-full 4xl:h-[580px]">
-        <div className="flex  justify-center max-w-full md:max-w-[450px] xl:max-w-full 4xl:w-full  h-full 4xl:h-[580px]">
+        <div className="flex  justify-center max-w-full md:max-w-[450px] xl:max-w-full 4xl:w-full h-full 4xl:h-[580px]">
           <Image
             src={layout.imageSrc}
             alt="image"
@@ -47,7 +47,7 @@ function ImageTextLayout({ layout }) {
           />
         </div>
       </Link>
-      <div className="flex items-center justify-center flex-col gap-y-3 md:max-w-[360px] lg:max-w-[460px] xl:max-w-[553px] 4xl:max-w-[702px] h-full ">
+      <div className="flex flex-col gap-y-3 md:max-w-[360px] lg:max-w-[460px] xl:max-w-[553px] 4xl:max-w-[702px] h-full">
         {layout.buttonText && (
           <div className="w-full max-w-[172px] flex items-center justify-start">
             <SecondaryButton

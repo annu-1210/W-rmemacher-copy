@@ -27,10 +27,10 @@ function ProductSlider() {
           {SliderData.map((slide) => {
             return (
               <SwiperSlide key={slide.id}>
-                <div className="w-full relative flex items-center justify-between text-white text-2xl ">
+                <div className="w-full relative flex items-center justify-between text-white text-2xl">
                   <Image
-                    src={slide.image.src}
-                    alt={slide.image.alt}
+                    src={slide.image}
+                    alt={slide.description}
                     width={1140}
                     height={770}
                     priority={true}

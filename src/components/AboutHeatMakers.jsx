@@ -22,7 +22,7 @@ function AboutHeatMakers() {
             <Text label={para2} size="md" />
           </p>
         </div>
-        <ActionButton label="Mehr entdecken" color="primary" size="xl" />
+        <ActionButton label="Mehr entdecken" color="quaternary" size="xl" />
       </div>
     </div>
   );

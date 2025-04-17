@@ -20,7 +20,7 @@ function Blog() {
               <Text label={introText} size="xsm" />
             </p>
           </div>
-          <ActionButton label="Alle ansehen" color="primary" size="lg" />
+          <ActionButton label="Alle ansehen" color="quaternary" size="lg" />
         </header>
         <div className="flex flex-col sm:flex-row-reverse xl:flex-row  items-center sm:items-start h-full w-full gap-y-6 sm:gap-x-6">
           <section className="flex flex-col gap-[34px] pt-6 lg:pt-10 xl:pt-0 max-w-[350px] sm:max-w-[300px] md:max-w-[500px] xl:max-w-[606px] ">
